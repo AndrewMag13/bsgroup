@@ -1,0 +1,23 @@
+html {
+  font-size: 24px;
+}
+.first {
+  font-size: 2em;
+}
+.second {
+  font-size: 2em;
+  animation: alternate 3s slideIn;
+}
+.third {
+  font-size: 1rem;
+}
+@keyframes slideIn {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,19 @@
+$laptop: 1024px;
+$tablet: 768px;
+$mobile: 425px;
+
+@mixin media($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $mobile) {
+      @content;
+    }
+  } @else if $media == tablet {
+    @media only screen and (max-width: $tablet) {
+      @content;
+    }
+  } @else if $media == laptop {
+    @media only screen and (max-width: $laptop) {
+      @content;
+    }
+  }
+}
