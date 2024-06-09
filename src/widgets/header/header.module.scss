@@ -1,0 +1,9 @@
+.header {
+  @apply flex justify-between py-4 text-xl mx-8 items-center z-10;
+}
+.header__links__list {
+  @apply flex flex-row gap-6;
+}
+.header__phone {
+  @apply flex items-center gap-4;
+}

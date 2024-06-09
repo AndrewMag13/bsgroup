@@ -4,8 +4,11 @@
 
 body {
   margin: 0 0 0 0;
+
 }
 html {
   scroll-behavior: smooth;
-  /* scroll-padding-top: 38px;  */
+  scroll-padding-top: 80px;  
+  background-color: #1c1c1c;
+  color: white;
 }
