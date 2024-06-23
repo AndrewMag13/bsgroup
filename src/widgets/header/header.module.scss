@@ -1,9 +1,12 @@
 .header {
-  @apply flex justify-between py-4 text-xl mx-8 items-center z-10;
+  @apply flex justify-between py-4 text-base leading-none items-center z-10 bg-funded w-full px-39 h-15;
 }
 .header__links__list {
   @apply flex flex-row gap-6;
 }
 .header__phone {
-  @apply flex items-center gap-4;
+  @apply flex items-center gap-2;
+}
+.header_logo {
+  @apply items-center self-center;
 }

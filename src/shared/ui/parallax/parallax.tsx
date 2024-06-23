@@ -39,7 +39,7 @@ const Parallax: NextPage = () => {
     () => ({
       fullScreen: {
         enable: false,
-        zIndex: 1,
+        zIndex: -1,
       },
       background: {
         color: {
@@ -49,10 +49,10 @@ const Parallax: NextPage = () => {
       fpsLimit: 120,
       interactivity: {
         events: {
-          onClick: {
-            enable: true,
-            mode: 'push',
-          },
+          // onClick: {
+          //   enable: true,
+          //   mode: 'push',
+          // },
           onHover: {
             enable: true,
             mode: 'repulse',
@@ -60,7 +60,7 @@ const Parallax: NextPage = () => {
         },
         modes: {
           push: {
-            quantity: 5,
+            quantity: 1,
           },
           repulse: {
             distance: 100,
@@ -69,7 +69,10 @@ const Parallax: NextPage = () => {
         },
       },
       style: {
-        height: 'calc(100vh - 80px)',
+        height: 'calc(100vh - 60px)',
+        zIndex: '-100',
+        position: 'absolute',
+        top: '60px',
       },
       particles: {
         color: {
@@ -96,7 +99,7 @@ const Parallax: NextPage = () => {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 100,
         },
         opacity: {
           value: 0.5,
@@ -110,7 +113,7 @@ const Parallax: NextPage = () => {
       },
       detectRetina: true,
     }),
-    []
+    [],
   )
 
   if (init) {
@@ -119,7 +122,6 @@ const Parallax: NextPage = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        style={{ marginTop: '80px', height: '100vh' }}
       />
     )
   }

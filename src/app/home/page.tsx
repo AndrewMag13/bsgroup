@@ -1,16 +1,18 @@
-import { NextPage } from 'next'
-import s from './home.module.scss'
-import { revalidatePath } from 'next/cache'
 import Header from '@/widgets/header/header'
-import Parallax from '@/shared/ui/parallax/parallax'
-import BsLogoParallax from '@/shared/ui/bsParallaxLogo/bsLogoParallax'
+import MainBlock from '@/widgets/mainBlock/mainblock'
+import s from './home.module.scss'
+import TextLen from '@/widgets/textLen/textLen'
+import ServicesPage from '@/widgets/services/services'
 
 const HomePage = () => {
   return (
     <>
-      <Header />
-      <Parallax />
-      {/* <BsLogoParallax /> */}
+      <div className={s.main}>
+        <Header />
+        <MainBlock />
+        <TextLen />
+        <ServicesPage />
+      </div>
     </>
   )
 }

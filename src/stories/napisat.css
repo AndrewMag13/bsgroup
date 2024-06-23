@@ -1,0 +1,55 @@
+@property --based {
+  syntax: '<color>';
+  initial-value: rgba(33, 156, 255, 1);
+  inherits: false;
+}
+
+@property --funded {
+  syntax: '<color>';
+  initial-value: rgba(98, 214, 197, 1);
+  inherits: false;
+}
+
+.storybook-button {
+  /* @font-face {
+    font-family: 'Inter';
+    src: local('Inter'), local('Inter-bold'),
+      url('./assets/Inter/Inter-Bold.ttf');
+  } */
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 0;
+  font-size: 20px;
+  padding: 25px 21px;
+  color: white;
+  width: 140px;
+  heigth: 50px;
+}
+.storybook-button--primary {
+  background-image: linear-gradient(90deg, var(--based) 0%, var(--funded) 100%);
+  transition:
+    --based 1s,
+    --funded 1s;
+}
+.storybook-button--primary:hover {
+  --based: rgba(98, 214, 197, 1);
+  --funded: rgba(33, 156, 255, 1);
+}
+/* .storybook-button--secondary {
+  background: linear-gradient(
+    90deg,
+    rgba(98, 214, 197, 1) 0%,
+    rgba(33, 156, 255, 1) 100%
+  );
+}
+.storybook-button--secondary:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(33, 156, 255, 1) 0%,
+    rgba(98, 214, 197, 1) 100%
+  );
+} */
