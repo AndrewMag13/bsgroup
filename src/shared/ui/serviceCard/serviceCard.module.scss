@@ -1,3 +1,24 @@
 .container {
-  @apply bg-funded
+  @apply bg-funded flex justify-center flex-col items-center w-full rounded-default;
+}
+.header {
+  @apply text-3xl font-bold leading-8 align-middle text-center;
+}
+.price {
+  @apply font-bold text-sm leading-8;
+}
+.serviceType {
+  @apply font-bold text-base leading-8;
+}
+.mainText {
+  @apply flex gap-5 flex-col justify-center items-center my-10;
+}
+.bulletList {
+  @apply list-disc flex gap-5 flex-col px-5;
+}
+.bullet {
+  @apply text-base font-bold leading-8 w-full;
+}
+.button {
+  @apply mt-10 mb-15 ;
 }

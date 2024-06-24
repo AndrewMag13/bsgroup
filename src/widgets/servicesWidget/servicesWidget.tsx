@@ -6,7 +6,7 @@ import {
 } from '@/shared/servicesText/servicesText'
 import ServiceCard from '@/shared/ui/serviceCard/serviceCard'
 import s from './servicesWidgets.module.scss'
-const ServicesPage: NextPage = () => {
+const ServicesWidget: NextPage = () => {
   return (
     <>
       <div className={s.container}>
@@ -21,4 +21,4 @@ const ServicesPage: NextPage = () => {
   )
 }
 
-export default ServicesPage
+export default ServicesWidget

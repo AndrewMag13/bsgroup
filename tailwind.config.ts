@@ -31,6 +31,12 @@ const config: Config = {
       lineHeight: {
         16: '64px',
       },
+      width: {
+        360: '360px',
+      },
+      borderRadius: {
+        default: '30px',
+      },
     },
   },
   plugins: [],
