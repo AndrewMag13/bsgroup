@@ -63,8 +63,8 @@ const Parallax: NextPage = () => {
             quantity: 1,
           },
           repulse: {
-            distance: 100,
-            duration: 0.4,
+            distance: 120,
+            duration: 0.5,
           },
         },
       },

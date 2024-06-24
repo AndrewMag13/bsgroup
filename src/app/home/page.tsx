@@ -2,7 +2,7 @@ import Header from '@/widgets/header/header'
 import MainBlock from '@/widgets/mainBlock/mainblock'
 import s from './home.module.scss'
 import TextLen from '@/widgets/textLen/textLen'
-import ServicesPage from '@/widgets/services/services'
+import ServicesPage from '@/widgets/servicesWidget/servicesWidget'
 
 const HomePage = () => {
   return (

@@ -20,11 +20,13 @@ const config: Config = {
     },
     extend: {
       spacing: {
-        '39': '156px',
         '15': '60px',
+        '25': '100px',
+        '39': '156px',
       },
       fontSize: {
         '16': '64px',
+        '40': '40px',
       },
       lineHeight: {
         16: '64px',

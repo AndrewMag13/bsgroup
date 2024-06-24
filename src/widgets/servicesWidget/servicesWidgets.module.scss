@@ -1,0 +1,9 @@
+.container {
+  @apply bg-based mt-25 flex justify-center flex-col;
+}
+.title {
+  @apply text-40 font-bold flex self-center;
+}
+.servicesContainer {
+  @apply flex flex-row mt-15;
+}

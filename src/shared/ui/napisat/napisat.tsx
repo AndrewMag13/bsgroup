@@ -5,7 +5,7 @@ import { Button } from '@/stories/Napisat'
 const Napisat = () => {
   return (
     <>
-      <Button label="Написать" primary style={{ zIndex: 100 }}></Button>
+      <Button label="Написать" primary style={{ zIndex: 10 }}></Button>
     </>
   )
 }

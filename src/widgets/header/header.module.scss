@@ -1,5 +1,5 @@
 .header {
-  @apply flex justify-between py-4 text-base leading-none items-center z-10 bg-funded w-full px-39 h-15;
+  @apply flex justify-between py-4 text-base leading-none items-center bg-funded w-full px-39 h-15 fixed z-50 bg-opacity-95 m-0 top-0;
 }
 .header__links__list {
   @apply flex flex-row gap-6;
@@ -8,5 +8,5 @@
   @apply flex items-center gap-2;
 }
 .header_logo {
-  @apply items-center self-center;
+  @apply items-center self-center z-50;
 }
