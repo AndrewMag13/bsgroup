@@ -22,6 +22,7 @@ interface ButtonProps {
    * Button contents
    */
   label: string
+  style: object
   /**
    * Optional click handler
    */

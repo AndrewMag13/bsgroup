@@ -14,11 +14,15 @@
   @apply flex gap-5 flex-col justify-center items-center my-10;
 }
 .bulletList {
-  @apply list-disc flex gap-5 flex-col px-5;
+  @apply list-disc flex gap-5 flex-col justify-start text-start w-full px-5;
 }
 .bullet {
-  @apply text-base font-bold leading-8 w-full;
+  @apply text-base font-bold leading-8 mx-5;
+  span {
+    @apply relative;
+  }
 }
+
 .button {
-  @apply mt-10 mb-15 ;
+  @apply mt-10 mb-15;
 }

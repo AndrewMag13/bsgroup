@@ -1,14 +1,13 @@
 import Napisat from '../napisat/napisat'
 import s from './serviceCard.module.scss'
-interface IBulletList {
-  id: number
-  bullet: string
-}
-interface IWidgetProps {
+
+export interface IWidgetProps {
   header: string
   price: number
+  priceFormatFrom: string
+  priceFormatCurrency: string
   serviceType: string
-  bulletList: IBulletList[]
+  bulletList: string[]
 }
 function numberWithSpaces(x: number) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
@@ -19,15 +18,17 @@ const ServiceCard = (props: IWidgetProps) => {
       <div className={s.container}>
         <div className={s.mainText}>
           <div className={s.header}>{props.header}</div>
-          <div className={s.price}>от {numberWithSpaces(props.price)} руб.</div>
-          <div className={s.serviceType}>{props.serviceType} </div>
+          <div
+            className={s.price}
+          >{`${props.priceFormatFrom} ${numberWithSpaces(props.price)} ${props.priceFormatCurrency}`}</div>
+          <div className={s.serviceType}>{props.serviceType}</div>
         </div>
 
         <ul className={s.bulletList}>
           {props.bulletList.map((bullet) => {
             return (
-              <li key={bullet.id} className={s.bullet}>
-                {bullet.bullet}
+              <li key={bullet} className={s.bullet}>
+                <span>{bullet}</span>
               </li>
             )
           })}
@@ -39,5 +40,4 @@ const ServiceCard = (props: IWidgetProps) => {
     </>
   )
 }
-
 export default ServiceCard

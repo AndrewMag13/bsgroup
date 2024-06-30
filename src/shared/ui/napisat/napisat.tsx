@@ -1,11 +1,17 @@
 'use client'
 
 import { Button } from '@/stories/Napisat'
+import { useTranslations } from 'next-intl'
 
 const Napisat = () => {
+  const t = useTranslations('home.ui')
   return (
     <>
-      <Button label="Написать" primary style={{ zIndex: 10 }}></Button>
+      <Button
+        label={t('napisatButton')}
+        primary
+        style={{ zIndex: 10 }}
+      ></Button>
     </>
   )
 }

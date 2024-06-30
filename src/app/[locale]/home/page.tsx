@@ -1,4 +1,3 @@
-import Header from '@/widgets/header/header'
 import MainBlock from '@/widgets/mainBlock/mainblock'
 import s from './home.module.scss'
 import TextLen from '@/widgets/textLen/textLen'
@@ -9,7 +8,6 @@ const HomePage = () => {
   return (
     <>
       <div className={s.main}>
-        <Header />
         <MainBlock />
         <TextLen />
         <ServicesPage />

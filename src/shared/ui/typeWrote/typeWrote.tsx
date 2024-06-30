@@ -1,19 +1,24 @@
 'use client'
-import { NextPage } from 'next'
+import { useTranslations } from 'next-intl'
 import { ReactTyped } from 'react-typed'
 
-const TypeWrote: NextPage = () => {
+const TypeWrote = () => {
+  const t = useTranslations('home.page.mainBlock')
+  const keys = [
+    'sales-driven',
+    'engaging',
+    'elegant',
+    'functional',
+    'high-quality',
+    'grandiose',
+  ]
+  const arr = keys.map((key) => {
+    return t(`titles.${key}`)
+  })
   return (
     <>
       <ReactTyped
-        strings={[
-          'продающие',
-          'интересные',
-          'красивые',
-          'работающие',
-          'качественные',
-          'грандиозные',
-        ]}
+        strings={arr}
         typeSpeed={100}
         backDelay={3000}
         backSpeed={50}

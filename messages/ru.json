@@ -1,0 +1,207 @@
+{
+  "home": {
+    "meta": {
+      "title": "BSGroup",
+      "description": "Built by BSGroup"
+    },
+    "ui": {
+      "napisatButton": "Написать",
+      "contactButton": "Отправить"
+    },
+    "page": {
+      "header": {
+        "links": {
+          "services": { "id": 1, "title": "Услуги", "href": "#services" },
+          "development": {
+            "id": 2,
+            "title": "Разработка",
+            "href": "#development"
+          },
+          "projects": { "id": 3, "title": "Проекты", "href": "#projects" },
+          "stack": { "id": 4, "title": "Технологии", "href": "#stack" },
+          "application": { "id": 5, "title": "Заявка", "href": "#application" }
+        },
+        "phoneNumber": "+7 937 138 44 40"
+      },
+      "mainBlock": {
+        "headerFirst": "Разрабатываем ",
+        "headerSecond": "сайты",
+        "smallText": "А также поддерживаем и продвигаем их",
+        "titles": {
+          "sales-driven": "продающие",
+          "engaging": "интересные",
+          "elegant": "красивые",
+          "functional": "работающие",
+          "high-quality": "качественные",
+          "grandiose": "грандиозные"
+        }
+      },
+      "textLen": {
+        "market analysis": {
+          "id": 1,
+          "title": "Анализ рынка"
+        },
+        "adaptation": {
+          "id": 2,
+          "title": "Адаптация"
+        },
+        "audit": {
+          "id": 3,
+          "title": "Аудит"
+        },
+        "projection": {
+          "id": 4,
+          "title": "Проектирование"
+        },
+        "SEO": {
+          "id": 5,
+          "title": "SEO"
+        },
+        "integration": {
+          "id": 6,
+          "title": "Интеграция"
+        },
+        "design": {
+          "id": 7,
+          "title": "Дизайн"
+        },
+        "redesign": {
+          "id": 8,
+          "title": "Редизайн"
+        },
+        "UI/UX": {
+          "id": 9,
+          "title": "UI/UX"
+        },
+        "content management": {
+          "id": 10,
+          "title": "Наполнение"
+        },
+        "deployment": {
+          "id": 11,
+          "title": "Деплой"
+        },
+        "optimization": {
+          "id": 12,
+          "title": "Оптимизация"
+        },
+        "maintenance": {
+          "id": 13,
+          "title": "Сопровождение"
+        },
+        "promotion": {
+          "id": 14,
+          "title": "Продвижение"
+        },
+        "support": {
+          "id": 15,
+          "title": "Поддержка"
+        }
+      },
+      "services": {
+        "title": "Наши услуги",
+        "priceFormat": {
+          "from": "от",
+          "currency": "руб."
+        },
+        "servicesText": {
+          "serviceLandingText": {
+            "header": "Landing-page",
+            "price": "30000",
+            "serviceType": "Простой",
+            "bulletList": {
+              "bullet1": "Разработка от 2-х недель",
+              "bullet2": "3 Правки",
+              "bullet3": "1 Неделя поддержки",
+              "bullet4": "1 Месяц гарантии",
+              "bullet5": "Настройка хостинга + Домен"
+            }
+          },
+          "serviceMultiText": {
+            "header": "Multi-page",
+            "price": "50000",
+            "serviceType": "Многостраничный",
+            "bulletList": {
+              "bullet1": "Разработка от 4-х недель",
+              "bullet2": "5 Правок",
+              "bullet3": "2 Недели поддержки",
+              "bullet4": "3 Месяца гарантии",
+              "bullet5": "Подключение метрик"
+            }
+          },
+          "serviceAdvancedText": {
+            "header": "Продвинутый",
+            "price": "80000",
+            "serviceType": "Многофункциональный",
+            "bulletList": {
+              "bullet1": "Разработка от 6-х недель",
+              "bullet2": "8 Правок",
+              "bullet3": "4 Недели поддержки",
+              "bullet4": "6 Месяцев гарантии",
+              "bullet5": "Масштабируемость"
+            }
+          }
+        },
+        "development": {
+          "title": "Как происходит разработка",
+          "step1": "Проводим брифинг",
+          "step2": "Согласовываем объем и сроки",
+          "step3": "Определяемся со стилем",
+          "step4": "Согласовываем концепт",
+          "step5": "Разрабатываем макет",
+          "step6": "Согласовываем макет",
+          "step7": "Разрабатываем сайт",
+          "step8": "Запуск и поддержка"
+        },
+        "projects": {
+          "title": "Projects",
+          "list": {
+            "fixer": {
+              "title": "Fixer",
+              "desc": "Перспективный сервис ремонта техники"
+            },
+            "webdeva": {
+              "title": "Webdeva",
+              "desc": "Портфолио web-разработчика"
+            },
+            "runSmart": {
+              "title": "RunSmart",
+              "desc": "Магазин пульсометров"
+            },
+            "ccTracker": {
+              "title": "CCTracker",
+              "desc": "Трекер криптовалют"
+            },
+            "myCourse": {
+              "title": "MyCourse",
+              "desc": "Интерактивная платформа для обучения"
+            },
+            "aliShop": {
+              "title": "AliShop",
+              "desc": "Каталог скидок на товары с  AliExpress"
+            }
+          }
+        },
+        "stack": {
+          "title": "Наши технологии",
+          "adaptability": "Адаптивность",
+          "rubberLayout": "Резиновая верстка"
+        },
+        "application": {
+          "title": "Оставить заявку",
+          "fields": {
+            "name": "Ваше имя",
+            "phoneNumber": "Номер телефона",
+            "email": "Эл. Почта"
+          }
+        },
+        "footer": {
+          "phoneNumber": "+7 937 138 44 40",
+          "email": "bsgroup.dev@yahoo.com",
+          "privacyPolicy": "Политика конфиденциальности",
+          "termsOfService": "Пользовательское соглашение"
+        }
+      }
+    }
+  }
+}

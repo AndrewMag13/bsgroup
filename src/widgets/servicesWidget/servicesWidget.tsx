@@ -1,20 +1,36 @@
-import { NextPage } from 'next'
-import {
-  serviceAdvanced,
-  serviceLanding,
-  serviceMulti,
-} from '@/shared/servicesText/servicesText'
-import ServiceCard from '@/shared/ui/serviceCard/serviceCard'
+import ServiceCard, { IWidgetProps } from '@/shared/ui/serviceCard/serviceCard'
 import s from './servicesWidgets.module.scss'
-const ServicesWidget: NextPage = () => {
+import { useTranslations } from 'next-intl'
+import { Fragment } from 'react'
+
+const ServicesWidget = () => {
+  const t = useTranslations('home.page.services')
+  const keys = ['serviceLandingText', 'serviceMultiText', 'serviceAdvancedText']
+  const bulletKeys = ['bullet1', 'bullet2', 'bullet3', 'bullet4', 'bullet5']
+  const propers = (type: string): IWidgetProps => {
+    return {
+      header: t(`servicesText.${type}.header`),
+      price: Number(t(`servicesText.${type}.price`)),
+      priceFormatFrom: t(`priceFormat.from`),
+      priceFormatCurrency: t(`priceFormat.currency`),
+      serviceType: t(`servicesText.${type}.serviceType`),
+      bulletList: bulletKeys.map((bulletKey) => {
+        return t(`servicesText.${type}.bulletList.${bulletKey}`)
+      }),
+    }
+  }
   return (
     <>
       <div className={s.container}>
-        <span className={s.title}>Наши услуги</span>
+        <span className={s.title}>{t('title')}</span>
         <div className={s.servicesContainer}>
-          <ServiceCard {...serviceLanding} />
-          <ServiceCard {...serviceMulti} />
-          <ServiceCard {...serviceAdvanced} />
+          {keys.map((key) => {
+            return (
+              <Fragment key={key}>
+                <ServiceCard {...propers(key)} />
+              </Fragment>
+            )
+          })}
         </div>
       </div>
     </>
