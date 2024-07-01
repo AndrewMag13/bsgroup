@@ -4,6 +4,7 @@
 
 body {
   margin: 0 0 0 0;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -11,7 +12,6 @@ html {
   scroll-padding-top: 60px;
   background-color: #1c1c1c;
   color: white;
-
 }
 /* width */
 ::-webkit-scrollbar {
@@ -26,6 +26,14 @@ html {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #161616;
+}
+::selection {
+  color: #161616;
+  background: white;
+}
+::-moz-selection {
+  color: #161616;
+  background: white;
 }
 
 /* Handle on hover

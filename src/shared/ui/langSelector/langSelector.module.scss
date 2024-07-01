@@ -1,4 +1,7 @@
-.main {
-  @apply right-5 flex justify-self-center z-50 fixed;
-  top: 50%;
+.selector {
+  @apply flex flex-col gap-8 py-8 px-8 rounded-default font-bold justify-center text-center bg-funded absolute border-2 mt-16 text-base leading-none border-none;
+}
+
+.common {
+  @apply flex justify-center;
 }

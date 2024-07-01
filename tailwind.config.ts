@@ -38,7 +38,6 @@ const config: Config = {
         default: '30px',
       },
     },
-    
   },
   plugins: [],
 }

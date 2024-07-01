@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { APP_URL } from '@/shared/constants/constants'
 import { useTranslations } from 'next-intl'
+import LangSelector from '@/shared/ui/langSelector/langSelector'
 
 const HeaderPage = () => {
   const t = useTranslations('home.page.header')
@@ -42,7 +43,7 @@ const HeaderPage = () => {
             })}
           </ul>
         </div>
-        <div className={s.header__phone}>
+        {/* <div className={s.header__phone}>
           <span>
             <Image
               src={`${APP_URL}/icons/phone.svg`}
@@ -52,6 +53,9 @@ const HeaderPage = () => {
             />
           </span>
           <span className={s.number}>{t('phoneNumber')}</span>
+        </div> */}
+        <div className={s.lang}>
+          <LangSelector />
         </div>
       </div>
     </>
