@@ -14,27 +14,49 @@ const NotFound = () => {
         justifyItems: 'center',
         flexDirection: 'column',
         alignItems: 'center',
-        position: 'relative'
+
       }}>
-        <MouseParallaxChild factorX={0.3} factorY={0.5}>
+        <MouseParallaxChild factorX={0.2} factorY={0.3} style={{
+          zIndex: '3',
+        }}>
           <h1 style={{
             fontSize: '12.5rem',
             fontWeight: '700',
             lineHeight: '12.5rem',
           }}
-
           >404</h1>
         </MouseParallaxChild>
-        <MouseParallaxChild factorX={0.6} factorY={0.8}>
-          <div style={{
-            marginTop: '5rem',
-            fontSize: '3rem',
-          }}
-          >{t('title')}</div>
-        </MouseParallaxChild>
+        <div style={{
+          position: 'fixed',
+          display: 'flex',
+          alignItems: 'center',
+          marginBottom: '10rem'
+        }}>
+
+          <MouseParallaxChild factorX={0.1} factorY={0.2} style={{
+            zIndex: '0',
+          }}>
+            <div style={{
+              fontSize: '12.5rem',
+              fontWeight: '700',
+              lineHeight: '12.5rem',
+              color: '#161616'
+            }}
+            >404</div>
+          </MouseParallaxChild>
+        </div>
+        {/* <MouseParallaxChild factorX={0.4} factorY={0.6} style={{
+          zIndex: '2',
+        }}> */}
+        <div style={{
+          marginTop: '3.75rem',
+          fontSize: '2.5rem',
+        }}
+        >{t('title')}</div>
+        {/* </MouseParallaxChild> */}
         <div style={{
           fontWeight: '700',
-          marginTop: '3.75rem',
+          marginTop: '5rem',
           fontSize: '2rem',
         }}>
           <Link href="/" >{t('link')}</Link>
