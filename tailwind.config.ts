@@ -26,6 +26,7 @@ const config: Config = {
       },
       fontSize: {
         '16': '64px',
+        '32': '32px',
         '40': '40px',
       },
       lineHeight: {
@@ -33,6 +34,11 @@ const config: Config = {
       },
       width: {
         360: '360px',
+        512: '512px',
+      },
+      height: {
+        360: '360px',
+        512: '512px',
       },
       borderRadius: {
         default: '30px',

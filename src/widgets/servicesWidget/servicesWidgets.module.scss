@@ -1,8 +1,9 @@
+@import '../../shared/scss/variables';
 .container {
   @apply bg-based mt-20 flex justify-center flex-col;
 }
 .title {
-  @apply text-40 font-bold leading-none flex self-center;
+  @extend %title;
 }
 .servicesContainer {
   @apply flex flex-row mt-15 mx-39 justify-between gap-6;

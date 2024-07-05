@@ -1,9 +1,9 @@
 import ServiceCard, { IWidgetProps } from '@/shared/ui/serviceCard/serviceCard'
 import s from './servicesWidgets.module.scss'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useFormatter } from 'next-intl'
 import { Fragment } from 'react'
 
-const ServicesWidget = () => {
+const ServicesWidget = () => {  
   const t = useTranslations('home.page.services')
   const keys = ['serviceLandingText', 'serviceMultiText', 'serviceAdvancedText']
   const bulletKeys = ['bullet1', 'bullet2', 'bullet3', 'bullet4', 'bullet5']
@@ -21,7 +21,7 @@ const ServicesWidget = () => {
   }
   return (
     <>
-      <div className={s.container}>
+      <div className={s.container} id="services">
         <span className={s.title}>{t('title')}</span>
         <div className={s.servicesContainer}>
           {keys.map((key) => {

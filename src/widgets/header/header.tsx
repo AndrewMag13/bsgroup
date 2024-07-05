@@ -21,9 +21,9 @@ const HeaderPage = () => {
       ></circle>
       <div className={s.header}>
         <span className={s.header__logo}>
-          <Link href={'/'}>
+          <Link href={'#main'}>
             <Image
-              src={`${APP_URL}/icons/bsHeader.svg`}
+              src={`/icons/bsHeader.svg`}
               alt="bs icon"
               width={98}
               height={33}
@@ -46,13 +46,13 @@ const HeaderPage = () => {
         {/* <div className={s.header__phone}>
           <span>
             <Image
-              src={`${APP_URL}/icons/phone.svg`}
+              src={`/icons/phone.svg`}
               width={24}
               height={24}
               alt="phone icon"
             />
           </span>
-          <span className={s.number}>{t('phoneNumber')}</span>
+          <span className={s.number}>{t('')}</span>
         </div> */}
         <div className={s.lang}>
           <LangSelector />

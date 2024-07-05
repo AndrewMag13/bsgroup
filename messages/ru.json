@@ -6,7 +6,12 @@
     },
     "ui": {
       "napisatButton": "Написать",
-      "contactButton": "Отправить"
+      "contactButton": "Отправить",
+      "phoneNumber": "+7 937 138 44 40"
+    },
+    "404": {
+      "title": "Не найдено!",
+      "link": "На главную"
     },
     "page": {
       "header": {
@@ -20,8 +25,7 @@
           "projects": { "id": 3, "title": "Проекты", "href": "#projects" },
           "stack": { "id": 4, "title": "Технологии", "href": "#stack" },
           "application": { "id": 5, "title": "Заявка", "href": "#application" }
-        },
-        "phoneNumber": "+7 937 138 44 40"
+        }
       },
       "mainBlock": {
         "headerFirst": "Разрабатываем ",
@@ -141,66 +145,65 @@
               "bullet5": "Масштабируемость"
             }
           }
-        },
-        "development": {
-          "title": "Как происходит разработка",
-          "step1": "Проводим брифинг",
-          "step2": "Согласовываем объем и сроки",
-          "step3": "Определяемся со стилем",
-          "step4": "Согласовываем концепт",
-          "step5": "Разрабатываем макет",
-          "step6": "Согласовываем макет",
-          "step7": "Разрабатываем сайт",
-          "step8": "Запуск и поддержка"
-        },
-        "projects": {
-          "title": "Projects",
-          "list": {
-            "fixer": {
-              "title": "Fixer",
-              "desc": "Перспективный сервис ремонта техники"
-            },
-            "webdeva": {
-              "title": "Webdeva",
-              "desc": "Портфолио web-разработчика"
-            },
-            "runSmart": {
-              "title": "RunSmart",
-              "desc": "Магазин пульсометров"
-            },
-            "ccTracker": {
-              "title": "CCTracker",
-              "desc": "Трекер криптовалют"
-            },
-            "myCourse": {
-              "title": "MyCourse",
-              "desc": "Интерактивная платформа для обучения"
-            },
-            "aliShop": {
-              "title": "AliShop",
-              "desc": "Каталог скидок на товары с  AliExpress"
-            }
-          }
-        },
-        "stack": {
-          "title": "Наши технологии",
-          "adaptability": "Адаптивность",
-          "rubberLayout": "Резиновая верстка"
-        },
-        "application": {
-          "title": "Оставить заявку",
-          "fields": {
-            "name": "Ваше имя",
-            "phoneNumber": "Номер телефона",
-            "email": "Эл. Почта"
-          }
-        },
-        "footer": {
-          "phoneNumber": "+7 937 138 44 40",
-          "email": "bsgroup.dev@yahoo.com",
-          "privacyPolicy": "Политика конфиденциальности",
-          "termsOfService": "Пользовательское соглашение"
         }
+      },
+      "development": {
+        "title": "Как происходит разработка",
+        "step1": "Проводим брифинг",
+        "step2": "Согласовываем объем и сроки",
+        "step3": "Определяемся со стилем",
+        "step4": "Согласовываем концепт",
+        "step5": "Разрабатываем макет",
+        "step6": "Согласовываем макет",
+        "step7": "Разрабатываем сайт",
+        "step8": "Запуск и поддержка"
+      },
+      "projects": {
+        "title": "Projects",
+        "list": {
+          "fixer": {
+            "title": "Fixer",
+            "desc": "Перспективный сервис ремонта техники"
+          },
+          "webdeva": {
+            "title": "Webdeva",
+            "desc": "Портфолио web-разработчика"
+          },
+          "runSmart": {
+            "title": "RunSmart",
+            "desc": "Магазин пульсометров"
+          },
+          "ccTracker": {
+            "title": "CCTracker",
+            "desc": "Трекер криптовалют"
+          },
+          "myCourse": {
+            "title": "MyCourse",
+            "desc": "Интерактивная платформа для обучения"
+          },
+          "aliShop": {
+            "title": "AliShop",
+            "desc": "Каталог скидок на товары с  AliExpress"
+          }
+        }
+      },
+      "stack": {
+        "title": "Наши технологии",
+        "adaptability": "Адаптивность",
+        "rubberLayout": "Резиновая верстка"
+      },
+      "application": {
+        "title": "Оставить заявку",
+        "fields": {
+          "name": "Ваше имя",
+          "phoneNumber": "Номер телефона",
+          "email": "Эл. Почта"
+        }
+      },
+      "footer": {
+        "email": "bsgroup.dev@yahoo.com",
+        "privacyPolicy": "Политика конфиденциальности",
+        "termsOfService": "Пользовательское соглашение"
       }
     }
   }

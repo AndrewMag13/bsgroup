@@ -2,9 +2,6 @@
 import { NextPage } from 'next'
 import Image from 'next/image'
 import s from './langSelector.module.scss'
-import { APP_URL } from '@/shared/constants/constants'
-import { useOutside } from '@/shared/hooks/useOutside'
-import cn from 'classnames'
 import Link from 'next/link'
 import { Variants, motion } from 'framer-motion'
 import { useState } from 'react'
@@ -21,7 +18,6 @@ const LangSelector: NextPage = () => {
     },
     closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
   }
-  const { ref, isShow, setIsShow } = useOutside(false)
   const [isOpen, setIsOpen] = useState(false)
   return (
     <>
@@ -33,12 +29,14 @@ const LangSelector: NextPage = () => {
         <motion.button
           onClick={() => setIsOpen(!isOpen)}
           whileTap={{ scale: 0.95 }}
+          className={s.button}
         >
           <Image
             src={`/icons/lang.svg`}
             alt="language selector"
             width={30}
             height={30}
+            className={s.logo}
           />
         </motion.button>
 
@@ -69,7 +67,13 @@ const LangSelector: NextPage = () => {
           {langs.map((lang) => {
             return (
               <motion.li key={lang.id} variants={itemVariants}>
-                <Link href={`/${lang.short}`}>{lang.lang}</Link>
+                <Link
+                  href={`/${lang.short}`}
+                  scroll={false}
+                  locale={`${lang.short}`}
+                >
+                  {lang.lang}
+                </Link>
               </motion.li>
             )
           })}

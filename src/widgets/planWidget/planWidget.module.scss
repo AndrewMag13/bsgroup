@@ -1,3 +1,46 @@
+@import '../../shared/scss/variables';
 .container {
-  @apply mt-20;
+  @apply mt-20 mx-39 flex flex-col justify-center;
+}
+.title {
+  @extend %title;
+}
+.cards {
+  @apply grid grid-flow-col pt-15;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-template-rows: 100px 100px 100px 100px;
+  column-gap: 24px;
+  row-gap: 40px;
+  z-index: 20;
+}
+// .divider {
+//   flex-grow: 1;
+//   border-bottom: 1px solid black;
+//   margin: 5px;
+// }
+// .line {
+// }
+
+.lines {
+  @apply flex relative justify-center top-0 z-0;
+}
+.border1 {
+  @apply flex relative top-0;
+  height: 1px;
+  width: 420px;
+  rotate: 90deg;
+  background: linear-gradient(90deg, white 50%, transparent 50%);
+  background-repeat: repeat-x;
+  background-size: 20px 3px;
+  background-position: 0px 0px;
+  padding: 10px;
+  animation: border-dance 4s infinite linear;
+}
+@keyframes border-dance {
+  0% {
+    background-position: 100px 0px;
+  }
+  100% {
+    background-position: 300px 0px;
+  }
 }

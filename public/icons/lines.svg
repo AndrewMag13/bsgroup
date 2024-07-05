@@ -1,0 +1,29 @@
+<svg
+      width="581"
+      height="475"
+      viewBox="0 0 581 475"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3 5L2.99998 473"
+        stroke="white"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-dasharray="6 6"
+      />
+      <path
+        d="M2 473L579 473"
+        stroke="white"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-dasharray="6 6"
+      />
+      <path
+        d="M578 2L578 473"
+        stroke="white"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-dasharray="6 6"
+      />
+    </svg>

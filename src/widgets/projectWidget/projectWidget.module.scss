@@ -1,0 +1,13 @@
+@import '../../shared/scss/variables';
+.container {
+  @apply mx-39 mt-20 flex justify-center flex-col;
+}
+.title {
+  @extend %title;
+}
+.cards__container {
+  @apply mt-15 flex flex-col gap-10;
+}
+.cards {
+  @apply flex flex-row gap-6 justify-center flex-wrap;
+}

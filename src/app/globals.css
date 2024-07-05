@@ -9,7 +9,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 60px;
+  scroll-padding-top: 80px;
   background-color: #1c1c1c;
   color: white;
 }

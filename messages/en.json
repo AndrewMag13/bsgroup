@@ -6,7 +6,12 @@
     },
     "ui": {
       "napisatButton": "Write",
-      "contactButton": "Send"
+      "contactButton": "Send",
+      "phoneNumber": "+7 937 138 44 40"
+    },
+    "404": {
+      "title": "Not found!",
+      "link": "Go home"
     },
     "page": {
       "header": {
@@ -24,8 +29,7 @@
             "title": "Application",
             "href": "#application"
           }
-        },
-        "phoneNumber": "+7 937 138 44 40"
+        }
       },
       "mainBlock": {
         "headerFirst": "Developing",
@@ -106,12 +110,12 @@
         "title": "Services",
         "priceFormat": {
           "from": "from",
-          "currency": "rub."
+          "currency": "USD"
         },
         "servicesText": {
           "serviceLandingText": {
             "header": "Landing-page",
-            "price": "30000",
+            "price": "300",
             "serviceType": "Simple",
             "bulletList": {
               "bullet1": "2 Weeks delivery time",
@@ -123,7 +127,7 @@
           },
           "serviceMultiText": {
             "header": "Multi-page",
-            "price": "50000",
+            "price": "500",
             "serviceType": "Several Pages",
             "bulletList": {
               "bullet1": "4 Weeks delivery time",
@@ -135,7 +139,7 @@
           },
           "serviceAdvancedText": {
             "header": "Advanced",
-            "price": "80000",
+            "price": "800",
             "serviceType": "Multi-functional",
             "bulletList": {
               "bullet1": "6 Weeks delivery time",
@@ -201,7 +205,6 @@
         }
       },
       "footer": {
-        "phoneNumber": "+7 937 138 44 40",
         "email": "bsgroup.dev@yahoo.com",
         "privacyPolicy": "Privacy Policy",
         "termsOfService": "Terms of Service"

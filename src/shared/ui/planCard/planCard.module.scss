@@ -1,0 +1,47 @@
+.card {
+  @apply bg-funded rounded-default flex justify-center align-middle items-center font-bold text-2xl leading-none z-10;
+  // width: clamp(365px, 552px, 552px);
+  height: 100px;
+}
+.container {
+  @apply flex flex-col justify-center text-center;
+}
+
+.border {
+  height: 3px;
+  z-index: 1;
+  animation: border-dance 6s infinite linear;
+  &.down {
+    @apply flex mt-2 self-center text-center justify-center align-middle items-center;
+    width: 60px;
+    rotate: 90deg;
+    background: linear-gradient(90deg, white 50%, transparent 50%);
+    background-repeat: repeat-x;
+    background-size: 20px 3px;
+  }
+  &.right {
+    height: 3px;
+    width: 300px;
+    @apply flex self-end relative left-1/4 -top-12;
+    rotate: 0deg;
+    background: linear-gradient(90deg, white 50%, transparent 50%);
+    background-repeat: repeat-x;
+    background-size: 20px 3px;
+  }
+  &.up {
+    @apply flex mt-2 self-center text-center justify-center align-middle items-center;
+    width: 60px;
+    rotate: 270deg;
+    background: linear-gradient(90deg, white 50%, transparent 50%);
+    background-repeat: repeat-x;
+    background-size: 20px 3px;
+  }
+}
+@keyframes border-dance {
+  0% {
+    background-position: 100px 0px;
+  }
+  100% {
+    background-position: 300px 0px;
+  }
+}

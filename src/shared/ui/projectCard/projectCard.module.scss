@@ -1,0 +1,12 @@
+.container {
+  @apply bg-funded h-512 w-360 rounded-default overflow-hidden flex justify-center flex-col pb-10;
+}
+.image {
+  @apply w-full flex self-center justify-center;
+}
+.title {
+  @apply text-32 font-bold mt-10 text-center;
+}
+.desc {
+  @apply text-base text-center mt-5 font-bold px-5;
+}

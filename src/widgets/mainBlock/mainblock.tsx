@@ -8,7 +8,7 @@ const MainBlockPage = () => {
   const t = useTranslations('home.page.mainBlock')
   return (
     <>
-      <div className={s.main}>
+      <div className={s.main} id="main">
         <Parallax />
         <div className={s.text}>
           <h1 className={s.title}>
