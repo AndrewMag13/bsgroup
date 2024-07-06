@@ -5,7 +5,7 @@ import TypeWrote from '@/shared/ui/typeWrote/typeWrote'
 import { useTranslations } from 'next-intl'
 
 const MainBlockPage = () => {
-  const t = useTranslations('home.page.mainBlock')
+  const t = useTranslations('home.mainBlock')
   return (
     <>
       <div className={s.main} id="main">

@@ -10,32 +10,20 @@
   inherits: false;
 }
 
-.storybook-button {
-  /* @font-face {
-    font-family: 'Inter';
-    src: local('Inter'), local('Inter-bold'),
-      url('./assets/Inter/Inter-Bold.ttf');
-  } */
+.button {
+  @apply h-20 w-64 rounded-default flex text-4xl justify-center items-center;
+  color: white;
+  border: 0;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  border: 0;
-  border-radius: 10px;
   cursor: pointer;
-  display: inline-block;
-  line-height: 0;
-  font-size: 20px;
-  padding: 25px 21px;
-  color: white;
-  width: 140px;
-  heigth: 50px;
-}
-.storybook-button--primary {
   background-image: linear-gradient(90deg, var(--based) 0%, var(--funded) 100%);
   transition:
     --based 1s,
     --funded 1s;
 }
-.storybook-button--primary:hover {
+
+.button:hover {
   --based: rgba(98, 214, 197, 1);
   --funded: rgba(33, 156, 255, 1);
 }

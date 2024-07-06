@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl'
 import { ReactTyped } from 'react-typed'
 
 const TypeWrote = () => {
-  const t = useTranslations('home.page.mainBlock')
+  const t = useTranslations('home.mainBlock')
   const keys = [
     'sales-driven',
     'engaging',

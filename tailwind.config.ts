@@ -33,6 +33,7 @@ const config: Config = {
         16: '64px',
       },
       width: {
+        75: '300px',
         360: '360px',
         512: '512px',
       },

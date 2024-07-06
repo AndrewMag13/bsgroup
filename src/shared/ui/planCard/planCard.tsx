@@ -6,7 +6,7 @@ interface ITitleProps {
   direction: string
 }
 const PlanCard = (props: ITitleProps) => {
-  const t = useTranslations('home.page.development')
+  const t = useTranslations('home.development')
   return (
     <>
       <div className={s.container}>

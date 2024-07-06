@@ -3,7 +3,7 @@ import s from './planWidget.module.scss'
 import PlanCard from '@/shared/ui/planCard/planCard'
 
 const PlanWidget = () => {
-  const t = useTranslations('home.page.development')
+  const t = useTranslations('home.development')
   const keys1 = ['step1', 'step2', 'step3']
   const key4 = 'step4'
   const keys2 = ['step6', 'step7', 'step8']

@@ -1,11 +1,10 @@
-import HeaderPage from '@/widgets/header/header'
 import HomePage from './home/page'
-import LangSelector from '@/shared/ui/langSelector/langSelector'
+import Footer from '@/widgets/footer/footer'
+import Header from '@/widgets/header/header'
 
 export default function App() {
   return (
     <>
-      <HeaderPage />
       <HomePage />
     </>
   )

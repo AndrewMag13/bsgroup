@@ -1,0 +1,20 @@
+.container {
+  @apply bg-funded w-screen h-36 mt-20 px-39 flex flex-row justify-between items-center overflow-hidden;
+}
+.image {
+  @apply absolute z-10 flex self-center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left {
+  @apply font-bold text-base flex flex-col gap-5  z-20;
+}
+.right {
+  @extend .left;
+  @apply text-end font-normal;
+}
+.icons {
+  @apply flex flex-row gap-5 items-center  z-20;
+}

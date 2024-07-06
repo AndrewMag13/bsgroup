@@ -3,7 +3,7 @@ import s from './textLen.module.scss'
 import { useTranslations } from 'next-intl'
 
 const TextLen = () => {
-  const t = useTranslations('home.page.textLen')
+  const t = useTranslations('home.textLen')
   const keys = [
     'market analysis',
     'adaptation',

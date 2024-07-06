@@ -6,7 +6,7 @@
   @extend %title;
 }
 .cards__container {
-  @apply mt-15 flex flex-col gap-10;
+  @apply mt-15 flex flex-col;
 }
 .cards {
   @apply flex flex-row gap-6 justify-center flex-wrap;

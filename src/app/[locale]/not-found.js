@@ -27,12 +27,11 @@ const NotFound = () => {
           >404</h1>
         </MouseParallaxChild>
         <div style={{
-          position: 'fixed',
+          position: 'absolute',
           display: 'flex',
           alignItems: 'center',
           marginBottom: '10rem'
         }}>
-
           <MouseParallaxChild factorX={0.1} factorY={0.2} style={{
             zIndex: '0',
           }}>

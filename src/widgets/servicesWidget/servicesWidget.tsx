@@ -3,8 +3,8 @@ import s from './servicesWidgets.module.scss'
 import { useTranslations, useFormatter } from 'next-intl'
 import { Fragment } from 'react'
 
-const ServicesWidget = () => {  
-  const t = useTranslations('home.page.services')
+const ServicesWidget = () => {
+  const t = useTranslations('home.services')
   const keys = ['serviceLandingText', 'serviceMultiText', 'serviceAdvancedText']
   const bulletKeys = ['bullet1', 'bullet2', 'bullet3', 'bullet4', 'bullet5']
   const propers = (type: string): IWidgetProps => {

@@ -1,0 +1,10 @@
+@import '../../shared/scss/variables';
+.title {
+  @extend %title;
+}
+.container {
+  @apply flex flex-col justify-center mx-39 mt-20;
+}
+.techs {
+  @apply mt-15 flex flex-row gap-x-6 gap-y-5 flex-wrap justify-center;
+}

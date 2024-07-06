@@ -13,202 +13,240 @@
       "title": "Not found!",
       "link": "Go home"
     },
-    "page": {
-      "header": {
-        "links": {
-          "services": { "id": 1, "title": "Services", "href": "#services" },
-          "development": {
-            "id": 2,
-            "title": "Development",
-            "href": "#development"
-          },
-          "projects": { "id": 3, "title": "Projects", "href": "#projects" },
-          "stack": { "id": 4, "title": "Techs", "href": "#stack" },
-          "application": {
-            "id": 5,
-            "title": "Application",
-            "href": "#application"
-          }
-        }
-      },
-      "mainBlock": {
-        "headerFirst": "Developing",
-        "headerSecond": "websites",
-        "smallText": "And also support and promote them",
-        "titles": {
-          "sales-driven": "sales-driven",
-          "engaging": "engaging",
-          "elegant": "elegant",
-          "functional": "functional",
-          "high-quality": "high-quality",
-          "grandiose": "grandiose"
-        }
-      },
-      "textLen": {
-        "market analysis": {
-          "id": 1,
-          "title": "Market analysis"
-        },
-        "adaptation": {
+    "header": {
+      "links": {
+        "services": { "id": 1, "title": "Services", "href": "#services" },
+        "development": {
           "id": 2,
-          "title": "Adaptation"
+          "title": "Development",
+          "href": "#development"
         },
-        "audit": {
-          "id": 3,
-          "title": "Audit"
-        },
-        "projection": {
-          "id": 4,
-          "title": "Projection"
-        },
-        "SEO": {
+        "projects": { "id": 3, "title": "Projects", "href": "#projects" },
+        "techs": { "id": 4, "title": "Techs", "href": "#techs" },
+        "application": {
           "id": 5,
-          "title": "SEO"
-        },
-        "integration": {
-          "id": 6,
-          "title": "Integration"
-        },
-        "design": {
-          "id": 7,
-          "title": "Design"
-        },
-        "redesign": {
-          "id": 8,
-          "title": "Redesign"
-        },
-        "UI/UX": {
-          "id": 9,
-          "title": "UI/UX"
-        },
-        "content management": {
-          "id": 10,
-          "title": "Content management"
-        },
-        "deployment": {
-          "id": 11,
-          "title": "Deployment"
-        },
-        "optimization": {
-          "id": 12,
-          "title": "Optimization"
-        },
-        "maintenance": {
-          "id": 13,
-          "title": "Maintenance"
-        },
-        "promotion": {
-          "id": 14,
-          "title": "Promotion"
-        },
-        "support": {
-          "id": 15,
-          "title": "Support"
+          "title": "Application",
+          "href": "#application"
         }
-      },
-      "services": {
-        "title": "Services",
-        "priceFormat": {
-          "from": "from",
-          "currency": "USD"
-        },
-        "servicesText": {
-          "serviceLandingText": {
-            "header": "Landing-page",
-            "price": "300",
-            "serviceType": "Simple",
-            "bulletList": {
-              "bullet1": "2 Weeks delivery time",
-              "bullet2": "3 Revisions",
-              "bullet3": "1 Week of support",
-              "bullet4": "1 Month guarantee",
-              "bullet5": "Hosting setup + Domain"
-            }
-          },
-          "serviceMultiText": {
-            "header": "Multi-page",
-            "price": "500",
-            "serviceType": "Several Pages",
-            "bulletList": {
-              "bullet1": "4 Weeks delivery time",
-              "bullet2": "5 Revisions",
-              "bullet3": "2 Weeks of support",
-              "bullet4": "3 Months guarantee",
-              "bullet5": "Metrics integration"
-            }
-          },
-          "serviceAdvancedText": {
-            "header": "Advanced",
-            "price": "800",
-            "serviceType": "Multi-functional",
-            "bulletList": {
-              "bullet1": "6 Weeks delivery time",
-              "bullet2": "8 Revisions",
-              "bullet3": "4 Weeks of support",
-              "bullet4": "6 Months guarantee",
-              "bullet5": "Scalability"
-            }
-          }
-        }
-      },
-      "development": {
-        "title": "Development Process",
-        "step1": "Holding a briefing",
-        "step2": "Agreeing on scope and deadlines",
-        "step3": "Defining style",
-        "step4": "Agreeing on concept",
-        "step5": "Developing layout",
-        "step6": "Agreeing on layout",
-        "step7": "Developing website",
-        "step8": "Launch and support"
-      },
-      "projects": {
-        "title": "Projects",
-        "list": {
-          "fixer": {
-            "title": "Fixer",
-            "desc": "Promising repair service"
-          },
-          "webdeva": {
-            "title": "Webdeva",
-            "desc": "Web developer portfolio"
-          },
-          "runSmart": {
-            "title": "RunSmart",
-            "desc": "Heart rate monitor store"
-          },
-          "ccTracker": {
-            "title": "CCTracker",
-            "desc": "Cryptocurrency tracker"
-          },
-          "myCourse": {
-            "title": "MyCourse",
-            "desc": "Interactive learning platform"
-          },
-          "aliShop": {
-            "title": "AliShop",
-            "desc": "Catalog of discounts on AliExpress products"
-          }
-        }
-      },
-      "stack": {
-        "title": "Techs",
-        "adaptability": "Adaptability",
-        "rubberLayout": "Rubber layout"
-      },
-      "application": {
-        "title": "Contact us",
-        "fields": {
-          "name": "Your Name",
-          "phoneNumber": "Phone Number",
-          "email": "Email"
-        }
-      },
-      "footer": {
-        "email": "bsgroup.dev@yahoo.com",
-        "privacyPolicy": "Privacy Policy",
-        "termsOfService": "Terms of Service"
       }
+    },
+    "mainBlock": {
+      "headerFirst": "Developing",
+      "headerSecond": "websites",
+      "smallText": "And also support and promote them",
+      "titles": {
+        "sales-driven": "sales-driven",
+        "engaging": "engaging",
+        "elegant": "elegant",
+        "functional": "functional",
+        "high-quality": "high-quality",
+        "grandiose": "grandiose"
+      }
+    },
+    "textLen": {
+      "market analysis": {
+        "id": 1,
+        "title": "Market analysis"
+      },
+      "adaptation": {
+        "id": 2,
+        "title": "Adaptation"
+      },
+      "audit": {
+        "id": 3,
+        "title": "Audit"
+      },
+      "projection": {
+        "id": 4,
+        "title": "Projection"
+      },
+      "SEO": {
+        "id": 5,
+        "title": "SEO"
+      },
+      "integration": {
+        "id": 6,
+        "title": "Integration"
+      },
+      "design": {
+        "id": 7,
+        "title": "Design"
+      },
+      "redesign": {
+        "id": 8,
+        "title": "Redesign"
+      },
+      "UI/UX": {
+        "id": 9,
+        "title": "UI/UX"
+      },
+      "content management": {
+        "id": 10,
+        "title": "Content management"
+      },
+      "deployment": {
+        "id": 11,
+        "title": "Deployment"
+      },
+      "optimization": {
+        "id": 12,
+        "title": "Optimization"
+      },
+      "maintenance": {
+        "id": 13,
+        "title": "Maintenance"
+      },
+      "promotion": {
+        "id": 14,
+        "title": "Promotion"
+      },
+      "support": {
+        "id": 15,
+        "title": "Support"
+      }
+    },
+    "services": {
+      "title": "Services",
+      "priceFormat": {
+        "from": "from",
+        "currency": "USD"
+      },
+      "servicesText": {
+        "serviceLandingText": {
+          "header": "Landing-page",
+          "price": "300",
+          "serviceType": "Simple",
+          "bulletList": {
+            "bullet1": "2 Weeks delivery time",
+            "bullet2": "3 Revisions",
+            "bullet3": "1 Week of support",
+            "bullet4": "1 Month guarantee",
+            "bullet5": "Hosting setup + Domain"
+          }
+        },
+        "serviceMultiText": {
+          "header": "Multi-page",
+          "price": "500",
+          "serviceType": "Several Pages",
+          "bulletList": {
+            "bullet1": "4 Weeks delivery time",
+            "bullet2": "5 Revisions",
+            "bullet3": "2 Weeks of support",
+            "bullet4": "3 Months guarantee",
+            "bullet5": "Metrics integration"
+          }
+        },
+        "serviceAdvancedText": {
+          "header": "Advanced",
+          "price": "800",
+          "serviceType": "Multi-functional",
+          "bulletList": {
+            "bullet1": "6 Weeks delivery time",
+            "bullet2": "8 Revisions",
+            "bullet3": "4 Weeks of support",
+            "bullet4": "6 Months guarantee",
+            "bullet5": "Scalability"
+          }
+        }
+      }
+    },
+    "development": {
+      "title": "Development Process",
+      "step1": "Holding a briefing",
+      "step2": "Agreeing on scope and deadlines",
+      "step3": "Defining style",
+      "step4": "Agreeing on concept",
+      "step5": "Developing layout",
+      "step6": "Agreeing on layout",
+      "step7": "Developing website",
+      "step8": "Launch and support"
+    },
+    "projects": {
+      "title": "Projects",
+      "list": {
+        "fixer": {
+          "title": "Fixer",
+          "desc": "Promising repair service"
+        },
+        "webdeva": {
+          "title": "Webdeva",
+          "desc": "Web developer portfolio"
+        },
+        "runSmart": {
+          "title": "RunSmart",
+          "desc": "Heart rate monitor store"
+        },
+        "ccTracker": {
+          "title": "CCTracker",
+          "desc": "Cryptocurrency tracker"
+        },
+        "myCourse": {
+          "title": "MyCourse",
+          "desc": "Interactive learning platform"
+        },
+        "aliShop": {
+          "title": "AliShop",
+          "desc": "Catalog of discounts on AliExpress products"
+        }
+      }
+    },
+    "techs": {
+      "title": "Techs",
+      "React": "React",
+      "DOM": "DOM",
+      "JQuery": "JQuery",
+      "Wordpress": "Wordpress",
+      "Git": "Git",
+      "Tailwind": "Tailwind",
+      "Bootstrap": "Bootstrap",
+      "Tilda": "Tilda",
+      "Nodejs": "Node.js",
+      "PWA": "PWA",
+      "SPA": "SPA",
+      "REST": "REST",
+      "Redux": "Redux",
+      "Zustand": "Zustand",
+      "React-hook-form": "React-hook-form",
+      "React-photo-view": "React-photo-view",
+      "React-typed": "React-typed",
+      "Storybook": "Storybook",
+      "Headless": "Headless",
+      "Nextjs": "Next.js",
+      "CSR/SSR": "CSR/SSR",
+      "JS/TS": "JS/TS",
+      "CSS/SCSS": "CSS/SCSS",
+      "PostCSS": "PostCSS",
+      "Framer": "Framer",
+      "FSD": "FSD",
+      "Tanstack": "Tanstack",
+      "Swiper": "Swiper",
+      "Parallax": "Parallax",
+      "Tsparticles": "Tsparticles",
+      "Hot toast": "Hot toast",
+      "Prettier": "Prettier",
+      "i18n": "i18n",
+      "Classnames": "Classnames",
+      "Em/Rem": "Em/Rem",
+      "Yarn": "Yarn",
+      "Postgress": "Postgress",
+      "Adaptability": "Adaptability",
+      "Flex": "Flex",
+      "Grid": "Grid",
+      "Responsive": "Responsive design"
+    },
+    "application": {
+      "title": "Contact us",
+      "fields": {
+        "name": "Your Name",
+        "phone": "Phone Number",
+        "email": "Email"
+      },
+      "done": "Application sent!"
+    },
+    "footer": {
+      "email": "bsgroup.dev@yahoo.com",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service"
     }
   }
 }

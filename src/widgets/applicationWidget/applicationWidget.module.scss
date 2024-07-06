@@ -1,0 +1,17 @@
+@import '../../shared/scss/variables';
+.container {
+  @apply flex flex-col justify-center mt-20 mx-39;
+}
+.title {
+  @extend %title;
+}
+.forms {
+  @apply mt-15 flex flex-col justify-center gap-15;
+}
+.otpravit {
+  @apply mt-15 flex justify-center;
+}
+.input {
+  @apply bg-based outline-none flex self-center border-b-2 border-white text-32 font-bold;
+  width: 50vw;
+}

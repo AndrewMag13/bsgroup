@@ -5,13 +5,13 @@ import { APP_URL } from '@/shared/constants/constants'
 import { useTranslations } from 'next-intl'
 import LangSelector from '@/shared/ui/langSelector/langSelector'
 
-const HeaderPage = () => {
-  const t = useTranslations('home.page.header')
+const Header = () => {
+  const t = useTranslations('home.header')
   const headerKeys = [
     'services',
     'development',
     'projects',
-    'stack',
+    'techs',
     'application',
   ]
   return (
@@ -62,4 +62,4 @@ const HeaderPage = () => {
   )
 }
 
-export default HeaderPage
+export default Header
