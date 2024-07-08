@@ -2,13 +2,13 @@
 import { NextPage } from 'next'
 import Image from 'next/image'
 import s from './langSelector.module.scss'
-import Link from 'next/link'
+import { Link } from '@/navigation'
 import { Variants, motion } from 'framer-motion'
 import { useState } from 'react'
 const LangSelector: NextPage = () => {
   const langs = [
-    { id: 1, short: 'en', lang: 'English' },
-    { id: 2, short: 'ru', lang: 'Русский' },
+    { short: 'en', lang: 'English' },
+    { short: 'ru', lang: 'Русский' },
   ]
   const itemVariants: Variants = {
     open: {
@@ -29,6 +29,8 @@ const LangSelector: NextPage = () => {
         <motion.button
           onClick={() => setIsOpen(!isOpen)}
           whileTap={{ scale: 0.95 }}
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: 'spring', stiffness: 200, damping: 20 }}
           className={s.button}
         >
           <Image
@@ -39,7 +41,6 @@ const LangSelector: NextPage = () => {
             className={s.logo}
           />
         </motion.button>
-
         <motion.ul
           className={s.selector}
           variants={{
@@ -66,12 +67,14 @@ const LangSelector: NextPage = () => {
         >
           {langs.map((lang) => {
             return (
-              <motion.li key={lang.id} variants={itemVariants}>
-                <Link
-                  href={`/${lang.short}`}
-                  scroll={false}
-                  locale={`${lang.short}`}
-                >
+              <motion.li
+                key={lang.short}
+                variants={itemVariants}
+                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+              >
+                <Link href={`/`} scroll={false} locale={`${lang.short}`}>
                   {lang.lang}
                 </Link>
               </motion.li>

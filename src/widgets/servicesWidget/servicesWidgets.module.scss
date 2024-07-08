@@ -6,5 +6,5 @@
   @extend %title;
 }
 .servicesContainer {
-  @apply flex flex-row mt-15 mx-39 justify-between gap-6;
+  @apply flex flex-row mt-15 mx-39 justify-center gap-x-6 gap-y-5 flex-wrap;
 }

@@ -1,5 +1,5 @@
 .header {
-  @apply flex justify-between h-15 text-base leading-none items-center  w-screen px-39 fixed z-50 top-0;
+  @apply flex justify-between h-15 text-base leading-none items-center w-screen px-39 sticky z-50 top-0;
   backdrop-filter: blur(20px) saturate(100%);
   -webkit-backdrop-filter: blur(20px) saturate(100%);
   background-color: rgba(22, 22, 22, 0.5);
@@ -10,9 +10,7 @@
 .header__links__element {
   @apply leading-4 text-base text-center font-normal;
 }
-// .header__phone {
-//   @apply flex items-center gap-2;
-// }
+
 .header_logo {
   @apply flex items-center self-center z-20;
 }

@@ -21,13 +21,14 @@
   border: 0;
   border-radius: 10px;
   cursor: pointer;
-  display: inline-block;
-  line-height: 0;
   font-size: 20px;
-  padding: 25px 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   width: 140px;
-  heigth: 50px;
+  height: 50px;
+  text-align: center;
 }
 .storybook-button--primary {
   background-image: linear-gradient(90deg, var(--based) 0%, var(--funded) 100%);

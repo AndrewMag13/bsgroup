@@ -1,6 +1,7 @@
 import React from 'react'
 import './napisat.css'
 import { Inter } from 'next/font/google'
+import { motion } from 'framer-motion'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -37,16 +38,19 @@ export const Button = ({ primary = true, label, ...props }: ButtonProps) => {
     ? 'storybook-button--primary'
     : 'storybook-button--secondary'
   return (
-    <button
+    <motion.button
       type="button"
       className={['storybook-button', mode, inter.className].join(' ')}
       {...props}
+      whileTap={{ scale: 0.95 }}
+      whileHover={{ scale: 1.1 }}
+      transition={{ type: 'spring', stiffness: 200, damping: 20 }}
     >
       {label}
       <style jsx>{`
         button {
         }
       `}</style>
-    </button>
+    </motion.button>
   )
 }

@@ -13,8 +13,11 @@ const TextLen = () => {
     'integration',
     'design',
     'redesign',
+    'prototype',
     'UI/UX',
     'content management',
+    'animation',
+    'motion design',
     'deployment',
     'optimization',
     'maintenance',
@@ -29,7 +32,7 @@ const TextLen = () => {
             {keys.map((key) => {
               return (
                 <Fragment key={key}>
-                  <li className={s.title}>{t(`${key}.title`)}</li>
+                  <li className={s.title}>{t(`${key}`)}</li>
                   <li className={s.dot}>·</li>
                 </Fragment>
               )
@@ -39,7 +42,7 @@ const TextLen = () => {
             {keys.map((key) => {
               return (
                 <Fragment key={key}>
-                  <li className={s.title}>{t(`${key}.title`)}</li>
+                  <li className={s.title}>{t(`${key}`)}</li>
                   <li className={s.dot}>·</li>
                 </Fragment>
               )
@@ -49,13 +52,13 @@ const TextLen = () => {
             {keys.map((key) => {
               return (
                 <Fragment key={key}>
-                  <li className={s.title}>{t(`${key}.title`)}</li>
+                  <li className={s.title}>{t(`${key}`)}</li>
                   <li className={s.dot}>·</li>
                 </Fragment>
               )
             })}
           </ul>
-        </div>
+        </div>  
       </div>
     </>
   )

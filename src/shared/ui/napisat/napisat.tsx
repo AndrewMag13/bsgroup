@@ -1,5 +1,4 @@
 'use client'
-
 import { Button } from '@/stories/Napisat'
 import { useTranslations } from 'next-intl'
 

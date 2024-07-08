@@ -7,11 +7,11 @@
     "ui": {
       "napisatButton": "Write",
       "contactButton": "Send",
+      "link": "Go home",
       "phoneNumber": "+7 937 138 44 40"
     },
     "404": {
-      "title": "Not found!",
-      "link": "Go home"
+      "title": "Not found!"
     },
     "header": {
       "links": {
@@ -44,66 +44,24 @@
       }
     },
     "textLen": {
-      "market analysis": {
-        "id": 1,
-        "title": "Market analysis"
-      },
-      "adaptation": {
-        "id": 2,
-        "title": "Adaptation"
-      },
-      "audit": {
-        "id": 3,
-        "title": "Audit"
-      },
-      "projection": {
-        "id": 4,
-        "title": "Projection"
-      },
-      "SEO": {
-        "id": 5,
-        "title": "SEO"
-      },
-      "integration": {
-        "id": 6,
-        "title": "Integration"
-      },
-      "design": {
-        "id": 7,
-        "title": "Design"
-      },
-      "redesign": {
-        "id": 8,
-        "title": "Redesign"
-      },
-      "UI/UX": {
-        "id": 9,
-        "title": "UI/UX"
-      },
-      "content management": {
-        "id": 10,
-        "title": "Content management"
-      },
-      "deployment": {
-        "id": 11,
-        "title": "Deployment"
-      },
-      "optimization": {
-        "id": 12,
-        "title": "Optimization"
-      },
-      "maintenance": {
-        "id": 13,
-        "title": "Maintenance"
-      },
-      "promotion": {
-        "id": 14,
-        "title": "Promotion"
-      },
-      "support": {
-        "id": 15,
-        "title": "Support"
-      }
+      "market analysis": "Market analysis",
+      "adaptation": "Adaptation",
+      "audit": "Audit",
+      "projection": "Projection",
+      "SEO": "SEO",
+      "integration": "Integration",
+      "design": "Design",
+      "redesign": "Redesign",
+      "prototype": "Prototyping",
+      "UI/UX": "UI/UX",
+      "content management": "Content management",
+      "animation": "Animation",
+      "motion design": "Motion design",
+      "deployment": "Deployment",
+      "optimization": "Optimization",
+      "maintenance": "Maintenance",
+      "promotion": "Promotion",
+      "support": "Support"
     },
     "services": {
       "title": "Services",
@@ -111,43 +69,71 @@
         "from": "from",
         "currency": "USD"
       },
-      "servicesText": {
-        "serviceLandingText": {
-          "header": "Landing-page",
-          "price": "300",
-          "serviceType": "Simple",
-          "bulletList": {
-            "bullet1": "2 Weeks delivery time",
-            "bullet2": "3 Revisions",
-            "bullet3": "1 Week of support",
-            "bullet4": "1 Month guarantee",
-            "bullet5": "Hosting setup + Domain"
-          }
+      "serviceLanding": {
+        "header": "Landing-page",
+        "price": "500",
+        "serviceType": "Simple",
+        "bulletList": {
+          "bullet1": "2 Weeks delivery time",
+          "bullet2": "3 Revisions",
+          "bullet3": "1 Week of support",
+          "bullet4": "1 Month guarantee"
         },
-        "serviceMultiText": {
-          "header": "Multi-page",
-          "price": "500",
-          "serviceType": "Several Pages",
-          "bulletList": {
-            "bullet1": "4 Weeks delivery time",
-            "bullet2": "5 Revisions",
-            "bullet3": "2 Weeks of support",
-            "bullet4": "3 Months guarantee",
-            "bullet5": "Metrics integration"
-          }
+        "desc": "Привлекательная веб-страница с высокой конверсией для эффективного привлечения клиентов"
+      },
+      "serviceMulti": {
+        "header": "Multi-page",
+        "price": "800",
+        "serviceType": "Several Pages",
+        "bulletList": {
+          "bullet1": "4 Weeks delivery time",
+          "bullet2": "5 Revisions",
+          "bullet3": "2 Weeks of support",
+          "bullet4": "3 Months guarantee"
         },
-        "serviceAdvancedText": {
-          "header": "Advanced",
-          "price": "800",
-          "serviceType": "Multi-functional",
-          "bulletList": {
-            "bullet1": "6 Weeks delivery time",
-            "bullet2": "8 Revisions",
-            "bullet3": "4 Weeks of support",
-            "bullet4": "6 Months guarantee",
-            "bullet5": "Scalability"
-          }
-        }
+        "desc": "Привлекательная веб-страница с высокой конверсией для эффективного привлечения клиентов"
+      },
+      "serviceAdvanced": {
+        "header": "Advanced",
+        "price": "1000",
+        "serviceType": "Multi-functional",
+        "bulletList": {
+          "bullet1": "6 Weeks delivery time",
+          "bullet2": "8 Revisions",
+          "bullet3": "4 Weeks of support",
+          "bullet4": "6 Months guarantee"
+        },
+        "desc": "Привлекательная веб-страница с высокой конверсией для эффективного привлечения клиентов"
+      },
+      "design": {
+        "header": "Бренд-дизайн",
+        "price": "15000",
+        "serviceType": "Уникальный",
+        "bulletList": {
+          "bullet1": "Разработка от 3 дней",
+          "bullet2": "3 Правки"
+        },
+        "desc": "Привлекательная веб-страница с высокой конверсией для эффективного привлечения клиентов"
+      },
+      "presentation": {
+        "header": "Презентация",
+        "price": "10000",
+        "serviceType": "Интерактивная",
+        "bulletList": {
+          "bullet1": "Разработка от 2 дней",
+          "bullet2": "3 Правки"
+        },
+        "desc": "Привлекательная веб-страница с высокой конверсией для эффективного привлечения клиентов"
+      },
+      "motion": {
+        "header": "Моушн-дизайн",
+        "price": "10000",
+        "serviceType": "Профессиональная",
+        "bulletList": {
+          "bullet1": "Разработка от 2 дней",
+          "bullet2": "3 Правки"
+        },
+        "desc": "Привлекательная веб-страница с высокой конверсией для эффективного привлечения клиентов"
       }
     },
     "development": {

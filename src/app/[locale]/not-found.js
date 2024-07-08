@@ -1,20 +1,20 @@
 'use client'
+import GoHome from "@/shared/ui/goHome/goHome";
 import { useTranslations } from "next-intl"
-import Link from "next/link"
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
+export const dynamic = 'force-dynamic'
 const NotFound = () => {
   const t = useTranslations('home.404')
   return (
     <>
       <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1} containerStyle={{
-        height: '100vh',
+        height: 'calc(100vh - 60px)',
         width: '100vw',
         display: 'flex',
         justifyContent: 'center',
         justifyItems: 'center',
         flexDirection: 'column',
         alignItems: 'center',
-
       }}>
         <MouseParallaxChild factorX={0.2} factorY={0.3} style={{
           zIndex: '3',
@@ -44,22 +44,13 @@ const NotFound = () => {
             >404</div>
           </MouseParallaxChild>
         </div>
-        {/* <MouseParallaxChild factorX={0.4} factorY={0.6} style={{
-          zIndex: '2',
-        }}> */}
+
         <div style={{
-          marginTop: '3.75rem',
+          marginTop: '2.5rem',
           fontSize: '2.5rem',
         }}
         >{t('title')}</div>
-        {/* </MouseParallaxChild> */}
-        <div style={{
-          fontWeight: '700',
-          marginTop: '5rem',
-          fontSize: '2rem',
-        }}>
-          <Link href="/" >{t('link')}</Link>
-        </div>
+        <GoHome />
       </MouseParallaxContainer >
     </>
   )

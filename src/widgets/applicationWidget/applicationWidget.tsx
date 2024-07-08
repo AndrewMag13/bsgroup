@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl'
 import s from './applicationWidget.module.scss'
 import OtpravitButton from '@/shared/ui/otpravit/otpravit'
 import { useForm, SubmitHandler } from 'react-hook-form'
-
+import { motion } from 'framer-motion'
 interface Inputs {
   name: string
   phone: string
@@ -24,7 +24,10 @@ const ApplicationWidget: NextPage = () => {
     <>
       <div className={s.container} id="application">
         <div className={s.title}>{t('title')}</div>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <motion.form
+          
+          
+        >
           <div className={s.forms}>
             <input placeholder={t('fields.name')} className={s.input}></input>
             <input placeholder={t('fields.phone')} className={s.input}></input>
@@ -33,7 +36,7 @@ const ApplicationWidget: NextPage = () => {
           <div className={s.otpravit}>
             <OtpravitButton />
           </div>
-        </form>
+        </motion.form>
       </div>
     </>
   )

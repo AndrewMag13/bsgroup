@@ -20,7 +20,7 @@ const config: Config = {
     },
     extend: {
       spacing: {
-        '15': '60px',
+        '15': '3.75rem',
         '25': '100px',
         '39': '156px',
       },

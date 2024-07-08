@@ -7,11 +7,11 @@
     "ui": {
       "napisatButton": "Написать",
       "contactButton": "Отправить",
+      "link": "На главную",
       "phoneNumber": "+7 937 138 44 40"
     },
     "404": {
-      "title": "Не найдено!",
-      "link": "На главную"
+      "title": "Не найдено!"
     },
     "header": {
       "links": {
@@ -40,66 +40,24 @@
       }
     },
     "textLen": {
-      "market analysis": {
-        "id": 1,
-        "title": "Анализ рынка"
-      },
-      "adaptation": {
-        "id": 2,
-        "title": "Адаптация"
-      },
-      "audit": {
-        "id": 3,
-        "title": "Аудит"
-      },
-      "projection": {
-        "id": 4,
-        "title": "Проектирование"
-      },
-      "SEO": {
-        "id": 5,
-        "title": "SEO"
-      },
-      "integration": {
-        "id": 6,
-        "title": "Интеграция"
-      },
-      "design": {
-        "id": 7,
-        "title": "Дизайн"
-      },
-      "redesign": {
-        "id": 8,
-        "title": "Редизайн"
-      },
-      "UI/UX": {
-        "id": 9,
-        "title": "UI/UX"
-      },
-      "content management": {
-        "id": 10,
-        "title": "Наполнение"
-      },
-      "deployment": {
-        "id": 11,
-        "title": "Деплой"
-      },
-      "optimization": {
-        "id": 12,
-        "title": "Оптимизация"
-      },
-      "maintenance": {
-        "id": 13,
-        "title": "Сопровождение"
-      },
-      "promotion": {
-        "id": 14,
-        "title": "Продвижение"
-      },
-      "support": {
-        "id": 15,
-        "title": "Поддержка"
-      }
+      "market analysis": "Анализ рынка",
+      "adaptation": "Адаптация",
+      "audit": "Аудит",
+      "projection": "Проектирование",
+      "SEO": "SEO",
+      "integration": "Интеграция",
+      "design": "Дизайн",
+      "redesign": "Редизайн",
+      "prototype": "Прототипирование",
+      "UI/UX": "UI/UX",
+      "content management": "Наполнение",
+      "animation": "Анимация",
+      "motion design": "Моушн дизайн",
+      "deployment": "Деплой",
+      "optimization": "Оптимизация",
+      "maintenance": "Сопровождение",
+      "promotion": "Продвижение",
+      "support": "Поддержка"
     },
     "services": {
       "title": "Наши услуги",
@@ -107,43 +65,71 @@
         "from": "от",
         "currency": "руб."
       },
-      "servicesText": {
-        "serviceLandingText": {
-          "header": "Landing-page",
-          "price": "30000",
-          "serviceType": "Простой",
-          "bulletList": {
-            "bullet1": "Разработка от 2-х недель",
-            "bullet2": "3 Правки",
-            "bullet3": "1 Неделя поддержки",
-            "bullet4": "1 Месяц гарантии",
-            "bullet5": "Настройка хостинга + Домен"
-          }
+      "serviceLanding": {
+        "header": "Landing-page",
+        "price": "50000",
+        "serviceType": "Простой",
+        "bulletList": {
+          "bullet1": "Разработка от 2-х недель",
+          "bullet2": "3 Правки",
+          "bullet3": "1 Неделя поддержки",
+          "bullet4": "1 Месяц гарантии"
         },
-        "serviceMultiText": {
-          "header": "Multi-page",
-          "price": "50000",
-          "serviceType": "Многостраничный",
-          "bulletList": {
-            "bullet1": "Разработка от 4-х недель",
-            "bullet2": "5 Правок",
-            "bullet3": "2 Недели поддержки",
-            "bullet4": "3 Месяца гарантии",
-            "bullet5": "Подключение метрик"
-          }
+        "desc": "Привлекательная веб-страница с высокой конверсией для эффективного привлечения клиентов"
+      },
+      "serviceMulti": {
+        "header": "Multi-page",
+        "price": "80000",
+        "serviceType": "Многостраничный",
+        "bulletList": {
+          "bullet1": "Разработка от 4-х недель",
+          "bullet2": "5 Правок",
+          "bullet3": "2 Недели поддержки",
+          "bullet4": "3 Месяца гарантии"
         },
-        "serviceAdvancedText": {
-          "header": "Продвинутый",
-          "price": "80000",
-          "serviceType": "Многофункциональный",
-          "bulletList": {
-            "bullet1": "Разработка от 6-х недель",
-            "bullet2": "8 Правок",
-            "bullet3": "4 Недели поддержки",
-            "bullet4": "6 Месяцев гарантии",
-            "bullet5": "Масштабируемость"
-          }
-        }
+        "desc": "Многостраничный веб-сайт с удобной навигацией и информативным контентом"
+      },
+      "serviceAdvanced": {
+        "header": "Продвинутый",
+        "price": "100000",
+        "serviceType": "Многофункциональный",
+        "bulletList": {
+          "bullet1": "Разработка от 6-х недель",
+          "bullet2": "8 Правок",
+          "bullet3": "4 Недели поддержки",
+          "bullet4": "6 Месяцев гарантии"
+        },
+        "desc": "Инновационное веб-приложение с расширенным функционалом и удобным интерфейсом"
+      },
+      "design": {
+        "header": "Бренд-дизайн",
+        "price": "15000",
+        "serviceType": "Уникальный",
+        "bulletList": {
+          "bullet1": "Разработка от 3 дней",
+          "bullet2": "3 Правки"
+        },
+        "desc": "Уникальный и запоминающийся образ бренда, включая логотип, цветовую палитру и стиль оформления"
+      },
+      "presentation": {
+        "header": "Презентация",
+        "price": "10000",
+        "serviceType": "Интерактивная",
+        "bulletList": {
+          "bullet1": "Разработка от 2 дней",
+          "bullet2": "3 Правки"
+        },
+        "desc": "Профессиональная презентация с креативным дизайном и понятной структурой"
+      },
+      "motion": {
+        "header": "Моушн-дизайн",
+        "price": "10000",
+        "serviceType": "Эффектный",
+        "bulletList": {
+          "bullet1": "Разработка от 2 дней",
+          "bullet2": "3 Правки"
+        },
+        "desc": "Анимация графических элементов для придания динамики и привлекательности контенту"
       }
     },
     "development": {
@@ -158,7 +144,7 @@
       "step8": "Запуск и поддержка"
     },
     "projects": {
-      "title": "Projects",
+      "title": "Проекты",
       "list": {
         "fixer": {
           "title": "Fixer",

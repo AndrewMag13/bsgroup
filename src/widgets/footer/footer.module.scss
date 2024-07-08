@@ -1,5 +1,5 @@
 .container {
-  @apply bg-funded w-screen h-36 mt-20 px-39 flex flex-row justify-between items-center overflow-hidden;
+  @apply bg-funded w-screen h-36 mt-20 px-39 flex flex-row justify-between items-center overflow-clip static bottom-0;
 }
 .image {
   @apply absolute z-10 flex self-center;

@@ -1,6 +1,6 @@
 .text {
   height: calc(100vh - 60px);
-  @apply z-10 flex px-39 flex-col justify-center text-start gap-10 max-w-fit mt-15;
+  @apply z-10 flex px-39 flex-col justify-center text-start gap-10 max-w-fit;
 }
 .title {
   @apply flex relative text-16 flex-col leading-16;

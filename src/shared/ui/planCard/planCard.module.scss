@@ -21,8 +21,8 @@
   }
   &.right {
     height: 3px;
-    width: 300px;
-    @apply flex self-end relative left-1/4 -top-12;
+    width: 60px;
+    @apply flex self-end relative left-12 -top-12;
     rotate: 0deg;
     background: linear-gradient(90deg, white 50%, transparent 50%);
     background-repeat: repeat-x;

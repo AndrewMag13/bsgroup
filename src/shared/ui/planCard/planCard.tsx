@@ -1,6 +1,8 @@
+'use client'
 import { useTranslations } from 'next-intl'
 import s from './planCard.module.scss'
 import cn from 'classnames'
+import { AnimatePresence, motion } from 'framer-motion'
 interface ITitleProps {
   title: string
   direction: string
@@ -9,18 +11,111 @@ const PlanCard = (props: ITitleProps) => {
   const t = useTranslations('home.development')
   return (
     <>
-      <div className={s.container}>
-        <div className={s.card}>{t(`${props.title}`)}</div>
+      <motion.div
+        className={s.container}
+        whileHover={{ scale: 1.02 }}
+        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+        initial={{
+          opacity: 0,
+          x:
+            props.direction === 'down' || props.direction === 'right'
+              ? -50
+              : 50,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 1,
+          },
+        }}
+        style={{
+          zIndex: 10,
+        }}
+        viewport={{ once: true }}
+      >
+        <div
+          className={s.card}
+          style={{
+            zIndex: 10,
+          }}
+        >
+          {t(`${props.title}`)}
+        </div>
         {props.direction === 'down' ? (
-          <div className={cn([s.border], [s.down])}></div>
+          <motion.div
+            className={cn([s.border], [s.down])}
+            initial={{
+              opacity: 0,
+              width: 1,
+              x: -50,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              width: 60,
+              transition: {
+                delay: 1,
+                duration: 1,
+              },
+            }}
+            style={{
+              zIndex: 1,
+            }}
+            viewport={{ once: true }}
+          ></motion.div>
         ) : props.direction === 'right' ? (
-          <div className={cn([s.border], [s.right])}></div>
+          <motion.div
+            className={cn([s.border], [s.right])}
+            initial={{
+              opacity: 0,
+              x: -50,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                delay: 1.5,
+                duration: 1,
+              },
+            }}
+            style={{
+              zIndex: 1,
+            }}
+            viewport={{ once: true }}
+          ></motion.div>
         ) : props.direction === 'up' ? (
-          <div className={cn([s.border], [s.up])}></div>
+          <motion.div
+            className={cn([s.border], [s.up])}
+            initial={{
+              opacity: 0,
+              width: 0,
+              x: -50,
+            }}
+            whileInView={{
+              opacity: 1,
+              width: 60,
+              x: 0,
+              transition: {
+                delay: 2,
+                duration: 1,
+              },
+            }}
+            style={{
+              zIndex: 1,
+            }}
+            viewport={{ once: true }}
+          ></motion.div>
         ) : (
-          <div className={cn([s.border], [s.none])}></div>
+          <motion.div
+            className={cn([s.border], [s.none])}
+            viewport={{ once: true }}
+            style={{
+              zIndex: 1,
+            }}
+          ></motion.div>
         )}
-      </div>
+      </motion.div>
     </>
   )
 }

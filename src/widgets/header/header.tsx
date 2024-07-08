@@ -1,10 +1,10 @@
+'use client'
 import s from './header.module.scss'
-import Link from 'next/link'
+import { Link } from '@/navigation'
 import Image from 'next/image'
-import { APP_URL } from '@/shared/constants/constants'
 import { useTranslations } from 'next-intl'
 import LangSelector from '@/shared/ui/langSelector/langSelector'
-
+import { motion } from 'framer-motion'
 const Header = () => {
   const t = useTranslations('home.header')
   const headerKeys = [
@@ -19,9 +19,28 @@ const Header = () => {
       <circle
         dangerouslySetInnerHTML={{ __html: '<!--silly easter egg)))-->' }}
       ></circle>
-      <div className={s.header}>
-        <span className={s.header__logo}>
-          <Link href={'#main'}>
+      <motion.div
+        className={s.header}
+        initial={{
+          opacity: 0,
+          y: -50,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true }}
+      >
+        <motion.span
+          className={s.header__logo}
+          whileTap={{ scale: 0.95 }}
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+        >
+          <Link href={'/#mainblock'}>
             <Image
               src={`/icons/bsHeader.svg`}
               alt="bs icon"
@@ -29,35 +48,30 @@ const Header = () => {
               height={33}
             />
           </Link>
-        </span>
+        </motion.span>
         <div className={s.header__links}>
           <ul className={s.header__links__list}>
             {headerKeys.map((headerKey) => {
               return (
-                <li className={s.header__links__element} key={headerKey}>
-                  <Link href={t(`links.${headerKey}.href`)}>
+                <motion.li
+                  className={s.header__links__element}
+                  key={headerKey}
+                  whileTap={{ scale: 0.95 }}
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+                >
+                  <Link href={`/${t(`links.${headerKey}.href`)}`}>
                     {t(`links.${headerKey}.title`)}
                   </Link>
-                </li>
+                </motion.li>
               )
             })}
           </ul>
         </div>
-        {/* <div className={s.header__phone}>
-          <span>
-            <Image
-              src={`/icons/phone.svg`}
-              width={24}
-              height={24}
-              alt="phone icon"
-            />
-          </span>
-          <span className={s.number}>{t('')}</span>
-        </div> */}
         <div className={s.lang}>
           <LangSelector />
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }
