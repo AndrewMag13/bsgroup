@@ -47,15 +47,13 @@ const PlanCard = (props: ITitleProps) => {
             className={cn([s.border], [s.down])}
             initial={{
               opacity: 0,
-              width: 1,
               x: -50,
             }}
             whileInView={{
               opacity: 1,
               x: 0,
-              width: 60,
               transition: {
-                delay: 1,
+                delay: 0.1,
                 duration: 1,
               },
             }}
@@ -75,7 +73,7 @@ const PlanCard = (props: ITitleProps) => {
               opacity: 1,
               x: 0,
               transition: {
-                delay: 1.5,
+                delay: 0.2,
                 duration: 1,
               },
             }}
@@ -89,15 +87,13 @@ const PlanCard = (props: ITitleProps) => {
             className={cn([s.border], [s.up])}
             initial={{
               opacity: 0,
-              width: 0,
               x: -50,
             }}
             whileInView={{
               opacity: 1,
-              width: 60,
               x: 0,
               transition: {
-                delay: 2,
+                delay: 0.3,
                 duration: 1,
               },
             }}
