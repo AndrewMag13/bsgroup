@@ -5751,9 +5751,9 @@ __metadata:
     eslint: "npm:^9.6.0"
     eslint-config-next: "npm:14.2.4"
     eslint-plugin-storybook: "npm:^0.8.0"
-    framer-motion: "npm:^11.2.13"
+    framer-motion: "npm:^11.2.14"
     next: "npm:14.2.4"
-    next-intl: "npm:^3.15.3"
+    next-intl: "npm:^3.15.5"
     postcss: "npm:^8.4.39"
     postcss-import: "npm:^16.1.0"
     react: "npm:^18.3.1"
@@ -8068,9 +8068,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^11.2.13":
-  version: 11.2.13
-  resolution: "framer-motion@npm:11.2.13"
+"framer-motion@npm:^11.2.14":
+  version: 11.2.14
+  resolution: "framer-motion@npm:11.2.14"
   dependencies:
     tslib: "npm:^2.4.0"
   peerDependencies:
@@ -8084,7 +8084,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10c0/f3f232e7208727145443b59b909841b37649409910c2e49cdaebae760215bbca57820530ecbae015791b11dd5d7b944ee8f1a6982d511e2e9a187f76ef30a7fd
+  checksum: 10c0/3b6c9299d7630b8153e97c838ce1670baa41190f36f22ff1566f79adcd45c2225409cd13093ecd36ff82747675e2801c756703b9be439b6b210c1e1ace5ea92e
   languageName: node
   linkType: hard
 
@@ -10206,17 +10206,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-intl@npm:^3.15.3":
-  version: 3.15.3
-  resolution: "next-intl@npm:3.15.3"
+"next-intl@npm:^3.15.5":
+  version: 3.15.5
+  resolution: "next-intl@npm:3.15.5"
   dependencies:
     "@formatjs/intl-localematcher": "npm:^0.2.32"
     negotiator: "npm:^0.6.3"
-    use-intl: "npm:^3.15.3"
+    use-intl: "npm:^3.15.5"
   peerDependencies:
     next: ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/d25151081a6145ca9bee3c039c939d41abd069dae4405b726733cde0f221a1ca57c92462dd54d3bcf9b431563cf0cb27a3b79e185f420b63b989ea3e64503b16
+  checksum: 10c0/7f132b817073e375a187eb89747fb1f0c68c27ff10ef6e676b3e795088b51e765507498d6358e5f3a909e41d9c33619fa3ed39bb23a55f680993c92cf77d3b08
   languageName: node
   linkType: hard
 
@@ -13669,14 +13669,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-intl@npm:^3.15.3":
-  version: 3.15.3
-  resolution: "use-intl@npm:3.15.3"
+"use-intl@npm:^3.15.5":
+  version: 3.15.5
+  resolution: "use-intl@npm:3.15.5"
   dependencies:
     intl-messageformat: "npm:^10.5.14"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/f65e20132adae5fd94716022122faf7af7e17a9f34f551d9d85a8de4c6419a89fdc21f80af80795487a5228e2d2779f4769559f3a570af3fdad2a59e633a51a0
+  checksum: 10c0/aabbabff1c376f7ed37d78f2e1a8e9d1a99bc95929012e6fa76f80e2f7887469962fe5c7e680bdfa2c90f0a9e62342921da40933656cfc2dc8fbc317d14ab6b5
   languageName: node
   linkType: hard
 
