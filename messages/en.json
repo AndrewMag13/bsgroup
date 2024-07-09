@@ -93,7 +93,7 @@
           "bullet3": "1 Week of support",
           "bullet4": "1 Month guarantee"
         },
-        "desc": "Привлекательная веб-страница с высокой конверсией для эффективного привлечения клиентов"
+        "desc": "Attractive, high-converting web page to attract customers effectively"
       },
       "serviceMulti": {
         "header": "Multi-page",
@@ -105,7 +105,7 @@
           "bullet3": "2 Weeks of support",
           "bullet4": "3 Months guarantee"
         },
-        "desc": "Привлекательная веб-страница с высокой конверсией для эффективного привлечения клиентов"
+        "desc": "Multi-page website with easy navigation and informative content"
       },
       "serviceAdvanced": {
         "header": "Advanced",
@@ -117,37 +117,37 @@
           "bullet3": "4 Weeks of support",
           "bullet4": "6 Months guarantee"
         },
-        "desc": "Привлекательная веб-страница с высокой конверсией для эффективного привлечения клиентов"
+        "desc": "Innovative web application with advanced functionality and user-friendly interface"
       },
       "design": {
-        "header": "Бренд-дизайн",
-        "price": "15000",
-        "serviceType": "Уникальный",
+        "header": "Brand-design",
+        "price": "150",
+        "serviceType": "Unique",
         "bulletList": {
-          "bullet1": "Разработка от 3 дней",
-          "bullet2": "3 Правки"
+          "bullet1": "3 Days delivery time",
+          "bullet2": "3 Revisions"
         },
-        "desc": "Привлекательная веб-страница с высокой конверсией для эффективного привлечения клиентов"
+        "desc": "Unique and memorable brand image, including logo, color palette and design style"
       },
       "presentation": {
-        "header": "Презентация",
-        "price": "10000",
-        "serviceType": "Интерактивная",
+        "header": "Presentation",
+        "price": "100",
+        "serviceType": "Interactive",
         "bulletList": {
-          "bullet1": "Разработка от 2 дней",
-          "bullet2": "3 Правки"
+          "bullet1": "2 Days delivery time",
+          "bullet2": "3 Revisions"
         },
-        "desc": "Привлекательная веб-страница с высокой конверсией для эффективного привлечения клиентов"
+        "desc": "Professional presentation with creative design and clear structure"
       },
       "motion": {
-        "header": "Моушн-дизайн",
-        "price": "10000",
-        "serviceType": "Профессиональная",
+        "header": "Motion-design",
+        "price": "100",
+        "serviceType": "Spectacular",
         "bulletList": {
-          "bullet1": "Разработка от 2 дней",
-          "bullet2": "3 Правки"
+          "bullet1": "2 Days delivery time",
+          "bullet2": "3 Revisions"
         },
-        "desc": "Привлекательная веб-страница с высокой конверсией для эффективного привлечения клиентов"
+        "desc": "Animation of graphic elements to make content dynamic and attractive"
       }
     },
     "development": {
