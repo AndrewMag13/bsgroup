@@ -53,7 +53,7 @@ const PlanCard = (props: ITitleProps) => {
               opacity: 1,
               x: 0,
               transition: {
-                delay: 0.1,
+                delay: 0.3,
                 duration: 1,
               },
             }}
@@ -73,7 +73,7 @@ const PlanCard = (props: ITitleProps) => {
               opacity: 1,
               x: 0,
               transition: {
-                delay: 0.2,
+                delay: 0.6,
                 duration: 1,
               },
             }}
@@ -93,7 +93,7 @@ const PlanCard = (props: ITitleProps) => {
               opacity: 1,
               x: 0,
               transition: {
-                delay: 0.3,
+                delay: 1,
                 duration: 1,
               },
             }}
