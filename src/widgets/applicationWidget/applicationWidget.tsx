@@ -24,7 +24,23 @@ const ApplicationWidget: NextPage = () => {
     <>
       <div className={s.container} id="application">
         <div className={s.title}>{t('title')}</div>
-        <motion.form>
+        <motion.form
+          initial={{
+            opacity: 0,
+            x: -100,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 1,
+            },
+          }}
+          style={{
+            zIndex: 10,
+          }}
+          viewport={{ once: true }}
+        >
           <div className={s.forms}>
             <input placeholder={t('fields.name')} className={s.input}></input>
             <input placeholder={t('fields.phone')} className={s.input}></input>
