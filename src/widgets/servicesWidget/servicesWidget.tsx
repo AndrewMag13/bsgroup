@@ -5,6 +5,7 @@ import { Fragment } from 'react'
 
 const ServicesWidget = () => {
   const t = useTranslations('home.services')
+  const f = useFormatter()
   const keys = [
     'serviceLanding',
     'serviceMulti',
@@ -18,9 +19,11 @@ const ServicesWidget = () => {
   const propers = (type: string): IWidgetProps => {
     return {
       header: t(`${type}.header`),
-      price: Number(t(`${type}.price`)),
       priceFormatFrom: t(`priceFormat.from`),
-      priceFormatCurrency: t(`priceFormat.currency`),
+      price: f.number(Number(t(`${type}.price`)), {
+        style: 'currency',
+        currency: t(`priceFormat.currency`),
+      }),
       serviceType: t(`${type}.serviceType`),
       bulletList:
         type !== 'design' && type !== 'presentation' && type !== 'motion'
@@ -31,6 +34,7 @@ const ServicesWidget = () => {
               return t(`${type}.bulletList.${bulletKey}`)
             }),
       img: type,
+      desc: t(`${type}.desc`),
     }
   }
   return (

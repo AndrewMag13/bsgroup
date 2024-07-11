@@ -13,13 +13,16 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.50.1",
-    "@tanstack/react-query-devtools": "^5.50.1",
+    "@nextui-org/react": "^2.4.2",
+    "@nextui-org/theme": "^2.2.6",
+    "@nextui-org/tooltip": "^2.0.36",
+    "@tanstack/react-query": "^5.51.1",
+    "@tanstack/react-query-devtools": "^5.51.1",
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.5.0",
     "classnames": "^2.5.1",
-    "framer-motion": "^11.3.0",
+    "framer-motion": "^11.3.1",
     "next": "14.2.5",
     "next-intl": "^3.15.5",
     "react": "^18.3.1",
@@ -56,5 +59,5 @@
     "tailwindcss": "^3.4.4",
     "typescript": "^5.5.3"
   },
-  "packageManager": "yarn@4.3.0"
+  "packageManager": "yarn@4.3.1"
 }

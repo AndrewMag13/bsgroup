@@ -1,12 +1,13 @@
 FROM node:lts as dependencies
 WORKDIR /bs_dev
 COPY package.json yarn.lock ./
-RUN yarn install --frozen-lockfile
+RUN corepack enable
+RUN yarn install
 
 FROM node:lts as builder
 WORKDIR /bs_dev
 COPY . .
-COPY --from=dependencies /bs_dev/node_modules ./node_modules
+# COPY --from=dependencies /bs_dev/node_modules ./node_modules
 RUN yarn build
 
 FROM node:lts as runner 

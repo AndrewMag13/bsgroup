@@ -77,7 +77,7 @@
       "title": "Наши услуги",
       "priceFormat": {
         "from": "от",
-        "currency": "руб."
+        "currency": "RUB"
       },
       "serviceLanding": {
         "header": "Landing-page",
@@ -190,6 +190,7 @@
       "title": "Наши технологии",
       "React": "React",
       "DOM": "DOM",
+      "Docker": "Docker",
       "JQuery": "JQuery",
       "Wordpress": "Wordpress",
       "Git": "Git",
@@ -224,7 +225,7 @@
       "Prettier": "Prettier",
       "i18n": "i18n",
       "Classnames": "Classnames",
-      "Em/Rem": "Em/Rem",
+      "NextUI": "NextUI",
       "Yarn": "Yarn",
       "Postgress": "Postgress",
       "Adaptability": "Адаптивность",
