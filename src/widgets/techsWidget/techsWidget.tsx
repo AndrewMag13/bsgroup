@@ -14,6 +14,8 @@ const TechsWidget: NextPage = () => {
     'Bootstrap',
     'Tilda',
     'Nodejs',
+    'Express',
+    'Nest',
     'PWA',
     'SPA',
     'REST',
