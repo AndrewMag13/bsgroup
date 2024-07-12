@@ -66,10 +66,13 @@ const ServiceCard = (props: IWidgetProps) => {
         }}
         style={{
           zIndex: 10,
-          backgroundColor: '#333333',
+          display: 'flex',
+          justifyContent: 'center',
           padding: '16px 16px',
           borderRadius: '30px',
           maxWidth: 360,
+          backdropFilter: 'blur(20px) saturate(100%)',
+          backgroundColor: 'rgba(51, 51, 51, 0.7)',
         }}
       >
         <motion.div

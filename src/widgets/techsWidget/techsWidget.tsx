@@ -7,7 +7,7 @@ const TechsWidget: NextPage = () => {
   const keys = [
     'React',
     'DOM',
-    'DOM',
+    'Docker',
     'JQuery',
     'Wordpress',
     'Git',

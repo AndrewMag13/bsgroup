@@ -1871,6 +1871,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hookform/error-message@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@hookform/error-message@npm:2.0.1"
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+    react-hook-form: ^7.0.0
+  checksum: 10c0/6b608bcdbd797ddb7c6cfc8c42b6bbac40066181a0c582b1f1a342bfa65fa7e8329cdb8e869a76e33988cd46fe8623d521ea597231b9d33e1f0ba3288e36c58e
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/module-importer@npm:^1.0.1":
   version: 1.0.1
   resolution: "@humanwhocodes/module-importer@npm:1.0.1"
@@ -7451,6 +7462,7 @@ __metadata:
   resolution: "bs_dev@workspace:."
   dependencies:
     "@chromatic-com/storybook": "npm:1.6.1"
+    "@hookform/error-message": "npm:^2.0.1"
     "@nextui-org/react": "npm:^2.4.2"
     "@nextui-org/theme": "npm:^2.2.6"
     "@nextui-org/tooltip": "npm:^2.0.36"
@@ -7485,6 +7497,7 @@ __metadata:
     react-hook-form: "npm:^7.52.1"
     react-hot-toast: "npm:^2.4.1"
     react-parallax-mouse: "npm:^2.1.0"
+    react-phone-number-input: "npm:^3.4.3"
     react-photo-view: "npm:^1.2.6"
     react-typed: "npm:^2.0.12"
     sass: "npm:^1.77.7"
@@ -8086,6 +8099,13 @@ __metadata:
     typescript:
       optional: true
   checksum: 10c0/1c1703be4f02a250b1d6ca3267e408ce16abfe8364193891afc94c2d5c060b69611fdc8d97af74b7e6d5d1aac0ab2fb94d6b079573146bc2d756c2484ce5f0ee
+  languageName: node
+  linkType: hard
+
+"country-flag-icons@npm:^1.5.11":
+  version: 1.5.13
+  resolution: "country-flag-icons@npm:1.5.13"
+  checksum: 10c0/beee2fe225469507d6c8df90376e031f08a5f103f65cd68e1db0679e82d4ffb2fbb27a3bb19defd112745b5c19d1972df615df21813c8c2074062dd5eb08eabb
   languageName: node
   linkType: hard
 
@@ -10400,6 +10420,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"input-format@npm:^0.3.10":
+  version: 0.3.10
+  resolution: "input-format@npm:0.3.10"
+  dependencies:
+    prop-types: "npm:^15.8.1"
+  checksum: 10c0/371b03593f272766e546d137dbc3c7f48ce57f1fa03f2d15c83eaa9f72f3e0160f4d2c92c363609ef1e8df4b3110fe2f1060931f1fb2252ad2c69202d47335f2
+  languageName: node
+  linkType: hard
+
 "internal-slot@npm:^1.0.5, internal-slot@npm:^1.0.7":
   version: 1.0.7
   resolution: "internal-slot@npm:1.0.7"
@@ -11091,6 +11120,13 @@ __metadata:
     prelude-ls: "npm:^1.2.1"
     type-check: "npm:~0.4.0"
   checksum: 10c0/effb03cad7c89dfa5bd4f6989364bfc79994c2042ec5966cb9b95990e2edee5cd8969ddf42616a0373ac49fac1403437deaf6e9050fbbaa3546093a59b9ac94e
+  languageName: node
+  linkType: hard
+
+"libphonenumber-js@npm:^1.11.2":
+  version: 1.11.4
+  resolution: "libphonenumber-js@npm:1.11.4"
+  checksum: 10c0/0a606da67b4b465e6e157570ad5e70b92f59197cdc1c505d160422a21a894b55a75c9044b863d0eaf4d96884d3fa3e77268adf55afc2d8f11efae7f7a249e7cc
   languageName: node
   linkType: hard
 
@@ -13010,6 +13046,22 @@ __metadata:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
   checksum: 10c0/c4f47fbbc149e53da931b9c336c7f4be1b49e778f37671901011eb85f4326660b88e0b57a2b95843ec4433709198453403cb090d82adc3a022aae068fc6685e6
+  languageName: node
+  linkType: hard
+
+"react-phone-number-input@npm:^3.4.3":
+  version: 3.4.3
+  resolution: "react-phone-number-input@npm:3.4.3"
+  dependencies:
+    classnames: "npm:^2.5.1"
+    country-flag-icons: "npm:^1.5.11"
+    input-format: "npm:^0.3.10"
+    libphonenumber-js: "npm:^1.11.2"
+    prop-types: "npm:^15.8.1"
+  peerDependencies:
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  checksum: 10c0/77223f3455f82f2aaf7115997a7479a9c4ea78afebd9876b2851b5e05980f740ee8c57bc233c51814bce1d9c62883b7bc9cebafb9366c11a4de4a4a8ae519a19
   languageName: node
   linkType: hard
 
