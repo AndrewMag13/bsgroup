@@ -4,6 +4,16 @@
 }
 .container {
   @apply flex flex-col justify-center mx-39 mt-20;
+  @import '../../shared/scss/media';
+  @include media(lg) {
+    @apply mx-20;
+  }
+  @include media(md) {
+    @apply mx-10;
+  }
+  @include media(sm) {
+    @apply mx-4;
+  }
 }
 .techs {
   @apply mt-15 flex flex-row gap-x-6 gap-y-5 flex-wrap justify-center;

@@ -40,3 +40,26 @@
   --based: rgba(98, 214, 197, 1);
   --funded: rgba(33, 156, 255, 1);
 }
+.storybook-button--primary::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: -5px; /* control the spread */
+  transform: translate3d(0px, 10px, 0) scale(1);
+  z-index: -1; /* place the element behind */
+  background: linear-gradient(-90deg, #62d6c5 0%, #219cff 100%);
+  filter: blur(20px);
+}
+
+.storybook-button--primary::after {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}

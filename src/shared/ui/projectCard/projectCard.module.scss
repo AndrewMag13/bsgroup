@@ -1,5 +1,9 @@
 .container {
   @apply bg-funded h-512 w-360 rounded-default overflow-hidden flex justify-center flex-col pb-10;
+  @import '../../scss/media';
+  @include media(md) {
+    @apply w-75;
+  }
 }
 .image__container {
   @apply flex self-center justify-center w-360 h-360;

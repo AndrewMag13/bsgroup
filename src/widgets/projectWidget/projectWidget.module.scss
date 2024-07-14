@@ -1,6 +1,16 @@
 @import '../../shared/scss/variables';
 .container {
   @apply mx-39 mt-20 flex justify-center flex-col;
+  @import '../../shared/scss/media';
+  @include media(lg) {
+    @apply mx-20;
+  }
+  @include media(md) {
+    @apply mx-10;
+  }
+  @include media(sm) {
+    @apply mx-4;
+  }
 }
 .title {
   @extend %title;

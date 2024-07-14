@@ -46,7 +46,7 @@ const config: Config = {
       },
       borderRadius: {
         default: '30px',
-      },  
+      },
     },
   },
 

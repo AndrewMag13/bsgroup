@@ -1,6 +1,16 @@
+@import '../../shared/scss/media';
 .text {
   height: calc(100vh - 60px);
   @apply z-10 flex px-39 flex-col justify-center text-start gap-10 max-w-fit;
+  @include media(lg) {
+    @apply px-20;
+  }
+  @include media(md) {
+    @apply px-10;
+  }
+  @include media(sm) {
+    @apply px-4;
+  }
 }
 .title {
   @apply flex relative text-16 flex-col leading-16;

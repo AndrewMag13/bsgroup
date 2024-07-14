@@ -2,9 +2,9 @@
 // $lg: 992px;
 // $md: 768px;
 // $sm: 576px;
-$desktop: 1440px;
-$tablet: 834px;
-$mobile: 375px;
+$laptop: 992px;
+$tablet: 768px;
+$mobile: 425px;
 
 @mixin media($media) {
   @if $media == sm {
@@ -16,7 +16,7 @@ $mobile: 375px;
       @content;
     }
   } @else if $media == lg {
-    @media only screen and (max-width: $desktop) {
+    @media only screen and (max-width: $laptop) {
       @content;
     }
   }

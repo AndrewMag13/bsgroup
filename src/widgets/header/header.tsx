@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import LangSelector from '@/shared/ui/langSelector/langSelector'
 import { motion } from 'framer-motion'
+import NavButton from '@/shared/ui/navButton/navButton'
 const Header = () => {
   const t = useTranslations('home.header')
   const headerKeys = [
@@ -68,6 +69,15 @@ const Header = () => {
             })}
           </ul>
         </div>
+        <motion.span
+          whileTap={{ scale: 0.95 }}
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+          className={s.navButton}
+        >
+          <NavButton />
+        </motion.span>
+
         <div className={s.lang}>
           <LangSelector />
         </div>

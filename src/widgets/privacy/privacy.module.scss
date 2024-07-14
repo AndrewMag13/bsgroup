@@ -1,3 +1,13 @@
 .container {
   @apply mx-39 text-xl text-left mt-15 mb-20 flex flex-col items-center;
+  @import '../../shared/scss/media';
+  @include media(lg) {
+    @apply mx-20;
+  }
+  @include media(md) {
+    @apply mx-10;
+  }
+  @include media(sm) {
+    @apply mx-4;
+  }
 }

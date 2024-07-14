@@ -1,7 +1,11 @@
+@import './media';
 %title {
   font-size: 40px;
   font-weight: 700;
   line-height: 1;
   display: flex;
   align-self: center;
+  @include media(md) {
+    font-size: 32px;
+  }
 }

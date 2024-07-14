@@ -10,8 +10,14 @@ const Footer = () => {
     <>
       <div className={s.container}>
         <div className={s.left}>
-          <div>{t(`ui.phoneNumber`)}</div>
-          <div>{t(`footer.email`)}</div>
+          <div>
+            <Link href={`tel:${t(`ui.phoneNumber`)}`}>
+              {t(`ui.phoneNumber`)}
+            </Link>
+          </div>
+          <div>
+            <Link href="mailto:bsgroup.dev@yahoo.com">{t(`footer.email`)}</Link>
+          </div>
           <div className={s.icons}>
             {icons.map((icon) => {
               return (

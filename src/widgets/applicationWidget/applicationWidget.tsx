@@ -3,9 +3,8 @@ import { NextPage } from 'next'
 import toast, { Toaster } from 'react-hot-toast'
 import { useTranslations } from 'next-intl'
 import s from './applicationWidget.module.scss'
-import 'react-phone-number-input/style.css'
 import OtpravitButton from '@/shared/ui/otpravit/otpravit'
-import { useForm, SubmitHandler, Controller } from 'react-hook-form'
+import { useForm, SubmitHandler } from 'react-hook-form'
 import { motion } from 'framer-motion'
 import { ErrorMessage } from '@hookform/error-message'
 interface Inputs {
@@ -56,7 +55,6 @@ const ApplicationWidget: NextPage = () => {
           }}
           style={{
             zIndex: 10,
-            display: 'flex flex-col',
           }}
           viewport={{ once: true }}
           onSubmit={handleSubmit(onSubmit)}

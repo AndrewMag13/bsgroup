@@ -1,0 +1,12 @@
+.selector {
+  @apply flex flex-col gap-8 py-8 px-8 rounded-default font-bold justify-center text-center absolute border-2 mt-16 text-base leading-none border-none;
+  backdrop-filter: blur(20px) saturate(100%);
+  background-color: rgba(51, 51, 51, 0.7);
+}
+
+.common {
+  @apply flex justify-center bg-funded;
+}
+.button {
+  @apply flex items-center justify-center;
+}
