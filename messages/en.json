@@ -180,9 +180,9 @@
           "title": "AmazonCA",
           "desc": "Amazon selling courses"
         },
-        "uber": {
-          "title": "UberMoscow",
-          "desc": "Uber partner program in Moscow"
+        "vlad": {
+          "title": "Skryabikov",
+          "desc": "Personal smm-courses"
         },
         "grow": {
           "title": "Grow",
@@ -255,7 +255,14 @@
     "footer": {
       "email": "bsgroup.dev@yahoo.com",
       "privacyPolicy": "Privacy Policy",
-      "termsOfService": "Terms of Service"
+      "termsOfService": "Terms of Service",
+      "iconsLinks": {
+        "telegram": "https://t.me/bsgrouptg",
+        "taplink": "https://taplink.cc/bsgroup",
+        "behance": "https://www.behance.net/nailburdasov",
+        "inst": "https://www.instagram.com/bsgroup_ru/",
+        "youtube": "https://www.youtube.com/channel/UCW1tRowMy3J3P7ii4mYGkcw"
+      }
     }
   }
 }

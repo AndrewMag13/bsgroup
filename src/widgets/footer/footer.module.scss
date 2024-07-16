@@ -24,15 +24,18 @@
 .left {
   @apply font-bold text-base flex flex-col gap-5 z-20;
   @include media(md) {
-    @apply text-sm;
+    @apply text-sm text-center;
   }
   @include media(sm) {
-    @apply text-xs;
+    @apply text-xs text-center self-center justify-self-center;
   }
 }
 .right {
   @extend .left;
   @apply text-end font-normal;
+  @include media(sm) {
+    @apply text-xs text-center
+  }
 }
 .icons {
   @apply flex flex-row gap-5 items-center z-20;

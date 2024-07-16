@@ -3,9 +3,10 @@ import s from './footer.module.scss'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { Link } from '@/navigation'
+import Icons from '@/shared/ui/icons/icons'
 const Footer = () => {
   const t = useTranslations('home')
-  const icons = ['telegram', 'taplink', 'behance', 'inst', 'youtube']
+
   return (
     <>
       <div className={s.container}>
@@ -19,18 +20,7 @@ const Footer = () => {
             <Link href="mailto:bsgroup.dev@yahoo.com">{t(`footer.email`)}</Link>
           </div>
           <div className={s.icons}>
-            {icons.map((icon) => {
-              return (
-                <div key={icon}>
-                  <Image
-                    src={`/footer/${icon}.svg`}
-                    width={24}
-                    height={24}
-                    alt={`icon of ${icon}`}
-                  />
-                </div>
-              )
-            })}
+            <Icons />
           </div>
         </div>
         <div className={s.right}>
