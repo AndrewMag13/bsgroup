@@ -1,20 +1,42 @@
+@import '@/shared/scss/media';
 .container {
-  @apply bg-funded w-screen h-36 mt-20 px-39 flex flex-row justify-between items-center overflow-clip static bottom-0;
+  @apply bg-funded w-screen h-36 mt-20 px-39 flex flex-row justify-between items-center overflow-clip;
+  @include media(lg) {
+    @apply px-20;
+  }
+  @include media(md) {
+    @apply px-10;
+  }
+  @include media(sm) {
+    @apply px-4 flex-col gap-5 items-center text-center h-full pb-5 pt-5;
+  }
 }
 .image {
-  @apply absolute z-10 flex self-center;
+  @apply absolute z-10 flex self-center h-fit;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  @include media(sm) {
+    @apply mt-[-20px] h-52;
+  }
 }
 .left {
-  @apply font-bold text-base flex flex-col gap-5  z-20;
+  @apply font-bold text-base flex flex-col gap-5 z-20;
+  @include media(md) {
+    @apply text-sm;
+  }
+  @include media(sm) {
+    @apply text-xs;
+  }
 }
 .right {
   @extend .left;
   @apply text-end font-normal;
 }
 .icons {
-  @apply flex flex-row gap-5 items-center  z-20;
+  @apply flex flex-row gap-5 items-center z-20;
+  @include media(sm) {
+    @apply gap-3;
+  }
 }

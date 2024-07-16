@@ -35,6 +35,9 @@ const Header = () => {
         }}
         viewport={{ once: true }}
       >
+        <motion.span className={s.navButton}>
+          <NavButton />
+        </motion.span>
         <motion.span
           className={s.header__logo}
           whileTap={{ scale: 0.95 }}
@@ -50,37 +53,26 @@ const Header = () => {
             />
           </Link>
         </motion.span>
-        <div className={s.header__links}>
-          <ul className={s.header__links__list}>
-            {headerKeys.map((headerKey) => {
-              return (
-                <motion.li
-                  className={s.header__links__element}
-                  key={headerKey}
-                  whileTap={{ scale: 0.95 }}
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ type: 'spring', stiffness: 200, damping: 20 }}
-                >
-                  <Link href={`/${t(`links.${headerKey}.href`)}`}>
-                    {t(`links.${headerKey}.title`)}
-                  </Link>
-                </motion.li>
-              )
-            })}
-          </ul>
-        </div>
-        <motion.span
-          whileTap={{ scale: 0.95 }}
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: 'spring', stiffness: 200, damping: 20 }}
-          className={s.navButton}
-        >
-          <NavButton />
-        </motion.span>
 
-        <div className={s.lang}>
-          <LangSelector />
-        </div>
+        <ul className={s.header__links__list}>
+          {headerKeys.map((headerKey) => {
+            return (
+              <motion.li
+                className={s.header__links__element}
+                key={headerKey}
+                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+              >
+                <Link href={`/${t(`links.${headerKey}.href`)}`}>
+                  {t(`links.${headerKey}.title`)}
+                </Link>
+              </motion.li>
+            )
+          })}
+        </ul>
+
+        <LangSelector />
       </motion.div>
     </>
   )

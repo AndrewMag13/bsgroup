@@ -18,8 +18,8 @@ const ProjectCard = (props: IProjectCardProps) => {
             props.title === 'fixer' ||
             props.title === 'webdeva' ||
             props.title === 'runSmart'
-              ? 50
-              : -50,
+              ? -50
+              : 50,
         }}
         whileInView={{
           opacity: 1,
@@ -36,10 +36,10 @@ const ProjectCard = (props: IProjectCardProps) => {
           transition={{ type: 'spring', stiffness: 300, damping: 20 }}
           style={{ cursor: 'pointer' }}
         >
-          <PhotoView src={'/projects/fixer.png'}>
+          <PhotoView src={`/projects/${props.title}.png`}>
             <Image
               alt={'card image'}
-              src={'/projects/fixer.png'}
+              src={`/projects/${props.title}.png`}
               width={360}
               height={360}
               style={{ objectFit: 'cover' }}

@@ -4,9 +4,11 @@ import s from './techWidget.module.scss'
 import TechCard from '@/shared/ui/techCard/techCard'
 
 const TechsWidget: NextPage = () => {
+  const fKeys = ['html', 'css', 'js']
   const keys = [
     'React',
     'DOM',
+    'JSON',
     'Docker',
     'JQuery',
     'Wordpress',
@@ -29,8 +31,8 @@ const TechsWidget: NextPage = () => {
     'Headless',
     'Nextjs',
     'CSR/SSR',
-    'JS/TS',
-    'CSS/SCSS',
+    'TS',
+    'SCSS',
     'PostCSS',
     'Framer',
     'FSD',
@@ -55,6 +57,15 @@ const TechsWidget: NextPage = () => {
     <>
       <div className={s.container} id="techs">
         <div className={s.title}>{t('title')}</div>
+        <div className={s.techs}>
+          {fKeys.map((key) => {
+            return (
+              <div key={key} className={s.fkey}>
+                <TechCard title={key} />
+              </div>
+            )
+          })}
+        </div>
         <div className={s.techs}>
           {keys.map((key) => {
             return (

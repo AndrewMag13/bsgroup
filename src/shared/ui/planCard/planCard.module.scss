@@ -1,7 +1,13 @@
+@import '../../scss/media';
 .card {
   @apply bg-funded rounded-default flex justify-center align-middle items-center font-bold text-2xl leading-none z-10;
-  // width: clamp(365px, 552px, 552px);
   height: 100px;
+  @include media(lg) {
+    @apply text-xl;
+  }
+  @include media(sm) {
+    @apply text-base;
+  }
 }
 .container {
   @apply flex flex-col justify-center text-center;

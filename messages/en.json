@@ -170,30 +170,34 @@
         },
         "webdeva": {
           "title": "Webdeva",
-          "desc": "Web developer portfolio"
+          "desc": "Web-developer portfolio"
         },
         "runSmart": {
           "title": "RunSmart",
           "desc": "Heart rate monitor store"
         },
-        "ccTracker": {
-          "title": "CCTracker",
-          "desc": "Cryptocurrency tracker"
+        "amazon": {
+          "title": "AmazonCA",
+          "desc": "Amazon selling courses"
         },
-        "myCourse": {
-          "title": "MyCourse",
-          "desc": "Interactive learning platform"
+        "uber": {
+          "title": "UberMoscow",
+          "desc": "Uber partner program in Moscow"
         },
-        "aliShop": {
-          "title": "AliShop",
-          "desc": "Catalog of discounts on AliExpress products"
+        "grow": {
+          "title": "Grow",
+          "desc": "Catalog of digital courses"
         }
       }
     },
     "techs": {
       "title": "Techs",
+      "html": "Html",
+      "css": "Css",
+      "js": "Js",
       "React": "React",
       "DOM": "DOM",
+      "JSON": "JSON",
       "Docker": "Docker",
       "JQuery": "JQuery",
       "Wordpress": "Wordpress",
@@ -216,8 +220,8 @@
       "Headless": "Headless",
       "Nextjs": "Next.js",
       "CSR/SSR": "CSR/SSR",
-      "JS/TS": "JS/TS",
-      "CSS/SCSS": "CSS/SCSS",
+      "TS": "TS",
+      "SCSS": "SCSS",
       "PostCSS": "PostCSS",
       "Framer": "Framer",
       "FSD": "FSD",

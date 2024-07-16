@@ -9,12 +9,22 @@
     @apply px-10;
   }
   @include media(sm) {
-    @apply px-4;
+    @apply px-4 overflow-hidden;
   }
 }
 .title {
   @apply flex relative text-16 flex-col leading-16;
+  @include media(md) {
+    @apply text-6xl;
+  }
+  @include media(sm) {
+    @apply text-5xl;
+  }
 }
 .smalltext {
   @apply flex relative text-2xl;
+
+  @include media(sm) {
+    @apply text-xl;
+  }
 }

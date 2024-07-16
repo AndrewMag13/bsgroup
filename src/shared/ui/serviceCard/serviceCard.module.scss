@@ -1,14 +1,15 @@
 @import '../../scss/media';
 .container {
-  @apply bg-funded flex flex-col items-center rounded-default w-360 h-fit;
-
+  @apply bg-funded flex flex-col items-center rounded-default h-fit w-360;
   @include media(lg) {
     @apply w-75;
   }
-  @include media(md) {
-    @apply w-60;
+
+  @include media(sm) {
+    @apply w-full;
   }
 }
+
 .img {
   @apply flex self-end mr-5 mt-5 absolute m-auto z-0;
 }

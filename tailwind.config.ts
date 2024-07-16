@@ -40,12 +40,18 @@ const config: Config = {
         360: '360px',
         512: '512px',
       },
+      maxWidth: {
+        360: '360px',
+      },
       height: {
         360: '360px',
         512: '512px',
       },
       borderRadius: {
         default: '30px',
+      },
+      paddingTop: {
+        'anti5': '-20px',
       },
     },
   },

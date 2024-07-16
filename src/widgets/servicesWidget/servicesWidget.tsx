@@ -6,14 +6,8 @@ import { Fragment } from 'react'
 const ServicesWidget = () => {
   const t = useTranslations('home.services')
   const f = useFormatter()
-  const keys = [
-    'serviceLanding',
-    'serviceMulti',
-    'serviceAdvanced',
-    'design',
-    'presentation',
-    'motion',
-  ]
+  const keys = ['serviceLanding', 'serviceMulti', 'serviceAdvanced']
+  const keys2 = ['design', 'presentation', 'motion']
   const bulletKeys = ['bullet1', 'bullet2', 'bullet3', 'bullet4']
   const bulletSmallKeys = ['bullet1', 'bullet2']
   const propers = (type: string): IWidgetProps => {
@@ -43,6 +37,15 @@ const ServicesWidget = () => {
         <span className={s.title}>{t('title')}</span>
         <div className={s.servicesContainer}>
           {keys.map((key) => {
+            return (
+              <Fragment key={key}>
+                <ServiceCard {...propers(key)} />
+              </Fragment>
+            )
+          })}
+        </div>
+        <div className={s.servicesContainer}>
+          {keys2.map((key) => {
             return (
               <Fragment key={key}>
                 <ServiceCard {...propers(key)} />

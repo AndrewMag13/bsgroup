@@ -1,6 +1,16 @@
+@import '../../scss/media';
 .container {
   @apply bg-funded flex justify-center items-center rounded-default px-16 py-8;
+  @include media(md) {
+    @apply px-12 py-6;
+  }
+  @include media(sm) {
+    @apply px-10 py-5;
+  }
 }
 .title {
-  @apply font-bold text-32 leading-8;
+  @apply font-bold text-32 leading-8 text-center align-middle;
+  @include media(md) {
+    @apply text-2xl;
+  }
 }

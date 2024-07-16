@@ -23,5 +23,13 @@
 }
 .input {
   @apply bg-based outline-none flex self-center border-b-2 border-white text-32 font-bold mt-15;
-  width: 50vw;
+  width: 60vw;
+  @include media(md) {
+    width: 70vw;
+    @apply text-3xl;
+  }
+  @include media(sm) {
+    width: 100%;
+    @apply text-2xl;
+  }
 }

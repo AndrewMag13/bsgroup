@@ -24,7 +24,7 @@ const NavButton = () => {
           initial={false}
           animate={isOpen ? 'open' : 'closed'}
           className={s.common}
-          style={{}}
+         
         >
           <motion.button
             onClick={() => setIsOpen(!isOpen)}
@@ -40,12 +40,12 @@ const NavButton = () => {
               height={30}
             />
           </motion.button>
+
           <motion.ul
             className={s.selector}
             variants={{
               open: {
                 clipPath: 'inset(0% 0% 0% 0% round 10px)',
-
                 transition: {
                   type: 'spring',
                   bounce: 0,
@@ -56,7 +56,6 @@ const NavButton = () => {
               },
               closed: {
                 clipPath: 'inset(10% 50% 90% 50% round 10px)',
-
                 transition: {
                   type: 'spring',
                   bounce: 0,
@@ -68,21 +67,23 @@ const NavButton = () => {
               pointerEvents: isOpen ? 'auto' : 'none',
             }}
           >
-            {opts.map((opt) => {
-              return (
-                <motion.li
-                  key={opt}
-                  variants={itemVariants}
-                  whileTap={{ scale: 0.95 }}
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ type: 'spring', stiffness: 200, damping: 20 }}
-                >
-                  <Link href={`/${t(`links.${opt}.href`)}`}>
-                    {t(`links.${opt}.title`)}
-                  </Link>
-                </motion.li>
-              )
-            })}
+            <ul className={s.ulist}>
+              {opts.map((opt) => {
+                return (
+                  <motion.li
+                    key={opt}
+                    variants={itemVariants}
+                    whileTap={{ scale: 0.95 }}
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+                  >
+                    <Link href={`/${t(`links.${opt}.href`)}`}>
+                      {t(`links.${opt}.title`)}
+                    </Link>
+                  </motion.li>
+                )
+              })}
+            </ul>
           </motion.ul>
         </motion.nav>
       </AnimatePresence>

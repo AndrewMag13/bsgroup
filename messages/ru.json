@@ -172,24 +172,28 @@
           "title": "RunSmart",
           "desc": "Магазин пульсометров"
         },
-        "ccTracker": {
-          "title": "CCTracker",
-          "desc": "Трекер криптовалют"
+        "amazon": {
+          "title": "AmazonCA",
+          "desc": "Курсы продаж на Amazon"
         },
-        "myCourse": {
-          "title": "MyCourse",
-          "desc": "Интерактивная платформа для обучения"
+        "uber": {
+          "title": "UberMoscow",
+          "desc": "Партнерская программа Uber в Москве"
         },
-        "aliShop": {
-          "title": "AliShop",
-          "desc": "Каталог скидок на товары с  AliExpress"
+        "grow": {
+          "title": "Grow",
+          "desc": "Каталог интернет-курсов"
         }
       }
     },
     "techs": {
       "title": "Наши технологии",
+      "html": "Html",
+      "css": "Css",
+      "js": "Js",
       "React": "React",
       "DOM": "DOM",
+      "JSON": "JSON",
       "Docker": "Docker",
       "JQuery": "JQuery",
       "Wordpress": "Wordpress",
@@ -212,8 +216,8 @@
       "Headless": "Headless",
       "Nextjs": "Next.js",
       "CSR/SSR": "CSR/SSR",
-      "JS/TS": "JS/TS",
-      "CSS/SCSS": "CSS/SCSS",
+      "TS": "JS/TS",
+      "SCSS": "CSS/SCSS",
       "PostCSS": "PostCSS",
       "Framer": "Framer",
       "FSD": "FSD",

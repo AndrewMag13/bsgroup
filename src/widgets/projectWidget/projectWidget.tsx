@@ -6,14 +6,7 @@ import 'react-photo-view/dist/react-photo-view.css'
 import { PhotoProvider } from 'react-photo-view'
 const ProjectWidget = () => {
   const t = useTranslations('home.projects')
-  const keys = [
-    'fixer',
-    'webdeva',
-    'runSmart',
-    'ccTracker',
-    'myCourse',
-    'aliShop',
-  ]
+  const keys = ['fixer', 'webdeva', 'runSmart', 'amazon', 'uber', 'grow']
   return (
     <>
       <div className={s.container} id="projects">

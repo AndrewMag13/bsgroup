@@ -49,6 +49,7 @@ const LangSelector: NextPage = () => {
               open: {
                 clipPath: 'inset(0% 0% 0% 0% round 10px)',
 
+                overflow: 'hidden',
                 transition: {
                   type: 'spring',
                   bounce: 0,
@@ -60,6 +61,7 @@ const LangSelector: NextPage = () => {
               closed: {
                 clipPath: 'inset(10% 50% 90% 50% round 10px)',
 
+                overflow: 'hidden',
                 transition: {
                   type: 'spring',
                   bounce: 0,

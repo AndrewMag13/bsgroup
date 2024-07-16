@@ -1,5 +1,5 @@
 .wrapper {
-  @apply relative overflow-hidden bg-funded flex h-15 items-center flex-row align-middle whitespace-nowrap w-full;
+  @apply relative overflow-hidden bg-funded flex h-15 items-center flex-row align-middle whitespace-nowrap w-screen;
 }
 .text {
   @apply absolute flex items-center flex-row align-middle overflow-hidden;
@@ -26,10 +26,10 @@
   padding-left: 20px;
 }
 .title {
-  @apply text-base leading-4 min-w-fit;
+  @apply text-base leading-4;
 }
 .dot {
-  @apply text-2xl font-bold leading-none;
+  @apply text-2xl font-bold;
 }
 @keyframes marq {
   0% {

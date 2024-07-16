@@ -1,6 +1,7 @@
 @import '../../shared/scss/variables';
 .title {
   @extend %title;
+  @apply mb-10;
 }
 .container {
   @apply flex flex-col justify-center mx-39 mt-20;
@@ -16,5 +17,11 @@
   }
 }
 .techs {
-  @apply mt-15 flex flex-row gap-x-6 gap-y-5 flex-wrap justify-center;
+  @apply flex flex-row gap-x-5 gap-y-5 flex-wrap justify-center mt-5;
+  @include media(md) {
+    @apply gap-x-4 gap-y-4;
+  }
+  @include media(sm) {
+    @apply gap-x-3 gap-y-3;
+  }
 }

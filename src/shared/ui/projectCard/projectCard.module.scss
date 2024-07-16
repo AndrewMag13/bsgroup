@@ -1,16 +1,16 @@
 .container {
-  @apply bg-funded h-512 w-360 rounded-default overflow-hidden flex justify-center flex-col pb-10;
+  @apply bg-funded  w-360 rounded-default overflow-hidden flex justify-center flex-col pb-10;
   @import '../../scss/media';
   @include media(md) {
-    @apply w-75;
+    @apply w-full;
   }
 }
 .image__container {
-  @apply flex self-center justify-center w-360 h-360;
+  @apply flex self-center justify-center w-full h-360 mt-0;
 }
 .title {
   @apply text-32 font-bold pt-10 text-center;
 }
 .desc {
-  @apply text-base text-center pt-5 font-bold px-5;
+  @apply text-base text-center pt-5 font-bold px-5 h-5 mb-10;
 }
