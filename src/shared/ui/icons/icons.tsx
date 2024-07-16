@@ -1,8 +1,9 @@
+'use client'
 import { NextPage } from 'next'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import { motion } from 'framer-motion'
 const Icons: NextPage = () => {
   const t = useTranslations('home.footer.iconsLinks')
   const icons = ['telegram', 'taplink', 'behance', 'inst', 'youtube']
@@ -10,7 +11,12 @@ const Icons: NextPage = () => {
     <>
       {icons.map((icon) => {
         return (
-          <div key={icon}>
+          <motion.div
+            key={icon}
+            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+          >
             <Link href={t(icon)}>
               <Image
                 src={`/footer/${icon}.svg`}
@@ -19,7 +25,7 @@ const Icons: NextPage = () => {
                 alt={`icon of ${icon}`}
               />
             </Link>
-          </div>
+          </motion.div>
         )
       })}
     </>

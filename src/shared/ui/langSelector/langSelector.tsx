@@ -48,7 +48,6 @@ const LangSelector: NextPage = () => {
             variants={{
               open: {
                 clipPath: 'inset(0% 0% 0% 0% round 10px)',
-
                 overflow: 'hidden',
                 transition: {
                   type: 'spring',
