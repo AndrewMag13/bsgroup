@@ -11,14 +11,10 @@
 }
 
 .storybook-button {
-  /* @font-face {
-    font-family: 'Inter';
-    src: local('Inter'), local('Inter-bold'),
-      url('./assets/Inter/Inter-Bold.ttf');
-  } */
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   border: 0;
+  background: rgba(33, 156, 255, 1);
   z-index: 0;
   border-radius: 10px;
   cursor: pointer;
@@ -32,7 +28,16 @@
   text-align: center;
 }
 .storybook-button--primary {
-  background-image: linear-gradient(90deg, var(--based) 0%, var(--funded) 100%);
+  background-image: linear-gradient(
+    90deg,
+    var(--based) 0%,
+    var(--funded) 100%
+  ) !important;
+  background-image: -moz-linear-gradient(
+    0deg,
+    rgba(33, 156, 255, 1) 0%,
+    rgba(98, 214, 197, 1) 100%
+  ) !important;
   transition:
     --based 1s,
     --funded 1s;
@@ -40,4 +45,9 @@
 .storybook-button--primary:hover {
   --based: rgba(98, 214, 197, 1);
   --funded: rgba(33, 156, 255, 1);
+  background-image: -moz-linear-gradient(
+    0deg,
+    rgba(98, 214, 197, 1) 0%,
+    rgba(33, 156, 255, 1) 100%
+  ) !important;
 }

@@ -47,7 +47,7 @@ const Header = () => {
           <Link href={'/#mainblock'}>
             <Image
               src={`/icons/bsHeader.svg`}
-              alt="bs icon"
+              alt="BSGROUP icon"
               width={98}
               height={33}
             />

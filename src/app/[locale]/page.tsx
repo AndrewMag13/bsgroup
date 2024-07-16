@@ -6,6 +6,7 @@ import PlanWidget from '@/widgets/planWidget/planWidget'
 import ProjectWidget from '@/widgets/projectWidget/projectWidget'
 import TechsWidget from '@/widgets/techsWidget/techsWidget'
 import ApplicationWidget from '@/widgets/applicationWidget/applicationWidget'
+
 interface IParams {
   params: { locale: string }
 }

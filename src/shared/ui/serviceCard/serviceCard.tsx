@@ -94,7 +94,7 @@ const ServiceCard = (props: IWidgetProps) => {
         >
           <Image
             src={`/services/${props.img}.svg`}
-            alt={props.img}
+            alt={`image of ${props.img}`}
             width={40}
             height={40}
             className={s.img}

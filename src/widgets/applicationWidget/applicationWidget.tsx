@@ -18,13 +18,10 @@ const ApplicationWidget: NextPage = () => {
   const {
     register,
     handleSubmit,
-    watch,
-    control,
     reset,
     formState: { errors },
   } = useForm<Inputs>({ mode: 'onChange' })
   const onSubmit: SubmitHandler<Inputs> = (data) => {
-    console.log(data)
     toast(t('done'), {
       duration: 2000,
       icon: '👏',

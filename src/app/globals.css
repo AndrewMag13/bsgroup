@@ -5,7 +5,7 @@
 body {
   margin: 0 0 0 0;
   scroll-behavior: smooth;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 html {
@@ -21,7 +21,7 @@ html {
 
   /* Firefox */
   input[type='number'] {
-    -moz-appearance: textfield;
+    appearance: textfield;
   }
 }
 /* width */

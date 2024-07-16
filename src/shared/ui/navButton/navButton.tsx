@@ -35,7 +35,7 @@ const NavButton = () => {
           >
             <Image
               src={'/icons/headerMenu.svg'}
-              alt="nav icons"
+              alt="navigation icons"
               width={30}
               height={30}
             />

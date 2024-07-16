@@ -38,7 +38,7 @@ const ProjectCard = (props: IProjectCardProps) => {
         >
           <PhotoView src={`/projects/${props.title}.png`}>
             <Image
-              alt={'card image'}
+              alt={'project card image'}
               src={`/projects/${props.title}.png`}
               width={360}
               height={360}

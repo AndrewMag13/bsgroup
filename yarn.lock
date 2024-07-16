@@ -7531,6 +7531,7 @@ __metadata:
     framer-motion: "npm:^11.3.2"
     next: "npm:14.2.5"
     next-intl: "npm:^3.17.1"
+    normalize.css: "npm:^8.0.1"
     postcss: "npm:^8.4.39"
     postcss-import: "npm:^16.1.0"
     react: "npm:^18.3.1"
@@ -11938,6 +11939,13 @@ __metadata:
   version: 0.1.2
   resolution: "normalize-range@npm:0.1.2"
   checksum: 10c0/bf39b73a63e0a42ad1a48c2bd1bda5a07ede64a7e2567307a407674e595bcff0fa0d57e8e5f1e7fa5e91000797c7615e13613227aaaa4d6d6e87f5bd5cc95de6
+  languageName: node
+  linkType: hard
+
+"normalize.css@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "normalize.css@npm:8.0.1"
+  checksum: 10c0/4ddf56d1af5ca755fa5e692e718316d8758ecb792aa96e1ad206824b5810a043763d681d6f7697d46573515f5e9690038b4c91a95c1997567128815545fb8cd7
   languageName: node
   linkType: hard
 
