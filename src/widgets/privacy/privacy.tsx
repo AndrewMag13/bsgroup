@@ -1,10 +1,13 @@
 import GoHome from '@/shared/ui/goHome/goHome'
 import s from './privacy.module.scss'
+import { useTranslations } from 'next-intl'
 const Privacy = () => {
+  const t = useTranslations('home')
   return (
     <>
-      <div className={s.container}>
-        <span>
+      <main className={s.container}>
+        <h1 className={s.title}>{t('privacy.title')}</h1>
+        <article className={s.text}>
           <b>1. ОБЩИЕ ПОЛОЖЕНИЯ </b>
           <br />
           1.1. Настоящее Пользовательское соглашение (далее – Соглашение)
@@ -302,9 +305,9 @@ const Privacy = () => {
           9.2. Отзывы Пользователя, размещенные на Сайте, не являются
           конфиденциальной информацией и могут быть использованы Администрацией
           сайта без ограничений.
-        </span>
+        </article>
         <GoHome />
-      </div>
+      </main>
     </>
   )
 }

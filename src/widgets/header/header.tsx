@@ -17,10 +17,7 @@ const Header = () => {
   ]
   return (
     <>
-      <circle
-        dangerouslySetInnerHTML={{ __html: '<!--silly easter egg)))-->' }}
-      ></circle>
-      <motion.div
+      <motion.header
         className={s.header}
         initial={{
           opacity: 0,
@@ -35,10 +32,10 @@ const Header = () => {
         }}
         viewport={{ once: true }}
       >
-        <motion.span className={s.navButton}>
+        <motion.nav className={s.navButton}>
           <NavButton />
-        </motion.span>
-        <motion.span
+        </motion.nav>
+        <motion.div
           className={s.header__logo}
           whileTap={{ scale: 0.95 }}
           whileHover={{ scale: 1.1 }}
@@ -52,8 +49,7 @@ const Header = () => {
               height={33}
             />
           </Link>
-        </motion.span>
-
+        </motion.div>
         <ul className={s.header__links__list}>
           {headerKeys.map((headerKey) => {
             return (
@@ -73,7 +69,7 @@ const Header = () => {
         </ul>
 
         <LangSelector />
-      </motion.div>
+      </motion.header>
     </>
   )
 }

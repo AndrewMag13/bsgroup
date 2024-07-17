@@ -7,8 +7,9 @@ const ServicesWidget = () => {
   const t = useTranslations('home.services')
   const f = useFormatter()
   const keys = ['serviceLanding', 'serviceMulti', 'serviceAdvanced']
-  const keys2 = ['design', 'presentation', 'motion']
   const bulletKeys = ['bullet1', 'bullet2', 'bullet3', 'bullet4']
+  const enableMinor = false
+  const keys2 = ['design', 'presentation', 'motion']
   const bulletSmallKeys = ['bullet1', 'bullet2']
   const propers = (type: string): IWidgetProps => {
     return {
@@ -33,8 +34,8 @@ const ServicesWidget = () => {
   }
   return (
     <>
-      <div className={s.container} id="services">
-        <span className={s.title}>{t('title')}</span>
+      <section className={s.container} id="services">
+        <h2 className={s.title}>{t('title')}</h2>
         <div className={s.servicesContainer}>
           {keys.map((key) => {
             return (
@@ -45,15 +46,17 @@ const ServicesWidget = () => {
           })}
         </div>
         <div className={s.servicesContainer}>
-          {keys2.map((key) => {
-            return (
-              <Fragment key={key}>
-                <ServiceCard {...propers(key)} />
-              </Fragment>
-            )
-          })}
+          {enableMinor
+            ? keys2.map((key) => {
+                return (
+                  <Fragment key={key}>
+                    <ServiceCard {...propers(key)} />
+                  </Fragment>
+                )
+              })
+            : ''}
         </div>
-      </div>
+      </section>
     </>
   )
 }

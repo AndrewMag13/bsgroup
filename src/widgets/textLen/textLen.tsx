@@ -41,7 +41,7 @@ const TextLen = () => {
   ]
   return (
     <>
-      <div className={s.wrapper}>
+      <section className={s.wrapper}>
         <div className={s.text}>
           <motion.ul
             className={s.list}
@@ -78,7 +78,7 @@ const TextLen = () => {
             })}
           </ul>
         </div>
-      </div>
+      </section>
     </>
   )
 }

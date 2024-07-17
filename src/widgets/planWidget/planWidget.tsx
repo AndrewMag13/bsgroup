@@ -12,8 +12,8 @@ const PlanWidget = () => {
 
   return (
     <>
-      <div className={s.container} id="development">
-        <div className={s.title}>{t('title')}</div>
+      <section className={s.container} id="development">
+        <h2 className={s.title}>{t('title')}</h2>
         <div className={s.cards}>
           {keys1.map((key1) => {
             return (
@@ -106,7 +106,7 @@ const PlanWidget = () => {
             <PlanCard title={key5} direction="none" />
           </motion.div>
         </div>
-      </div>
+      </section>
     </>
   )
 }

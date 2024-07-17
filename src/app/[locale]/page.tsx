@@ -14,13 +14,18 @@ export default function App({ params: { locale } }: IParams) {
   unstable_setRequestLocale(locale)
   return (
     <>
-      <MainBlock />
-      <TextLen />
-      <ServicesPage />
-      <PlanWidget />
-      <ProjectWidget />
-      <TechsWidget />
-      <ApplicationWidget />
+      <main>
+        <circle
+          dangerouslySetInnerHTML={{ __html: '<!--silly easter egg)))-->' }}
+        ></circle>
+        <MainBlock />
+        <TextLen />
+        <ServicesPage />
+        <PlanWidget />
+        <ProjectWidget />
+        <TechsWidget />
+        <ApplicationWidget />
+      </main>
     </>
   )
 }

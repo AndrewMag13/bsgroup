@@ -1,7 +1,7 @@
-import type { Metadata, ResolvingMetadata } from 'next'
 import '../globals.css'
+import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { NextIntlClientProvider, useTranslations } from 'next-intl'
+import { NextIntlClientProvider } from 'next-intl'
 import { ReactNode } from 'react'
 import {
   getMessages,
@@ -10,7 +10,6 @@ import {
 } from 'next-intl/server'
 import Footer from '@/widgets/footer/footer'
 import Header from '@/widgets/header/header'
-import Head from 'next/head'
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],

@@ -1,4 +1,3 @@
-import { NextPage } from 'next'
 import s from './footer.module.scss'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
@@ -9,7 +8,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className={s.container}>
+      <footer className={s.container}>
         <div className={s.left}>
           <div>
             <Link href={`tel:${t(`ui.phoneNumber`)}`}>
@@ -24,8 +23,8 @@ const Footer = () => {
           </div>
         </div>
         <div className={s.right}>
-          <Link href={'/privacy'}>{t('footer.privacyPolicy')}</Link>
-          <Link href={'/terms'}>{t('footer.termsOfService')}</Link>
+          <Link href={'/privacy'}>{t('privacy.title')}</Link>
+          <Link href={'/terms'}>{t('terms.title')}</Link>
         </div>
         <Image
           src={'/footer/BS.svg'}
@@ -35,7 +34,7 @@ const Footer = () => {
           sizes="min-width: 334px"
           className={s.image}
         />
-      </div>
+      </footer>
     </>
   )
 }

@@ -13,6 +13,12 @@
     "404": {
       "title": "Не найдено!"
     },
+    "terms": {
+      "title": "Пользовательское Соглашение"
+    },
+    "privacy": {
+      "title": "Политика Конфиденциальности"
+    },
     "header": {
       "links": {
         "services": { "id": 1, "title": "Услуги", "href": "#services" },
@@ -250,8 +256,6 @@
     },
     "footer": {
       "email": "bsgroup.dev@yahoo.com",
-      "privacyPolicy": "Политика конфиденциальности",
-      "termsOfService": "Пользовательское соглашение",
       "iconsLinks": {
         "telegram": "https://t.me/bsgrouptg",
         "taplink": "https://taplink.cc/bsgroup",

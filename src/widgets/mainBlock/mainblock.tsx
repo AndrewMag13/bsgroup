@@ -9,7 +9,7 @@ const MainBlockPage = () => {
   const t = useTranslations('home.mainBlock')
   return (
     <>
-      <div className={s.main} id="main">
+      <section className={s.main} id="main">
         <Parallax />
         <motion.div
           className={s.text}
@@ -36,10 +36,10 @@ const MainBlockPage = () => {
             </b>
             {t('headerSecond')}
           </h1>
-          <div className={s.smalltext}>{t('smallText')}</div>
+          <h3 className={s.smalltext}>{t('smallText')}</h3>
           <Napisat />
         </motion.div>
-      </div>
+      </section>
     </>
   )
 }

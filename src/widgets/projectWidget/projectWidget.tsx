@@ -9,8 +9,8 @@ const ProjectWidget = () => {
   const keys = ['fixer', 'webdeva', 'runSmart', 'amazon', 'vlad', 'grow']
   return (
     <>
-      <div className={s.container} id="projects">
-        <div className={s.title}>{t('title')}</div>
+      <section className={s.container} id="projects">
+        <h2 className={s.title}>{t('title')}</h2>
         <div className={s.cards__container}>
           <PhotoProvider speed={() => 1000}>
             <div className={s.cards}>
@@ -24,7 +24,7 @@ const ProjectWidget = () => {
             </div>
           </PhotoProvider>
         </div>
-      </div>
+      </section>
     </>
   )
 }

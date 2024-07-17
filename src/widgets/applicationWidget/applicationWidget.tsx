@@ -14,6 +14,7 @@ interface Inputs {
 }
 
 const ApplicationWidget: NextPage = () => {
+  console.log(process.env.APP_ENV)
   const t = useTranslations('home.application')
   const {
     register,
@@ -34,9 +35,9 @@ const ApplicationWidget: NextPage = () => {
 
   return (
     <>
-      <div className={s.container} id="application">
+      <section className={s.container} id="application">
         <Toaster />
-        <label className={s.title}>{t('title')}</label>
+        <h2 className={s.title}>{t('title')}</h2>
         <motion.form
           noValidate
           initial={{
@@ -113,7 +114,7 @@ const ApplicationWidget: NextPage = () => {
             <OtpravitButton />
           </div>
         </motion.form>
-      </div>
+      </section>
     </>
   )
 }

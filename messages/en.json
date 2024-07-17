@@ -13,6 +13,12 @@
     "404": {
       "title": "Not found!"
     },
+    "terms": {
+      "title": "Terms of Service"
+    },
+    "privacy": {
+      "title": "Privacy Policy"
+    },
     "header": {
       "links": {
         "services": { "id": 1, "title": "Services", "href": "#services" },
@@ -254,8 +260,6 @@
     },
     "footer": {
       "email": "bsgroup.dev@yahoo.com",
-      "privacyPolicy": "Privacy Policy",
-      "termsOfService": "Terms of Service",
       "iconsLinks": {
         "telegram": "https://t.me/bsgrouptg",
         "taplink": "https://taplink.cc/bsgroup",

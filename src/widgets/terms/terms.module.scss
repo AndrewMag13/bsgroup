@@ -1,6 +1,7 @@
+@import '../../shared/scss/variables';
+@import '../../shared/scss/media';
 .container {
-  @apply mx-39 text-xl text-left mt-15 mb-20 flex flex-col items-center;
-  @import '../../shared/scss/media';
+  @apply mx-39 text-xl text-left mt-20 mb-20 flex flex-col items-center;
   @include media(lg) {
     @apply mx-20;
   }
@@ -10,4 +11,10 @@
   @include media(sm) {
     @apply mx-4;
   }
+}
+.title {
+  @extend %title;
+}
+.text {
+  @apply mt-15;
 }

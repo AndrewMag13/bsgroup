@@ -55,8 +55,8 @@ const TechsWidget: NextPage = () => {
   const t = useTranslations('home.techs')
   return (
     <>
-      <div className={s.container} id="techs">
-        <div className={s.title}>{t('title')}</div>
+      <section className={s.container} id="techs">
+        <h2 className={s.title}>{t('title')}</h2>
         <div className={s.techs}>
           {fKeys.map((key) => {
             return (
@@ -75,7 +75,7 @@ const TechsWidget: NextPage = () => {
             )
           })}
         </div>
-      </div>
+      </section>
     </>
   )
 }
