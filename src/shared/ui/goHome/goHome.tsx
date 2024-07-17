@@ -1,7 +1,8 @@
 'use client'
+
+import { Link } from '@/navigation'
 import { NextPage } from 'next'
 import { useTranslations } from 'next-intl'
-import { Link } from '@/navigation'
 
 const GoHome: NextPage = () => {
   const t = useTranslations('home.ui')

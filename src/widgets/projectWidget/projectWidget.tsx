@@ -1,9 +1,12 @@
 'use client'
-import { useTranslations } from 'next-intl'
-import s from './projectWidget.module.scss'
-import ProjectCard from '@/shared/ui/projectCard/projectCard'
+
 import 'react-photo-view/dist/react-photo-view.css'
+
 import { PhotoProvider } from 'react-photo-view'
+import ProjectCard from '@/shared/ui/projectCard/projectCard'
+import s from './projectWidget.module.scss'
+import { useTranslations } from 'next-intl'
+
 const ProjectWidget = () => {
   const t = useTranslations('home.projects')
   const keys = ['fixer', 'webdeva', 'runSmart', 'amazon', 'vlad', 'grow']

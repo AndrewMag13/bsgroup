@@ -1,7 +1,10 @@
 'use client'
+
+import { MouseParallaxChild, MouseParallaxContainer } from "react-parallax-mouse";
+
 import GoHome from "@/shared/ui/goHome/goHome";
 import { useTranslations } from "next-intl"
-import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
+
 export const dynamic = 'force-dynamic'
 const NotFound = () => {
   const t = useTranslations('home.404')

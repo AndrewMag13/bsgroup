@@ -1,20 +1,23 @@
 import '../globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import { NextIntlClientProvider } from 'next-intl'
-import { ReactNode } from 'react'
+
 import {
   getMessages,
   getTranslations,
   unstable_setRequestLocale,
 } from 'next-intl/server'
+
 import Footer from '@/widgets/footer/footer'
 import Header from '@/widgets/header/header'
+import { Inter } from 'next/font/google'
+import type { Metadata } from 'next'
+import { NextIntlClientProvider } from 'next-intl'
+import { ReactNode } from 'react'
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],
   display: 'swap',
 })
+
 const locales = ['en', 'ru']
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))

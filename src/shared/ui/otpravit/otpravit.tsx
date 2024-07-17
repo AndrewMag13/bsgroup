@@ -1,6 +1,7 @@
-import { useTranslations } from 'next-intl'
-import s from './otpravit.module.scss'
 import { motion } from 'framer-motion'
+import s from './otpravit.module.scss'
+import { useTranslations } from 'next-intl'
+
 const OtpravitButton = () => {
   const t = useTranslations('home.ui')
   return (

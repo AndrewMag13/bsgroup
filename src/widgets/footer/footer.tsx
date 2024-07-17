@@ -1,11 +1,11 @@
-import s from './footer.module.scss'
-import { useTranslations } from 'next-intl'
+import Icons from '@/shared/ui/icons/icons'
 import Image from 'next/image'
 import { Link } from '@/navigation'
-import Icons from '@/shared/ui/icons/icons'
+import s from './footer.module.scss'
+import { useTranslations } from 'next-intl'
+
 const Footer = () => {
   const t = useTranslations('home')
-
   return (
     <>
       <footer className={s.container}>

@@ -1,7 +1,7 @@
 import { NextPage } from 'next'
-import { useTranslations } from 'next-intl'
-import s from './techWidget.module.scss'
 import TechCard from '@/shared/ui/techCard/techCard'
+import s from './techWidget.module.scss'
+import { useTranslations } from 'next-intl'
 
 const TechsWidget: NextPage = () => {
   const fKeys = ['html', 'css', 'js']

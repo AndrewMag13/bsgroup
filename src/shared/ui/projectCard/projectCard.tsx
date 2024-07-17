@@ -1,8 +1,9 @@
-import { useTranslations } from 'next-intl'
-import s from './projectCard.module.scss'
 import Image from 'next/image'
 import { PhotoView } from 'react-photo-view'
 import { motion } from 'framer-motion'
+import s from './projectCard.module.scss'
+import { useTranslations } from 'next-intl'
+
 interface IProjectCardProps {
   title: string
 }

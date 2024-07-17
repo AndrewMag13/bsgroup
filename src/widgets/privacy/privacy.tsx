@@ -1,6 +1,7 @@
 import GoHome from '@/shared/ui/goHome/goHome'
 import s from './privacy.module.scss'
 import { useTranslations } from 'next-intl'
+
 const Privacy = () => {
   const t = useTranslations('home')
   return (
@@ -15,7 +16,7 @@ const Privacy = () => {
           адресу http://bsgroup.io/.
           <br />
           1.2. Сайт «BSGroup - it-компания новой эры.» (далее – Сайт) является
-          собственностью физического лица Бурдасова Наилья Анатольевича (адрес
+          собственностью физического лица Бурдасова Наиля Анатольевича (адрес
           регистрации: 414000 Астраханская область, г. Астрахань, ул. Куприна,
           25)
           <br />

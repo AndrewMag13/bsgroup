@@ -1,6 +1,7 @@
-import React from 'react'
 import './napisat.css'
+
 import { Inter } from 'next/font/google'
+import React from 'react'
 import { motion } from 'framer-motion'
 
 const inter = Inter({

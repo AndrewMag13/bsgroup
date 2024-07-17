@@ -1,9 +1,11 @@
 'use client'
-import { NextPage } from 'next'
-import { useTranslations } from 'next-intl'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { NextPage } from 'next'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
+
 const Icons: NextPage = () => {
   const t = useTranslations('home.footer.iconsLinks')
   const icons = ['telegram', 'taplink', 'behance', 'inst', 'youtube']

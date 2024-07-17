@@ -1,8 +1,10 @@
 'use client'
-import { useTranslations } from 'next-intl'
-import s from './planWidget.module.scss'
+
 import PlanCard from '@/shared/ui/planCard/planCard'
 import { motion } from 'framer-motion'
+import s from './planWidget.module.scss'
+import { useTranslations } from 'next-intl'
+
 const PlanWidget = () => {
   const t = useTranslations('home.development')
   const keys1 = ['step1', 'step2', 'step3']

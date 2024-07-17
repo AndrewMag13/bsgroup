@@ -1,11 +1,13 @@
 'use client'
-import s from './header.module.scss'
-import { Link } from '@/navigation'
+
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
 import LangSelector from '@/shared/ui/langSelector/langSelector'
-import { motion } from 'framer-motion'
+import { Link } from '@/navigation'
 import NavButton from '@/shared/ui/navButton/navButton'
+import { motion } from 'framer-motion'
+import s from './header.module.scss'
+import { useTranslations } from 'next-intl'
+
 const Header = () => {
   const t = useTranslations('home.header')
   const headerKeys = [

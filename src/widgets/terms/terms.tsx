@@ -1,6 +1,7 @@
-import { useTranslations } from 'next-intl'
-import s from './terms.module.scss'
 import GoHome from '@/shared/ui/goHome/goHome'
+import s from './terms.module.scss'
+import { useTranslations } from 'next-intl'
+
 const Terms = () => {
   const t = useTranslations('home')
   return (

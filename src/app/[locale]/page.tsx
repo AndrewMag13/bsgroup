@@ -1,11 +1,11 @@
-import { unstable_setRequestLocale } from 'next-intl/server'
+import ApplicationWidget from '@/widgets/applicationWidget/applicationWidget'
 import MainBlock from '@/widgets/mainBlock/mainblock'
-import TextLen from '@/widgets/textLen/textLen'
-import ServicesPage from '@/widgets/servicesWidget/servicesWidget'
 import PlanWidget from '@/widgets/planWidget/planWidget'
 import ProjectWidget from '@/widgets/projectWidget/projectWidget'
+import ServicesPage from '@/widgets/servicesWidget/servicesWidget'
 import TechsWidget from '@/widgets/techsWidget/techsWidget'
-import ApplicationWidget from '@/widgets/applicationWidget/applicationWidget'
+import TextLen from '@/widgets/textLen/textLen'
+import { unstable_setRequestLocale } from 'next-intl/server'
 
 interface IParams {
   params: { locale: string }

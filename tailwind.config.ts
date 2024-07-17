@@ -1,4 +1,3 @@
-import { nextui } from '@nextui-org/theme'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -51,7 +50,7 @@ const config: Config = {
         default: '30px',
       },
       paddingTop: {
-        'anti5': '-20px',
+        anti5: '-20px',
       },
     },
   },

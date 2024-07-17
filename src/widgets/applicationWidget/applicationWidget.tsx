@@ -1,12 +1,15 @@
 'use client'
-import { NextPage } from 'next'
+
+import { SubmitHandler, useForm } from 'react-hook-form'
 import toast, { Toaster } from 'react-hot-toast'
-import { useTranslations } from 'next-intl'
-import s from './applicationWidget.module.scss'
-import OtpravitButton from '@/shared/ui/otpravit/otpravit'
-import { useForm, SubmitHandler } from 'react-hook-form'
-import { motion } from 'framer-motion'
+
 import { ErrorMessage } from '@hookform/error-message'
+import { NextPage } from 'next'
+import OtpravitButton from '@/shared/ui/otpravit/otpravit'
+import { motion } from 'framer-motion'
+import s from './applicationWidget.module.scss'
+import { useTranslations } from 'next-intl'
+
 interface Inputs {
   name: string
   phone: string

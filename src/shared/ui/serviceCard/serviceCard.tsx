@@ -1,9 +1,11 @@
 'use client'
+
 import Image from 'next/image'
 import Napisat from '../napisat/napisat'
-import s from './serviceCard.module.scss'
-import { motion } from 'framer-motion'
 import { Tooltip } from '@nextui-org/tooltip'
+import { motion } from 'framer-motion'
+import s from './serviceCard.module.scss'
+
 export interface IWidgetProps {
   header: string
   priceFormatFrom: string

@@ -1,8 +1,10 @@
 'use client'
-import { useTranslations } from 'next-intl'
-import s from './planCard.module.scss'
+
 import cn from 'classnames'
 import { motion } from 'framer-motion'
+import s from './planCard.module.scss'
+import { useTranslations } from 'next-intl'
+
 interface ITitleProps {
   title: string
   direction: string

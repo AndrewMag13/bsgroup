@@ -1,10 +1,13 @@
 'use client'
-import { NextPage } from 'next'
-import Image from 'next/image'
-import s from './langSelector.module.scss'
-import { Link } from '@/navigation'
+
 import { AnimatePresence, Variants, motion } from 'framer-motion'
+
+import Image from 'next/image'
+import { Link } from '@/navigation'
+import { NextPage } from 'next'
+import s from './langSelector.module.scss'
 import { useState } from 'react'
+
 const LangSelector: NextPage = () => {
   const langs = [
     { short: 'en', lang: 'English' },

@@ -1,8 +1,10 @@
 'use client'
+
 import { Fragment } from 'react'
+import { motion } from 'framer-motion'
 import s from './textLen.module.scss'
 import { useTranslations } from 'next-intl'
-import { motion } from 'framer-motion'
+
 const TextLen = () => {
   const t = useTranslations('home.textLen')
   const keys = [

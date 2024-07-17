@@ -1,7 +1,9 @@
 'use client'
-import { useTranslations } from 'next-intl'
+
 import { motion } from 'framer-motion'
 import s from './techCard.module.scss'
+import { useTranslations } from 'next-intl'
+
 interface ITechCard {
   title: string
 }

@@ -1,7 +1,8 @@
 import ServiceCard, { IWidgetProps } from '@/shared/ui/serviceCard/serviceCard'
-import s from './servicesWidgets.module.scss'
-import { useTranslations, useFormatter } from 'next-intl'
+import { useFormatter, useTranslations } from 'next-intl'
+
 import { Fragment } from 'react'
+import s from './servicesWidgets.module.scss'
 
 const ServicesWidget = () => {
   const t = useTranslations('home.services')

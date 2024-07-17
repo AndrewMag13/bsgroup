@@ -1,10 +1,13 @@
 'use client'
-import { AnimatePresence, motion, Variants } from 'framer-motion'
-import { useState } from 'react'
-import s from './navButton.module.scss'
+
+import { AnimatePresence, Variants, motion } from 'framer-motion'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import s from './navButton.module.scss'
+import { useState } from 'react'
 import { useTranslations } from 'next-intl'
+
 const NavButton = () => {
   const itemVariants: Variants = {
     open: {

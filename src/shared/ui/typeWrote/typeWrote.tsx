@@ -1,6 +1,7 @@
 'use client'
-import { useTranslations } from 'next-intl'
+
 import { ReactTyped } from 'react-typed'
+import { useTranslations } from 'next-intl'
 
 const TypeWrote = () => {
   const t = useTranslations('home.mainBlock')

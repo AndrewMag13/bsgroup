@@ -1,10 +1,12 @@
 'use client'
-import Parallax from '@/shared/ui/parallax/parallax'
-import s from './mainblock.module.scss'
+
 import Napisat from '@/shared/ui/napisat/napisat'
+import Parallax from '@/shared/ui/parallax/parallax'
 import TypeWrote from '@/shared/ui/typeWrote/typeWrote'
-import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
+import s from './mainblock.module.scss'
+import { useTranslations } from 'next-intl'
+
 const MainBlockPage = () => {
   const t = useTranslations('home.mainBlock')
   return (
