@@ -1,6 +1,6 @@
 @import '@/shared/scss/media';
 .container {
-  @apply bg-funded w-screen h-36 mt-20 px-39 flex flex-row justify-between items-center overflow-clip;
+  @apply bg-funded w-screen h-36 px-39 flex flex-row justify-between items-center overflow-clip;
   @include media(lg) {
     @apply px-20;
   }

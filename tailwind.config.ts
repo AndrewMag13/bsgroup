@@ -1,11 +1,12 @@
 import type { Config } from 'tailwindcss'
+import { nextui } from '@nextui-org/theme'
 
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+
   ],
 
   theme: {
@@ -21,6 +22,9 @@ const config: Config = {
       emerald: '#62D6C5',
     },
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+      },
       spacing: {
         '15': '3.75rem',
         '25': '100px',
@@ -54,7 +58,7 @@ const config: Config = {
       },
     },
   },
-
+  darkMode: 'class',
   plugins: [],
 }
 export default config

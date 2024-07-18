@@ -11,18 +11,27 @@ import Header from '@/widgets/header/header'
 import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
 import { NextIntlClientProvider } from 'next-intl'
+import { NextUIProvider } from '@nextui-org/react'
+import Providers from './providers'
 import { ReactNode } from 'react'
+import localFont from 'next/font/local'
+import ogImage from '../../../public/images/og.png'
 
-const inter = Inter({
-  subsets: ['latin', 'cyrillic'],
-  display: 'swap',
-})
+// const inter = Inter({
+//   subsets: ['latin', 'cyrillic'],
+//   display: 'swap',
+// })
 
 const locales = ['en', 'ru']
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
 }
 
+const interLocal = localFont({
+  src: '../../../public/fonts/Inter/InterVariable.woff2',
+  fallback: ['system-ui', 'arial'],
+  variable: '--font-inter',
+})
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('home.meta')
 
@@ -64,13 +73,23 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title: t('title'),
       description: t('desc'),
-      images: ['/images/og.png'],
+      // images: [
+      //   {
+      //     url: ogImage.src,
+      //   },
+      // ],
+
       type: 'website',
     },
     twitter: {
       title: t('title'),
       description: t('desc'),
-      images: ['/images/og.png'],
+      // images: [
+      //   {
+      //     url: ogImage.src,
+      //   },
+      // ],
+
       card: 'summary_large_image',
     },
   }
@@ -92,7 +111,7 @@ export default async function RootLayout({
 
   return (
     <>
-      <html lang={locale} className={inter.className}>
+      <html lang={locale} className={`${interLocal.variable} font-sans`}>
         <body>
           <NextIntlClientProvider messages={messages}>
             <Header />

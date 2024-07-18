@@ -7,7 +7,7 @@ import TechsWidget from '@/widgets/techsWidget/techsWidget'
 import TextLen from '@/widgets/textLen/textLen'
 import { unstable_setRequestLocale } from 'next-intl/server'
 
-interface IParams {
+export interface IParams {
   params: { locale: string }
 }
 export default function App({ params: { locale } }: IParams) {
