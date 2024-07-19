@@ -8,11 +8,8 @@ import {
 
 import Footer from '@/widgets/footer/footer'
 import Header from '@/widgets/header/header'
-import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
 import { NextIntlClientProvider } from 'next-intl'
-import { NextUIProvider } from '@nextui-org/react'
-import Providers from './providers'
 import { ReactNode } from 'react'
 import localFont from 'next/font/local'
 import ogImage from '../../../public/images/og.png'

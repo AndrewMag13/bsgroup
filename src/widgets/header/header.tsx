@@ -9,14 +9,8 @@ import s from './header.module.scss'
 import { useTranslations } from 'next-intl'
 
 const Header = () => {
-  const t = useTranslations('home.header')
-  const headerKeys = [
-    'services',
-    'development',
-    'projects',
-    'techs',
-    'application',
-  ]
+  const t = useTranslations('home')
+
   return (
     <>
       <motion.header
@@ -34,9 +28,6 @@ const Header = () => {
         }}
         viewport={{ once: true }}
       >
-        <motion.nav className={s.navButton}>
-          <NavButton />
-        </motion.nav>
         <motion.div
           className={s.header__logo}
           whileTap={{ scale: 0.95 }}
@@ -52,24 +43,18 @@ const Header = () => {
             />
           </Link>
         </motion.div>
-        <ul className={s.header__links__list}>
-          {headerKeys.map((headerKey) => {
-            return (
-              <motion.li
-                className={s.header__links__element}
-                key={headerKey}
-                whileTap={{ scale: 0.95 }}
-                whileHover={{ scale: 1.1 }}
-                transition={{ type: 'spring', stiffness: 200, damping: 20 }}
-              >
-                <Link href={`/${t(`links.${headerKey}.href`)}`}>
-                  {t(`links.${headerKey}.title`)}
-                </Link>
-              </motion.li>
-            )
-          })}
-        </ul>
-
+        <motion.div>
+          <Link href={`tel:${t(`ui.phoneNumber`)}`} className={s.phone}>
+            {' '}
+            <Image
+              src={`/icons/phone.svg`}
+              alt="BSGROUP icon"
+              width={20}
+              height={20}
+            />
+            <span className={s.number}>{t(`ui.phoneNumber`)}</span>
+          </Link>
+        </motion.div>
         <LangSelector />
       </motion.header>
     </>

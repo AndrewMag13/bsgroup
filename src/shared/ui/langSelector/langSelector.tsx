@@ -29,7 +29,9 @@ const LangSelector: NextPage = () => {
           initial={false}
           animate={isOpen ? 'open' : 'closed'}
           className={s.common}
-          style={{}}
+          style={{
+            zIndex: 30,
+          }}
         >
           <motion.button
             onClick={() => setIsOpen(!isOpen)}
@@ -62,7 +64,6 @@ const LangSelector: NextPage = () => {
               },
               closed: {
                 clipPath: 'inset(10% 50% 90% 50% round 10px)',
-
                 overflow: 'hidden',
                 transition: {
                   type: 'spring',
@@ -73,6 +74,7 @@ const LangSelector: NextPage = () => {
             }}
             style={{
               pointerEvents: isOpen ? 'auto' : 'none',
+              zIndex: 10,
             }}
           >
             {langs.map((lang) => {

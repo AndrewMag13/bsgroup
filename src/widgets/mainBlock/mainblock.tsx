@@ -1,6 +1,8 @@
 'use client'
 
+import Link from 'next/link'
 import Napisat from '@/shared/ui/napisat/napisat'
+import NavButton from '@/shared/ui/navButton/navButton'
 import Parallax from '@/shared/ui/parallax/parallax'
 import TypeWrote from '@/shared/ui/typeWrote/typeWrote'
 import { motion } from 'framer-motion'
@@ -8,11 +10,64 @@ import s from './mainblock.module.scss'
 import { useTranslations } from 'next-intl'
 
 const MainBlockPage = () => {
+  const headerKeys = [
+    'services',
+    'development',
+    'projects',
+    'techs',
+    'application',
+  ]
   const t = useTranslations('home.mainBlock')
+  const ht = useTranslations('home.header')
   return (
     <>
       <section className={s.main} id="main">
         <Parallax />
+        {/* <motion.nav
+          className={s.navButton}
+          style={{
+            zIndex: 10,
+          }}
+        >
+          <NavButton />
+        </motion.nav> */}
+        <motion.ul
+          className={s.header__links__list}
+          style={{
+            zIndex: 10,
+          }}
+          initial={{
+            opacity: 0,
+            y: -50,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 0.5,
+            },
+          }}
+          viewport={{ once: true }}
+        >
+          {headerKeys.map((headerKey) => {
+            return (
+              <motion.li
+                className={s.header__links__element}
+                key={headerKey}
+                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+                style={{
+                  zIndex: 10,
+                }}
+              >
+                <Link href={`/${ht(`links.${headerKey}.href`)}`}>
+                  {ht(`links.${headerKey}.title`)}
+                </Link>
+              </motion.li>
+            )
+          })}
+        </motion.ul>
         <motion.div
           className={s.text}
           initial={{

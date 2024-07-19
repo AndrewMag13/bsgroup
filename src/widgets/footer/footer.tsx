@@ -23,8 +23,12 @@ const Footer = () => {
           </div>
         </div>
         <div className={s.right}>
-          <Link href={'/privacy'}>{t('privacy.title')}</Link>
-          <Link href={'/terms'}>{t('terms.title')}</Link>
+          <Link href={'/privacy'} prefetch={true}>
+            {t('privacy.title')}
+          </Link>
+          <Link href={'/terms'} prefetch={true}>
+            {t('terms.title')}
+          </Link>
         </div>
         <Image
           src={'/footer/BS.svg'}

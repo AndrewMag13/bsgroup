@@ -14,24 +14,16 @@
     @apply px-4;
   }
 }
-.header__links__list {
-  @apply flex flex-row justify-center gap-5;
-  @include media(md) {
-    @apply hidden w-0 basis-0;
-  }
-}
-.header__links__element {
-  @apply leading-4 text-base text-center font-normal;
-}
-.navButton {
-  @apply hidden;
-  @include media(md) {
-    @apply flex flex-row justify-center;
-  }
-}
+
 .header_logo {
   @apply flex items-center self-center z-20;
 }
-// .number {
-//   @apply text-xl leading-5 flex self-center;
-// }
+.number {
+  @apply text-xl flex self-center;
+  @include media(md) {
+    @apply text-base;
+  }
+}
+.phone {
+  @apply flex gap-2 flex-row align-middle;
+}

@@ -21,6 +21,24 @@
     @apply text-5xl;
   }
 }
+.header__links__list {
+  @apply flex flex-row justify-center gap-15 h-15 items-center w-screen absolute text-xl flex-wrap px-4;
+  @include media(md) {
+    @apply gap-5 text-base;
+  }
+  @include media(sm) {
+    @apply mt-5;
+  }
+}
+.header__links__element {
+  @apply leading-4 text-center font-normal;
+}
+.navButton {
+  @apply hidden;
+  // @include media(sm) {
+  //   @apply flex flex-row justify-center;
+  // }
+}
 .smalltext {
   @apply flex relative text-2xl;
 

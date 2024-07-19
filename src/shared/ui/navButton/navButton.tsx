@@ -27,7 +27,9 @@ const NavButton = () => {
           initial={false}
           animate={isOpen ? 'open' : 'closed'}
           className={s.common}
-         
+          style={{
+            zIndex: 10,
+          }}
         >
           <motion.button
             onClick={() => setIsOpen(!isOpen)}
