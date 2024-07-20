@@ -1,5 +1,6 @@
 import '../globals.css'
 
+import type { Metadata, Viewport } from 'next'
 import {
   getMessages,
   getTranslations,
@@ -8,7 +9,6 @@ import {
 
 import Footer from '@/widgets/footer/footer'
 import Header from '@/widgets/header/header'
-import type { Metadata } from 'next'
 import { NextIntlClientProvider } from 'next-intl'
 import { ReactNode } from 'react'
 import localFont from 'next/font/local'
@@ -28,6 +28,7 @@ const interLocal = localFont({
   src: '../../../public/fonts/Inter/InterVariable.woff2',
   fallback: ['system-ui', 'arial'],
   variable: '--font-inter',
+  display: 'swap',
 })
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('home.meta')
@@ -89,9 +90,16 @@ export async function generateMetadata(): Promise<Metadata> {
 
       card: 'summary_large_image',
     },
+    manifest: '/manifest.json',
   }
 }
-
+export function viewport(): Viewport {
+  return {
+    initialScale: 1,
+    viewportFit: 'cover',
+    width: 'device-width',
+  }
+}
 interface Props {
   children: ReactNode
   params: {
