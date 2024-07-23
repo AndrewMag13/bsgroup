@@ -6,7 +6,7 @@
   }
 }
 .image__container {
-  @apply flex self-center justify-center w-full h-360 mt-0;
+  @apply flex self-center justify-center w-full h-360 mt-0 select-none;
 }
 .title {
   @apply text-32 font-bold pt-10 text-center;

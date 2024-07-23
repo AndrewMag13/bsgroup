@@ -1,12 +1,12 @@
 import type { Config } from 'tailwindcss'
 import { nextui } from '@nextui-org/theme'
+import plugin from 'tailwindcss/plugin'
 
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-
   ],
 
   theme: {
@@ -59,6 +59,17 @@ const config: Config = {
     },
   },
   darkMode: 'class',
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.drag-none': {
+          '-webkit-user-drag': 'none',
+          '-moz-user-drag': 'none',
+          '-o-user-drag': 'none',
+          'user-drag': 'none',
+        },
+      })
+    }),
+  ],
 }
 export default config

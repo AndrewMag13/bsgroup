@@ -5,6 +5,9 @@
   line-height: 1;
   display: flex;
   align-self: center;
+  z-index: 2;
+  text-align: center;
+  justify-self: center;
   @include media(md) {
     font-size: 32px;
   }

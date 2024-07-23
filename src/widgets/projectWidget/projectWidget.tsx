@@ -2,6 +2,7 @@
 
 import 'react-photo-view/dist/react-photo-view.css'
 
+import Image from 'next/image'
 import { PhotoProvider } from 'react-photo-view'
 import ProjectCard from '@/shared/ui/projectCard/projectCard'
 import s from './projectWidget.module.scss'
@@ -14,6 +15,13 @@ const ProjectWidget = () => {
     <>
       <section className={s.container} id="projects">
         <h2 className={s.title}>{t('title')}</h2>
+        <Image
+          src={'/figures/cross.svg'}
+          width={200}
+          height={200}
+          alt="deco figure"
+          className={s.figure}
+        />
         <div className={s.cards__container}>
           <PhotoProvider speed={() => 1000}>
             <div className={s.cards}>

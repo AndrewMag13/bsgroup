@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import PlanCard from '@/shared/ui/planCard/planCard'
 import { motion } from 'framer-motion'
 import s from './planWidget.module.scss'
@@ -16,6 +17,13 @@ const PlanWidget = () => {
     <>
       <section className={s.container} id="development">
         <h2 className={s.title}>{t('title')}</h2>
+        <Image
+          src={'/figures/circle.svg'}
+          width={200}
+          height={200}
+          alt="deco figure"
+          className={s.figure}
+        />
         <div className={s.cards}>
           {keys1.map((key1) => {
             return (

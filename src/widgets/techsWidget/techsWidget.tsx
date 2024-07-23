@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { NextPage } from 'next'
 import TechCard from '@/shared/ui/techCard/techCard'
 import s from './techWidget.module.scss'
@@ -43,7 +44,7 @@ const TechsWidget: NextPage = () => {
     'Hot toast',
     'Prettier',
     'i18n',
-    'Classnames',
+    'a11y',
     'NextUI',
     'Yarn',
     'Postgress',
@@ -57,6 +58,13 @@ const TechsWidget: NextPage = () => {
     <>
       <section className={s.container} id="techs">
         <h2 className={s.title}>{t('title')}</h2>
+        <Image
+          src={'/figures/rect.svg'}
+          width={200}
+          height={200}
+          alt="deco figure"
+          className={s.figure}
+        />
         <div className={s.techs}>
           {fKeys.map((key) => {
             return (

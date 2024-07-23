@@ -9,7 +9,33 @@
     @apply w-full;
   }
 }
-
+@keyframes strike {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.strike {
+  position: relative;
+  color: rgba(255, 255, 255, 50%);
+  @apply mt-5 text-xs font-bold;
+}
+.strike::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 50%);
+  animation-name: strike;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 .img {
   @apply flex self-end mr-5 mt-5 absolute m-auto z-0;
 }
@@ -17,13 +43,13 @@
   @apply text-32 font-bold text-center z-10;
 }
 .price {
-  @apply font-bold text-sm z-10 mt-5;
+  @apply font-bold text-sm z-10 mt-1;
 }
 .serviceType {
   @apply font-bold text-base z-10 mt-5;
 }
 .mainText {
-  @apply flex w-full flex-col  items-center my-10;
+  @apply flex w-full flex-col items-center my-10;
 }
 .bulletList {
   @apply list-disc flex gap-5 flex-col justify-start text-start w-full px-5;
@@ -35,5 +61,5 @@
   }
 }
 .button {
-  @apply mt-10 mb-15 bottom-15;
+  @apply mt-10 mb-15;
 }

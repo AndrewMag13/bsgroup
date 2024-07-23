@@ -35,8 +35,8 @@ const LangSelector: NextPage = () => {
         >
           <motion.button
             onClick={() => setIsOpen(!isOpen)}
-            whileTap={{ scale: 0.95 }}
-            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.96 }}
+            whileHover={{ scale: 1.06 }}
             transition={{ type: 'spring', stiffness: 200, damping: 20 }}
             className={s.button}
           >
@@ -82,8 +82,8 @@ const LangSelector: NextPage = () => {
                 <motion.li
                   key={lang.short}
                   variants={itemVariants}
-                  whileTap={{ scale: 0.95 }}
-                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.96 }}
+                  whileHover={{ scale: 1.06 }}
                   transition={{ type: 'spring', stiffness: 200, damping: 20 }}
                 >
                   <Link href={`/`} scroll={false} locale={`${lang.short}`}>

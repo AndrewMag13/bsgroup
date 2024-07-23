@@ -63,7 +63,6 @@
       "wireframing": "Wireframing",
       "UI/UX": "UI/UX",
       "E2E": "E2E",
-      "coffee preparing": "Приготовление кофе",
       "content management": "Наполнение",
       "content strategy": "Контент-стратегия",
       "setting": "Настройка",
@@ -87,7 +86,8 @@
       },
       "serviceLanding": {
         "header": "Landing-page",
-        "price": "50000",
+        "beforePrice": "50000",
+        "price": "40000",
         "serviceType": "Простой",
         "bulletList": {
           "bullet1": "Разработка от 2-х недель",
@@ -99,7 +99,8 @@
       },
       "serviceMulti": {
         "header": "Multi-page",
-        "price": "80000",
+        "beforePrice": "80000",
+        "price": "60000",
         "serviceType": "Многостраничный",
         "bulletList": {
           "bullet1": "Разработка от 4-х недель",
@@ -111,7 +112,8 @@
       },
       "serviceAdvanced": {
         "header": "Продвинутый",
-        "price": "100000",
+        "beforePrice": "100000",
+        "price": "80000",
         "serviceType": "Многофункциональный",
         "bulletList": {
           "bullet1": "Разработка от 6-х недель",
@@ -234,7 +236,7 @@
       "Hot toast": "Hot toast",
       "Prettier": "Prettier",
       "i18n": "i18n",
-      "Classnames": "Classnames",
+      "a11y": "a11y",
       "NextUI": "NextUI",
       "Yarn": "Yarn",
       "Postgress": "Postgress",

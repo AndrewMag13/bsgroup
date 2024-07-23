@@ -33,7 +33,8 @@ const ProjectCard = (props: IProjectCardProps) => {
       >
         <motion.div
           className={s.image__container}
-          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 1 }}
+          whileHover={{ scale: 1.04 }}
           transition={{ type: 'spring', stiffness: 300, damping: 20 }}
           style={{ cursor: 'pointer' }}
         >

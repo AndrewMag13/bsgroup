@@ -2,6 +2,7 @@ import ServiceCard, { IWidgetProps } from '@/shared/ui/serviceCard/serviceCard'
 import { useFormatter, useTranslations } from 'next-intl'
 
 import { Fragment } from 'react'
+import Image from 'next/image'
 import s from './servicesWidgets.module.scss'
 
 const ServicesWidget = () => {
@@ -16,10 +17,15 @@ const ServicesWidget = () => {
     return {
       header: t(`${type}.header`),
       priceFormatFrom: t(`priceFormat.from`),
+      beforePrice: f.number(Number(t(`${type}.beforePrice`)), {
+        style: 'currency',
+        currency: t(`priceFormat.currency`),
+      }),
       price: f.number(Number(t(`${type}.price`)), {
         style: 'currency',
         currency: t(`priceFormat.currency`),
       }),
+
       serviceType: t(`${type}.serviceType`),
       bulletList:
         type !== 'design' && type !== 'presentation' && type !== 'motion'
@@ -37,6 +43,13 @@ const ServicesWidget = () => {
     <>
       <section className={s.container} id="services">
         <h2 className={s.title}>{t('title')}</h2>
+        <Image
+          src={'/figures/dots.svg'}
+          width={200}
+          height={80}
+          alt="deco figure"
+          className={s.figure}
+        />
         <div className={s.servicesContainer}>
           {keys.map((key) => {
             return (
@@ -46,17 +59,19 @@ const ServicesWidget = () => {
             )
           })}
         </div>
-        <div className={s.servicesContainer}>
-          {enableMinor
-            ? keys2.map((key) => {
-                return (
-                  <Fragment key={key}>
-                    <ServiceCard {...propers(key)} />
-                  </Fragment>
-                )
-              })
-            : ''}
-        </div>
+        {enableMinor ? (
+          <div className={s.servicesContainer}>
+            {keys2.map((key) => {
+              return (
+                <Fragment key={key}>
+                  <ServiceCard {...propers(key)} />
+                </Fragment>
+              )
+            })}
+          </div>
+        ) : (
+          ''
+        )}
       </section>
     </>
   )

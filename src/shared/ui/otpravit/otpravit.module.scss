@@ -11,7 +11,7 @@
 }
 
 .button {
-  @apply h-20 w-64 rounded-default flex text-4xl justify-center items-center;
+  @apply h-20 w-56 rounded-default flex text-32 justify-center items-center border-transparent;
   color: white;
   border: 0;
   background: rgba(33, 156, 255, 1);

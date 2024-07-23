@@ -67,7 +67,6 @@
       "wireframing": "Wireframing",
       "UI/UX": "UI/UX",
       "E2E": "E2E",
-      "coffee preparing": "Coffee preparing",
       "content management": "Content-management",
       "content strategy": "Content-strategy",
       "setting": "Setting",
@@ -91,7 +90,8 @@
       },
       "serviceLanding": {
         "header": "Landing-page",
-        "price": "500",
+        "beforePrice": "500",
+        "price": "400",
         "serviceType": "Simple",
         "bulletList": {
           "bullet1": "2 Weeks delivery time",
@@ -103,7 +103,8 @@
       },
       "serviceMulti": {
         "header": "Multi-page",
-        "price": "800",
+        "beforePrice": "800",
+        "price": "600",
         "serviceType": "Several Pages",
         "bulletList": {
           "bullet1": "4 Weeks delivery time",
@@ -115,7 +116,8 @@
       },
       "serviceAdvanced": {
         "header": "Advanced",
-        "price": "1000",
+        "beforePrice": "1000",
+        "price": "800",
         "serviceType": "Multi-functional",
         "bulletList": {
           "bullet1": "6 Weeks delivery time",
@@ -238,7 +240,7 @@
       "Hot toast": "Hot toast",
       "Prettier": "Prettier",
       "i18n": "i18n",
-      "Classnames": "Classnames",
+      "a11y": "a11y",
       "NextUI": "NextUI",
       "Yarn": "Yarn",
       "Postgress": "Postgress",

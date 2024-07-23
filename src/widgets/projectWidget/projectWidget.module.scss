@@ -1,6 +1,6 @@
 @import '../../shared/scss/variables';
 .container {
-  @apply mx-39 mt-20 flex justify-center flex-col;
+  @apply mx-39 mt-20 grid;
   @import '../../shared/scss/media';
   @include media(lg) {
     @apply mx-20;
@@ -12,11 +12,14 @@
     @apply mx-4;
   }
 }
+.figure {
+  @apply absolute -z-0 select-none drag-none justify-self-start self-center;
+}
 .title {
   @extend %title;
 }
 .cards__container {
-  @apply mt-15 flex flex-col;
+  @apply mt-15 flex flex-col z-10;
 }
 .cards {
   @apply flex flex-row gap-6 justify-center flex-wrap;

@@ -1,7 +1,7 @@
 @import '../../shared/scss/media';
 @import '../../shared/scss/variables';
 .container {
-  @apply mt-20 mx-39 flex flex-col justify-center;
+  @apply mt-20 mx-39 grid;
   @include media(lg) {
     @apply mx-20;
   }
@@ -11,6 +11,9 @@
   @include media(sm) {
     @apply mx-4;
   }
+}
+.figure {
+  @apply absolute -z-0 justify-self-end self-center select-none drag-none;
 }
 .title {
   @extend %title;

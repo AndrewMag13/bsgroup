@@ -1,6 +1,6 @@
 @import '../../shared/scss/variables';
 .container {
-  @apply flex flex-col justify-center mt-20 mx-39  mb-20 ;
+  @apply flex flex-col justify-center mt-20 mx-39 mb-20;
   @import '../../shared/scss/media';
   @include media(lg) {
     @apply mx-20;

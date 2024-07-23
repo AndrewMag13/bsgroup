@@ -25,7 +25,6 @@ const TextLen = () => {
     'wireframing',
     'UI/UX',
     'E2E',
-    'coffee preparing',
     'content management',
     'content strategy',
     'setting',

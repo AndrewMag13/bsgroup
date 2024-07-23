@@ -10,6 +10,7 @@ const withPWA = require('next-pwa')({
   mode: 'production',
   skipWaiting: true,
   include: ['production', 'development'],
+
 })
 const config = {
   // dest: 'public',
@@ -20,5 +21,6 @@ const config = {
   // }
 }
 module.exports = withPWA(withNextIntl({
-  reactProductionProfiling: true
+  reactProductionProfiling: true,
+
 }));

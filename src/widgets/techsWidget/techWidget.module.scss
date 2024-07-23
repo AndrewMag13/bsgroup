@@ -1,10 +1,6 @@
 @import '../../shared/scss/variables';
-.title {
-  @extend %title;
-  @apply mb-10;
-}
 .container {
-  @apply flex flex-col justify-center mx-39 mt-20;
+  @apply grid mx-39 mt-20;
   @import '../../shared/scss/media';
   @include media(lg) {
     @apply mx-20;
@@ -16,12 +12,28 @@
     @apply mx-4;
   }
 }
+.title {
+  @extend %title;
+  @apply mb-10;
+}
+.figure {
+  @apply absolute -z-0 select-none drag-none justify-self-end self-center;
+  @include media(lg) {
+    @apply mx-20;
+  }
+  @include media(md) {
+    @apply mx-10;
+  }
+  @include media(sm) {
+    @apply mx-4;
+  }
+}
 .techs {
-  @apply flex flex-row gap-x-5 gap-y-5 flex-wrap justify-center mt-5;
+  @apply flex flex-row gap-x-5 gap-y-5 flex-wrap justify-center mt-5 z-10;
   @include media(md) {
     @apply gap-x-4 gap-y-4;
   }
   @include media(sm) {
-    @apply gap-x-3 gap-y-3;
+    @apply gap-x-2 gap-y-2;
   }
 }

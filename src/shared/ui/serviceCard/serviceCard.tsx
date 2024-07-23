@@ -9,6 +9,7 @@ import s from './serviceCard.module.scss'
 export interface IWidgetProps {
   header: string
   priceFormatFrom: string
+  beforePrice: string
   price: string
   serviceType: string
   bulletList: string[]
@@ -80,7 +81,7 @@ const ServiceCard = (props: IWidgetProps) => {
         <motion.div
           className={s.container}
           whileHover={{ scale: 1.02 }}
-          transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+          transition={{ type: 'spring', stiffness: 300, damping: 20 }}
           initial={{
             opacity: 0,
             x: props.bulletList.length % 4 === 0 ? 50 : -50,
@@ -103,6 +104,11 @@ const ServiceCard = (props: IWidgetProps) => {
           />
           <div className={s.mainText}>
             <div className={s.header}>{props.header}</div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              className={s.strike}
+            >{`${props.priceFormatFrom} ${props.beforePrice}`}</motion.div>
             <div
               className={s.price}
             >{`${props.priceFormatFrom} ${props.price}`}</div>
