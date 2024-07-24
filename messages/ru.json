@@ -86,8 +86,8 @@
       },
       "serviceLanding": {
         "header": "Landing-page",
-        "beforePrice": "50000",
-        "price": "40000",
+        "beforePrice": "49990",
+        "price": "39990",
         "serviceType": "Простой",
         "bulletList": {
           "bullet1": "Разработка от 2-х недель",
@@ -99,8 +99,8 @@
       },
       "serviceMulti": {
         "header": "Multi-page",
-        "beforePrice": "80000",
-        "price": "60000",
+        "beforePrice": "79990",
+        "price": "59990",
         "serviceType": "Многостраничный",
         "bulletList": {
           "bullet1": "Разработка от 4-х недель",
@@ -112,8 +112,8 @@
       },
       "serviceAdvanced": {
         "header": "Продвинутый",
-        "beforePrice": "100000",
-        "price": "80000",
+        "beforePrice": "119990",
+        "price": "99990",
         "serviceType": "Многофункциональный",
         "bulletList": {
           "bullet1": "Разработка от 6-х недель",

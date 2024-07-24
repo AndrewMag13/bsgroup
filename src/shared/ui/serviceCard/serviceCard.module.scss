@@ -1,11 +1,11 @@
 @import '../../scss/media';
 .container {
-  @apply bg-funded flex flex-col items-center rounded-default h-fit w-360;
+  @apply bg-funded flex flex-col  rounded-default h-fit w-360;
+
   @include media(lg) {
     @apply w-75;
   }
-
-  @include media(sm) {
+  @include media(md) {
     @apply w-full;
   }
 }
@@ -40,19 +40,23 @@
   @apply flex self-end mr-5 mt-5 absolute m-auto z-0;
 }
 .header {
-  @apply text-32 font-bold text-center z-10;
+  @apply text-32 font-bold text-left z-10;
 }
 .price {
-  @apply font-bold text-sm z-10 mt-1;
-}
-.serviceType {
-  @apply font-bold text-base z-10 mt-5;
+  @apply font-bold text-base z-10 mt-1;
 }
 .mainText {
-  @apply flex w-full flex-col items-center my-10;
+  @apply flex w-full flex-col items-start mt-5 pl-10;
+}
+.serviceType {
+  @apply font-bold text-xl z-10;
+  background: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .bulletList {
-  @apply list-disc flex gap-5 flex-col justify-start text-start w-full px-5;
+  @apply list-disc flex gap-5 flex-col justify-start text-start w-full ml-5 mt-10;
 }
 .bullet {
   @apply text-base font-bold mx-5;
@@ -61,5 +65,5 @@
   }
 }
 .button {
-  @apply mt-10 mb-15;
+  @apply mt-10 mb-15 self-center;
 }

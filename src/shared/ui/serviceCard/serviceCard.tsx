@@ -103,6 +103,20 @@ const ServiceCard = (props: IWidgetProps) => {
             className={s.img}
           />
           <div className={s.mainText}>
+            <div
+              className={s.serviceType}
+              style={{
+                background:
+                  props.serviceType === 'Simple'
+                    ? 'linear-gradient(90deg,  #6ee556 0%, #9fda20 100%)'
+                    : props.serviceType === 'Several Pages'
+                      ? 'linear-gradient(90deg,  rgb(246, 31, 255) 0%, rgb(85, 205, 226) 100%)'
+                      : 'linear-gradient(90deg,  rgb(197, 23, 104) 0%, rgb(207, 121, 128) 100%)',
+                backgroundClip: 'text',
+              }}
+            >
+              {props.serviceType}
+            </div>
             <div className={s.header}>{props.header}</div>
             <motion.div
               initial="hidden"
@@ -112,7 +126,6 @@ const ServiceCard = (props: IWidgetProps) => {
             <div
               className={s.price}
             >{`${props.priceFormatFrom} ${props.price}`}</div>
-            <div className={s.serviceType}>{props.serviceType}</div>
           </div>
           <ul className={s.bulletList}>
             {props.bulletList.map((bullet) => {

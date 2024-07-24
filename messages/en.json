@@ -90,8 +90,8 @@
       },
       "serviceLanding": {
         "header": "Landing-page",
-        "beforePrice": "500",
-        "price": "400",
+        "beforePrice": "499",
+        "price": "399",
         "serviceType": "Simple",
         "bulletList": {
           "bullet1": "2 Weeks delivery time",
@@ -103,8 +103,8 @@
       },
       "serviceMulti": {
         "header": "Multi-page",
-        "beforePrice": "800",
-        "price": "600",
+        "beforePrice": "799",
+        "price": "599",
         "serviceType": "Several Pages",
         "bulletList": {
           "bullet1": "4 Weeks delivery time",
@@ -116,8 +116,8 @@
       },
       "serviceAdvanced": {
         "header": "Advanced",
-        "beforePrice": "1000",
-        "price": "800",
+        "beforePrice": "1099",
+        "price": "999",
         "serviceType": "Multi-functional",
         "bulletList": {
           "bullet1": "6 Weeks delivery time",
