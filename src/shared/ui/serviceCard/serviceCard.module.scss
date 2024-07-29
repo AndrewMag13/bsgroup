@@ -1,11 +1,11 @@
 @import '../../scss/media';
 .container {
-  @apply bg-funded flex flex-col  rounded-default h-fit w-360;
+  @apply bg-funded flex flex-col rounded-default h-fit w-360;
 
   @include media(lg) {
     @apply w-75;
   }
-  @include media(md) {
+  @include media(sm) {
     @apply w-full;
   }
 }

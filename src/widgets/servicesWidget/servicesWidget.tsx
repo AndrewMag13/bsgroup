@@ -53,9 +53,9 @@ const ServicesWidget = () => {
         <div className={s.servicesContainer}>
           {keys.map((key) => {
             return (
-              <div key={key}>
+              <Fragment key={key}>
                 <ServiceCard {...propers(key)} />
-              </div>
+              </Fragment>
             )
           })}
         </div>

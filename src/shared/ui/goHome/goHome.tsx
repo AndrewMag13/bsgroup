@@ -22,7 +22,7 @@ const GoHome: NextPage = () => {
           style={{
             fontWeight: '700',
 
-            fontSize: '2rem',
+            fontSize: '1.5rem',
             backgroundColor: '#161616',
             width: '200px',
             height: '75px',

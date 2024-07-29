@@ -23,4 +23,21 @@ const config = {
 module.exports = withPWA(withNextIntl({
   reactProductionProfiling: true,
 
+  // webpack: (config, { isServer }) => {
+  //   if (!isServer) {
+  //     config.resolve.fallback.fs = false
+  //     config.resolve.fallback.tls = false
+  //     config.resolve.fallback.net = false
+  //     config.resolve.fallback.child_process = false
+  //   }
+
+  //   return config
+  // },
+  // resolve: {
+  //   extensions: [".ts", ".js"],
+  //   fallback: {
+  //     "child_process": false,
+  //     // and also other packages that are not found
+  //   }
+  // }
 }));

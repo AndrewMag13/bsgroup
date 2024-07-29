@@ -23,6 +23,7 @@ const TextLen = () => {
     'redesign',
     'prototype',
     'wireframing',
+    'typography',
     'UI/UX',
     'E2E',
     'content management',

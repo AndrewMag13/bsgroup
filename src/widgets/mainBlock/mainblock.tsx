@@ -23,14 +23,6 @@ const MainBlockPage = () => {
     <>
       <section className={s.main} id="main">
         <Parallax />
-        {/* <motion.nav
-          className={s.navButton}
-          style={{
-            zIndex: 10,
-          }}
-        >
-          <NavButton />
-        </motion.nav> */}
         <motion.ul
           className={s.header__links__list}
           style={{
