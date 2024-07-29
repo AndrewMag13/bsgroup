@@ -27,8 +27,8 @@ const ProjectWidget = () => {
             speed={() => 600}
             easing={(type) =>
               type === 2
-                ? 'cubic-bezier(0.36, 0, 0.66, -0.56)'
-                : 'cubic-bezier(0.34, 1.56, 0.64, 1)'
+                ? 'cubic-bezier(1,.5,0,.5)'
+                : 'cubic-bezier(1,.5,0,.5)'
             }
           >
             <div className={s.cards}>
