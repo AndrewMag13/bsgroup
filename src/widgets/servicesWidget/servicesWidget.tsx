@@ -25,7 +25,6 @@ const ServicesWidget = () => {
         style: 'currency',
         currency: t(`priceFormat.currency`),
       }),
-
       serviceType: t(`${type}.serviceType`),
       bulletList:
         type !== 'design' && type !== 'presentation' && type !== 'motion'

@@ -107,9 +107,9 @@ const ServiceCard = (props: IWidgetProps) => {
               className={s.serviceType}
               style={{
                 background:
-                  props.serviceType === 'Simple'
+                  props.header === 'Landing-page'
                     ? 'linear-gradient(90deg,  #6ee556 0%, #9fda20 100%)'
-                    : props.serviceType === 'Several Pages'
+                    : props.header === 'Multi-page'
                       ? 'linear-gradient(90deg,  rgb(246, 31, 255) 0%, rgb(85, 205, 226) 100%)'
                       : 'linear-gradient(90deg,  rgb(197, 23, 104) 0%, rgb(207, 121, 128) 100%)',
                 backgroundClip: 'text',
