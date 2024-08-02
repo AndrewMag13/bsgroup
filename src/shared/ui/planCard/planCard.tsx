@@ -13,19 +13,17 @@ const PlanCard = (props: ITitleProps) => {
   const t = useTranslations('home.development')
   return (
     <>
-      <motion.div
-        className={s.container}
-        whileHover={{ scale: 1.02 }}
-        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-      >
-        <div
+      <div className={s.container}>
+        <motion.div
           className={s.card}
           style={{
             zIndex: 10,
           }}
+          whileHover={{ scale: 1.02 }}
+          transition={{ type: 'spring', stiffness: 300, damping: 20 }}
         >
           {t(`${props.title}`)}
-        </div>
+        </motion.div>
         {props.direction === 'down' ? (
           <motion.div
             className={cn([s.border], [s.down])}
@@ -95,7 +93,7 @@ const PlanCard = (props: ITitleProps) => {
             }}
           ></motion.div>
         )}
-      </motion.div>
+      </div>
     </>
   )
 }
