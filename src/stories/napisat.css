@@ -12,7 +12,7 @@
 
 .storybook-button {
   font-family: 'Inter', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   border: 0;
   background: rgba(33, 156, 255, 1);
   z-index: 0;
@@ -39,6 +39,9 @@
     rgba(98, 214, 197, 1) 100%
   ) !important;
   transition:
+    --based 1s,
+    --funded 1s;
+  -moz-transition:
     --based 1s,
     --funded 1s;
 }
