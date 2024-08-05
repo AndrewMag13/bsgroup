@@ -21,7 +21,7 @@ const TechsWidget: NextPage = () => {
     'Express',
     'Nest',
     'PWA',
-    'SPA',
+    'Playwright',
     'REST',
     'Redux',
     'Zustand',
