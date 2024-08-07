@@ -11,18 +11,16 @@ const withPWA = require('next-pwa')({
   skipWaiting: true,
   include: ['production', 'development'],
 
+  
 })
 const config = {
-  // dest: 'public',
-  // register: true,
-  // skipWaiting: true,
-  // pwa: {
-  //   dest: 'public'
-  // }
+
 }
 module.exports = withPWA(withNextIntl({
   reactProductionProfiling: true,
-
+  experimental: {
+    serverComponentsExternalPackages: ['telegraf']
+  }
   // webpack: (config, { isServer }) => {
   //   if (!isServer) {
   //     config.resolve.fallback.fs = false
