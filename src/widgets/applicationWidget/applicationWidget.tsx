@@ -3,6 +3,7 @@
 import { SubmitHandler, useForm } from 'react-hook-form'
 import toast, { Toaster } from 'react-hot-toast'
 
+import { API_URL } from '@/shared/constants/constants'
 import { ErrorMessage } from '@hookform/error-message'
 import { NextPage } from 'next'
 import OtpravitButton from '@/shared/ui/otpravit/otpravit'
@@ -26,7 +27,7 @@ const ApplicationWidget: NextPage = () => {
   } = useForm<Inputs>({ mode: 'onChange' })
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
-    fetch('http://localhost:3000/api/bot', {
+    fetch(`${API_URL}/bot`, {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',

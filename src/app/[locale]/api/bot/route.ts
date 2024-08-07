@@ -8,9 +8,11 @@ export const POST = async (request: Request) => {
   const body = await request.json()
   await bot.telegram.sendMessage(
     CHAT_ID,
-    `Имя: ${body.name}
-Телефон: ${body.phone}
-Почта: ${body.email}`,
+`Имя: **${body.name}**
+
+Телефон: **${body.phone}**
+
+Почта: **${body.email}**`,
   )
   return Response.json(body)
 }
