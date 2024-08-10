@@ -6,10 +6,10 @@
     @apply mx-20;
   }
   @include media(md) {
-    @apply mx-10;
+    @apply mx-10 mt-15;
   }
   @include media(sm) {
-    @apply mx-4;
+    @apply mx-4 mt-10;
   }
 }
 .title {
@@ -20,13 +20,19 @@
 }
 .otpravit {
   @apply mt-15 flex justify-center;
+  @include media(md) {
+    @apply mt-10;
+  }
+  @include media(sm) {
+    @apply mt-10;
+  }
 }
 .input {
   @apply bg-based outline-none flex self-center border-b-2 border-white text-32 font-bold mt-15;
   width: 60vw;
   @include media(md) {
     width: 70vw;
-    @apply text-3xl;
+    @apply text-3xl mt-10;
   }
   @include media(sm) {
     width: 100%;

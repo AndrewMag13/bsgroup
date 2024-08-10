@@ -11,7 +11,7 @@ export const POST = async (request: Request) => {
     CHAT_ID,
 `Имя: \`${body.name}\`
 
-Телефон: *${body.phone}*
+Телефон: \`${body.phone}\`
 
 Почта: *${body.email}*`, {parse_mode: 'Markdown'},
   )

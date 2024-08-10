@@ -1,12 +1,16 @@
 @import '../../scss/media';
 .card {
-  @apply bg-funded rounded-default flex justify-center align-middle items-center font-bold text-2xl leading-none z-10 border-transparent;
+  @apply bg-funded rounded-default flex justify-center align-middle items-center font-bold text-2xl leading-none z-10 border-transparent px-4;
   height: 100px;
   @include media(lg) {
     @apply text-xl;
   }
+  @include media(md) {
+    @apply text-base px-2;
+    height: 80px;
+  }
   @include media(sm) {
-    @apply text-sm;
+    @apply text-xs;
   }
 }
 .container {
@@ -17,9 +21,9 @@
   height: 3px;
   z-index: 1;
   animation: border-dance 6s infinite linear;
+  width: 60px;
   &.down {
     @apply flex mt-2 self-center text-center justify-center align-middle items-center;
-    width: 60px;
     rotate: 90deg;
     background: linear-gradient(90deg, white 50%, transparent 50%);
     background-repeat: repeat-x;
@@ -27,20 +31,27 @@
   }
   &.right {
     height: 3px;
-    width: 60px;
     @apply flex self-end relative left-12 -top-12;
     rotate: 0deg;
     background: linear-gradient(90deg, white 50%, transparent 50%);
     background-repeat: repeat-x;
     background-size: 20px 3px;
+    @include media(md) {
+      @apply -top-10;
+    }
+    @include media(sm) {
+      @apply left-10;
+    }
   }
   &.up {
     @apply flex mt-2 self-center text-center justify-center align-middle items-center;
-    width: 60px;
     rotate: 270deg;
     background: linear-gradient(90deg, white 50%, transparent 50%);
     background-repeat: repeat-x;
     background-size: 20px 3px;
+  }
+  @include media(sm) {
+    @apply w-10;
   }
 }
 @keyframes border-dance {

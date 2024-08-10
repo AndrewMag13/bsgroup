@@ -56,10 +56,10 @@
   -webkit-text-fill-color: transparent;
 }
 .bulletList {
-  @apply list-disc flex gap-5 flex-col justify-start text-start w-full ml-5 mt-10;
+  @apply list-disc flex gap-5 flex-col justify-start text-start ml-5 mt-10;
 }
 .bullet {
-  @apply text-base font-bold mx-5;
+  @apply text-base font-bold ml-5;
   span {
     @apply relative;
   }

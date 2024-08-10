@@ -5,15 +5,15 @@
     @apply px-12 py-6;
   }
   @include media(sm) {
-    @apply px-8 py-4;
+    @apply px-6 py-4;
   }
 }
 .title {
   @apply font-bold text-32 leading-8 text-center align-middle;
   @include media(md) {
-    @apply text-2xl;
+    @apply text-xl;
   }
   @include media(sm) {
-    @apply text-xl;
+    @apply text-base;
   }
 }

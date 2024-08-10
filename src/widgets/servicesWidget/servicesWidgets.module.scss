@@ -2,6 +2,12 @@
 @import '../../shared/scss/media';
 .container {
   @apply bg-based mt-20 grid;
+  @include media(md) {
+    @apply mt-15;
+  }
+  @include media(sm) {
+    @apply mt-10;
+  }
 }
 .title {
   @extend %title;
@@ -25,9 +31,9 @@
     @apply mx-20;
   }
   @include media(md) {
-    @apply mx-10;
+    @apply mx-10 mt-10;
   }
   @include media(sm) {
-    @apply mx-4;
+    @apply mx-4 mt-5;
   }
 }

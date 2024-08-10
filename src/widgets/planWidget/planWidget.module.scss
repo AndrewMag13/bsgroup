@@ -3,13 +3,13 @@
 .container {
   @apply mt-20 mx-39 grid;
   @include media(lg) {
-    @apply mx-20;
+    @apply mx-20 mt-15;
   }
   @include media(md) {
     @apply mx-10;
   }
   @include media(sm) {
-    @apply mx-4;
+    @apply mx-4 mt-10;
   }
 }
 .figure {
@@ -23,8 +23,25 @@
   grid-auto-columns: minmax(0, 1fr);
   grid-template-rows: 100px 100px 100px 100px;
   column-gap: 24px;
-  row-gap: 40px;
+  row-gap: 32px;
   z-index: 20;
+  @include media(md) {
+    column-gap: 10px;
+    row-gap: 20px;
+    grid-template-rows: 80px 80px 80px 80px;
+    @apply pt-10;
+  }
+  @include media(sm) {
+    column-gap: 8px;
+    row-gap: 12px;
+    @apply pt-5;
+  }
+}
+.card {
+  height: 100px;
+  @include media(sm) {
+    height: 80px;
+  }
 }
 .lines {
   @apply flex relative justify-center top-0 z-0;

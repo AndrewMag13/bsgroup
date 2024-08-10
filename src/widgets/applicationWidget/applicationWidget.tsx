@@ -27,13 +27,14 @@ const ApplicationWidget: NextPage = () => {
   } = useForm<Inputs>({ mode: 'onChange' })
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
-    fetch(`${API_URL}/bot`, {
+    fetch(`/api/bot`, {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
       },
       body: JSON.stringify(data),
     })
+    console.log(JSON.stringify(data))
     toast(t('done'), {
       duration: 2000,
       icon: '👏',

@@ -23,7 +23,15 @@
   @include media(md) {
     @apply text-base;
   }
+  @include media(sm) {
+    @apply text-xs;
+  }
 }
 .phone {
   @apply flex gap-2 flex-row align-middle;
+}
+.phone_icon {
+  @include media(sm) {
+    @apply w-4 h-4;
+  }
 }

@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import Napisat from '@/shared/ui/napisat/napisat'
-import NavButton from '@/shared/ui/navButton/navButton'
 import Parallax from '@/shared/ui/parallax/parallax'
 import TypeWrote from '@/shared/ui/typeWrote/typeWrote'
 import { motion } from 'framer-motion'

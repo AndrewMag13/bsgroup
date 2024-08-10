@@ -1,5 +1,6 @@
 'use client'
 
+import { Fragment } from 'react'
 import Image from 'next/image'
 import PlanCard from '@/shared/ui/planCard/planCard'
 import { motion } from 'framer-motion'
@@ -44,6 +45,7 @@ const PlanWidget = () => {
                 style={{
                   zIndex: 10,
                 }}
+
                 viewport={{ once: true }}
               >
                 <PlanCard title={key1} direction="down" />

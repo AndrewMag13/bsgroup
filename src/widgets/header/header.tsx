@@ -55,6 +55,7 @@ const Header = () => {
               alt="BSGROUP icon"
               width={20}
               height={20}
+              className={s.phone_icon}
             />
             <span className={s.number}>{t(`ui.phoneNumber`)}</span>
           </Link>

@@ -6,10 +6,10 @@
     @apply mx-20;
   }
   @include media(md) {
-    @apply mx-10;
+    @apply mx-10 mt-15;
   }
   @include media(sm) {
-    @apply mx-4;
+    @apply mx-4 mt-10;
   }
 }
 .figure {
@@ -20,6 +20,12 @@
 }
 .cards__container {
   @apply mt-15 flex flex-col z-10;
+  @include media(md) {
+    @apply mt-10;
+  }
+  @include media(sm) {
+    @apply mt-5;
+  }
 }
 .cards {
   @apply flex flex-row gap-6 justify-center flex-wrap;

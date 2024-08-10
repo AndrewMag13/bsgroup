@@ -15,29 +15,26 @@
 .title {
   @apply flex relative text-16 flex-col leading-16;
   @include media(md) {
-    @apply text-6xl;
+    @apply text-5xl;
   }
   @include media(sm) {
-    @apply text-5xl;
+    @apply text-4xl;
   }
 }
 .header__links__list {
   @apply flex flex-row justify-center gap-15 h-15 items-center w-screen absolute text-xl flex-wrap px-4;
   @include media(md) {
-    @apply gap-5 text-base;
+    @apply gap-5 text-sm;
   }
   @include media(sm) {
-    @apply mt-5;
+    @apply mt-5 text-sm;
   }
 }
 .header__links__element {
-  @apply leading-4 text-center font-normal;
+  @apply leading-4 text-center font-bold;
 }
 .navButton {
   @apply hidden;
-  // @include media(sm) {
-  //   @apply flex flex-row justify-center;
-  // }
 }
 .smalltext {
   @apply flex relative text-2xl;
