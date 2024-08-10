@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import LangSelector from '@/shared/ui/langSelector/langSelector'
 import { Link } from '@/navigation'
-import NavButton from '@/shared/ui/navButton/navButton'
 import { motion } from 'framer-motion'
 import s from './header.module.scss'
 import { useTranslations } from 'next-intl'

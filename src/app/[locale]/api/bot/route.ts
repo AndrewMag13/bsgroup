@@ -1,5 +1,4 @@
 import { BOT_API, CHAT_ID } from '@/shared/constants/constants'
-import { FmtString, bold } from 'telegraf/format'
 
 import { Telegraf } from 'telegraf'
 

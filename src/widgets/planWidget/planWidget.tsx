@@ -1,6 +1,5 @@
 'use client'
 
-import { Fragment } from 'react'
 import Image from 'next/image'
 import PlanCard from '@/shared/ui/planCard/planCard'
 import { motion } from 'framer-motion'

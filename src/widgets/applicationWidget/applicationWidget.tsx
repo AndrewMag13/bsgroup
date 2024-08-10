@@ -3,7 +3,6 @@
 import { SubmitHandler, useForm } from 'react-hook-form'
 import toast, { Toaster } from 'react-hot-toast'
 
-import { API_URL } from '@/shared/constants/constants'
 import { ErrorMessage } from '@hookform/error-message'
 import { NextPage } from 'next'
 import OtpravitButton from '@/shared/ui/otpravit/otpravit'
