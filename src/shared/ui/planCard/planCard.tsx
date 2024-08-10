@@ -19,7 +19,7 @@ const PlanCard = (props: ITitleProps) => {
           style={{
             zIndex: 10,
           }}
-          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 1.02 }}
           transition={{ type: 'spring', stiffness: 300, damping: 20 }}
         >
           {t(`${props.title}`)}

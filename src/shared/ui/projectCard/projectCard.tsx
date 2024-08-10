@@ -13,23 +13,23 @@ const ProjectCard = (props: IProjectCardProps) => {
     <>
       <motion.div
         className={s.container}
-        initial={{
-          opacity: 0,
-          x:
-            props.title === 'fixer' ||
-            props.title === 'webDeva' ||
-            props.title === 'runSmart'
-              ? -50
-              : 50,
-        }}
-        whileInView={{
-          opacity: 1,
-          x: 0,
-          transition: {
-            duration: 1,
-          },
-        }}
-        viewport={{ once: true }}
+        // initial={{
+        //   opacity: 0,
+        //   x:
+        //     props.title === 'fixer' ||
+        //     props.title === 'webDeva' ||
+        //     props.title === 'runSmart'
+        //       ? -50
+        //       : 50,
+        // }}
+        // whileInView={{
+        //   opacity: 1,
+        //   x: 0,
+        //   transition: {
+        //     duration: 1,
+        //   },
+        // }}
+        // viewport={{ once: true }}
       >
         <motion.div
           className={s.image__container}

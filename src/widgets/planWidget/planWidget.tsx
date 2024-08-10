@@ -32,11 +32,11 @@ const PlanWidget = () => {
                 className={s.card}
                 initial={{
                   opacity: 0,
-                  x: -50,
+                  y: -50,
                 }}
                 whileInView={{
                   opacity: 1,
-                  x: 0,
+                  y: 0,
                   transition: {
                     duration: 1,
                   },
@@ -44,7 +44,6 @@ const PlanWidget = () => {
                 style={{
                   zIndex: 10,
                 }}
-
                 viewport={{ once: true }}
               >
                 <PlanCard title={key1} direction="down" />
@@ -55,11 +54,11 @@ const PlanWidget = () => {
             className={s.card}
             initial={{
               opacity: 0,
-              x: -50,
+              y: -50,
             }}
             whileInView={{
               opacity: 1,
-              x: 0,
+              y: 0,
               transition: {
                 duration: 1,
               },
@@ -78,11 +77,11 @@ const PlanWidget = () => {
                 className={s.card}
                 initial={{
                   opacity: 0,
-                  x: 50,
+                  y: 50,
                 }}
                 whileInView={{
                   opacity: 1,
-                  x: 0,
+                  y: 0,
                   transition: {
                     duration: 1,
                   },
@@ -100,11 +99,11 @@ const PlanWidget = () => {
             className={s.card}
             initial={{
               opacity: 0,
-              x: 50,
+              y: 50,
             }}
             whileInView={{
               opacity: 1,
-              x: 0,
+              y: 0,
               transition: {
                 duration: 1,
               },

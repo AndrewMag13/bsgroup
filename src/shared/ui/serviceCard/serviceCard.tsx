@@ -67,6 +67,7 @@ const ServiceCard = (props: IWidgetProps) => {
             },
           },
         }}
+      
         style={{
           zIndex: 10,
           display: 'flex',
@@ -82,18 +83,6 @@ const ServiceCard = (props: IWidgetProps) => {
           className={s.container}
           whileHover={{ scale: 1.02 }}
           transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-          initial={{
-            opacity: 0,
-            x: props.bulletList.length % 4 === 0 ? 50 : -50,
-          }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-            transition: {
-              duration: 1,
-            },
-          }}
-          viewport={{ once: true }}
         >
           <Image
             src={`/services/${props.img}.svg`}

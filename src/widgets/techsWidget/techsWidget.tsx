@@ -5,33 +5,25 @@ import s from './techWidget.module.scss'
 import { useTranslations } from 'next-intl'
 
 const TechsWidget: NextPage = () => {
-  const fKeys = ['html', 'css', 'js']
   const keys = [
+    'html',
+    'css',
+    'js',
     'React',
-    'DOM',
-    'JSON',
     'Docker',
-    'JQuery',
     'Wordpress',
     'Git',
     'Tailwind',
-    'Bootstrap',
     'Tilda',
-    'Nodejs',
     'Express',
-    'Nest',
     'PWA',
     'Playwright',
-    'REST',
     'Redux',
     'Zustand',
     'React-hook-form',
-    'React-photo-view',
     'React-typed',
     'Storybook',
-    'Headless',
     'Nextjs',
-    'CSR/SSR',
     'TS',
     'SCSS',
     'PostCSS',
@@ -39,16 +31,13 @@ const TechsWidget: NextPage = () => {
     'FSD',
     'Tanstack',
     'Swiper',
-    'Parallax',
     'Tsparticles',
     'Hot toast',
     'Prettier',
     'i18n',
     'a11y',
     'NextUI',
-    'Yarn',
     'Postgress',
-    'Adaptability',
     'Flex',
     'Grid',
     'Responsive',
@@ -65,15 +54,6 @@ const TechsWidget: NextPage = () => {
           alt="deco figure"
           className={s.figure}
         />
-        <div className={s.techs}>
-          {fKeys.map((key) => {
-            return (
-              <div key={key} className={s.fkey}>
-                <TechCard title={key} />
-              </div>
-            )
-          })}
-        </div>
         <div className={s.techs}>
           {keys.map((key) => {
             return (

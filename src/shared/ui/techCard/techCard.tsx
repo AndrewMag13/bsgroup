@@ -13,7 +13,7 @@ const TechCard = (props: ITechCard) => {
     <>
       <motion.div
         className={s.container}
-        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 1.04 }}
         transition={{ type: 'spring', stiffness: 300, damping: 20 }}
         initial={{
           opacity: 0,
