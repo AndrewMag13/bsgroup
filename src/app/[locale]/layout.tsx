@@ -67,29 +67,29 @@ export async function generateMetadata(): Promise<Metadata> {
         url: '/images/android-chrome-512x512.png',
       },
     ],
-    metadataBase: new URL('bsgroup.vercel.app'),
-    openGraph: {
-      title: t('title'),
-      description: t('desc'),
-      images: [
-        {
-          url: ogImage.src,
-        },
-      ],
+    // metadataBase: new URL('localhost:3000'),
+    // openGraph: {
+    //   title: t('title'),
+    //   description: t('desc'),
+    //   // images: [
+    //   //   {
+    //   //     url: ogImage.src,
+    //   //   },
+    //   // ],
 
-      type: 'website',
-    },
-    twitter: {
-      title: t('title'),
-      description: t('desc'),
-      images: [
-        {
-          url: ogImage.src,
-        },
-      ],
+    //   type: 'website',
+    // },
+    // twitter: {
+    //   title: t('title'),
+    //   description: t('desc'),
+    //   // images: [
+    //   //   {
+    //   //     url: ogImage.src,
+    //   //   },
+    //   // ],
 
-      card: 'summary_large_image',
-    },
+    //   card: 'summary_large_image',
+    // },
     manifest: '/manifest.json',
   }
 }
