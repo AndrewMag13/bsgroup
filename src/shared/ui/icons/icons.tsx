@@ -8,7 +8,7 @@ import { useTranslations } from 'next-intl'
 
 const Icons: NextPage = () => {
   const t = useTranslations('home.footer.iconsLinks')
-  const icons = ['telegram', 'taplink', 'behance', 'inst', 'youtube']
+  const icons = ['telegram', 'taplink', 'behance', 'inst', 'youtube', 'github']
   return (
     <>
       {icons.map((icon) => {
