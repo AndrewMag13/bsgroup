@@ -79,7 +79,7 @@ const Parallax: NextPage = () => {
           density: {
             enable: true,
           },
-          value: 100,
+          value: 69,
         },
         opacity: {
           value: 0.5,
