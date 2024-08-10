@@ -17,7 +17,7 @@ const ProjectCard = (props: IProjectCardProps) => {
           opacity: 0,
           x:
             props.title === 'fixer' ||
-            props.title === 'webdeva' ||
+            props.title === 'webDeva' ||
             props.title === 'runSmart'
               ? -50
               : 50,

@@ -10,7 +10,7 @@ import { useTranslations } from 'next-intl'
 
 const ProjectWidget = () => {
   const t = useTranslations('home.projects')
-  const keys = ['fixer', 'webdeva', 'runSmart', 'amazon', 'vlad', 'grow']
+  const keys = ['fixer', 'webDeva', 'runSmart', 'amazon', 'vlad', 'grow']
   return (
     <>
       <section className={s.container} id="projects">
@@ -26,9 +26,7 @@ const ProjectWidget = () => {
           <PhotoProvider
             speed={() => 600}
             easing={(type) =>
-              type === 2
-                ? 'cubic-bezier(1,.5,0,.5)'
-                : 'cubic-bezier(1,.5,0,.5)'
+              type === 2 ? 'cubic-bezier(1,.5,0,.5)' : 'cubic-bezier(1,.5,0,.5)'
             }
           >
             <div className={s.cards}>
