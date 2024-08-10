@@ -12,7 +12,7 @@
   }
 }
 .image {
-  @apply absolute z-10 flex self-center h-fit;
+  @apply absolute z-10 flex self-center h-fit select-none drag-none;
   left: 0;
   right: 0;
   margin-left: auto;

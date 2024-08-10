@@ -40,6 +40,7 @@ const Header = () => {
               alt="BSGROUP icon"
               width={98}
               height={33}
+              priority
             />
           </Link>
         </motion.div>

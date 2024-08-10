@@ -48,7 +48,7 @@ const LangSelector: NextPage = () => {
               className={s.logo}
             />
           </motion.button>
-          <motion.ul
+          <motion.div
             className={s.selector}
             variants={{
               open: {
@@ -65,6 +65,7 @@ const LangSelector: NextPage = () => {
               closed: {
                 clipPath: 'inset(10% 50% 90% 50% round 10px)',
                 overflow: 'hidden',
+
                 transition: {
                   type: 'spring',
                   bounce: 0,
@@ -74,25 +75,32 @@ const LangSelector: NextPage = () => {
             }}
             style={{
               pointerEvents: isOpen ? 'auto' : 'none',
-              zIndex: 10,
             }}
           >
-            {langs.map((lang) => {
-              return (
-                <motion.li
-                  key={lang.short}
-                  variants={itemVariants}
-                  whileTap={{ scale: 0.96 }}
-                  whileHover={{ scale: 1.06 }}
-                  transition={{ type: 'spring', stiffness: 200, damping: 20 }}
-                >
-                  <Link href={`/`} scroll={false} locale={`${lang.short}`}>
-                    {lang.lang}
-                  </Link>
-                </motion.li>
-              )
-            })}
-          </motion.ul>
+
+              <ul className={s.uli}>
+                {langs.map((lang) => {
+                  return (
+                    <motion.li
+                      key={lang.short}
+                      variants={itemVariants}
+                      whileTap={{ scale: 0.96 }}
+                      whileHover={{ scale: 1.06 }}
+                      transition={{
+                        type: 'spring',
+                        stiffness: 200,
+                        damping: 20,
+                      }}
+                    >
+                      <Link href={`/`} scroll={false} locale={`${lang.short}`}>
+                        {lang.lang}
+                      </Link>
+                    </motion.li>
+                  )
+                })}
+              </ul>
+
+          </motion.div>
         </motion.nav>
       </AnimatePresence>
     </>

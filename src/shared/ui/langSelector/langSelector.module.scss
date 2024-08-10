@@ -1,14 +1,22 @@
 @import '../../scss/media';
 .selector {
-  @apply flex flex-col gap-8 py-8 px-8 rounded-default font-bold justify-center text-center absolute border-2 mt-16 text-base leading-none border-transparent;
-  backdrop-filter: blur(20px) saturate(100%);
-  background-color: rgba(51, 51, 51, 0.9);
-  -webkit-backdrop-filter: blur(20px) saturate(100%);
+  @apply absolute border-2 mt-16 border-transparent z-50 rounded-default font-bold text-base before:backdrop-blur-lg;
+  background-color: rgba(22, 22, 22, 0.7);
   @include media(md) {
     @apply right-4;
   }
+  &:before {
+    background-color: rgba(22, 22, 22, 0.7);
+    @apply absolute inset-0 -z-10 rounded-default;
+  }
 }
 
+.uli {
+  @apply flex flex-col gap-8 py-8 px-8 text-center leading-none justify-center z-0;
+  li {
+    z-index: 1;
+  }
+}
 .common {
   @apply flex justify-center;
 }

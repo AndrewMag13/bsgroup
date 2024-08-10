@@ -8,7 +8,8 @@ import s from './servicesWidgets.module.scss'
 const ServicesWidget = () => {
   const t = useTranslations('home.services')
   const f = useFormatter()
-  const keys = ['serviceLanding', 'serviceMulti', 'serviceAdvanced']
+  // const keys = ['serviceLanding', 'serviceMulti', 'serviceAdvanced']
+  const keys = ['serviceLanding', 'serviceMulti']
   const bulletKeys = ['bullet1', 'bullet2', 'bullet3', 'bullet4']
   const enableMinor = false
   const keys2 = ['design', 'presentation', 'motion']

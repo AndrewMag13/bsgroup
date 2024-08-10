@@ -26,14 +26,6 @@
   row-gap: 40px;
   z-index: 20;
 }
-// .divider {
-//   flex-grow: 1;
-//   border-bottom: 1px solid black;
-//   margin: 5px;
-// }
-// .line {
-// }
-
 .lines {
   @apply flex relative justify-center top-0 z-0;
 }
