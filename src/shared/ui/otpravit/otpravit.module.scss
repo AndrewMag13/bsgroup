@@ -28,6 +28,12 @@
   transition:
     --based 1s,
     --funded 1s;
+  -moz-transition:
+    --based 1s,
+    --funded 1s;
+  -webkit-transition:
+    --based 1s,
+    --funded 1s;
 }
 
 .button:hover {

@@ -21,7 +21,6 @@ const GoHome: NextPage = () => {
           transition={{ type: 'spring', stiffness: 200, damping: 20 }}
           style={{
             fontWeight: '700',
-
             fontSize: '1.5rem',
             backgroundColor: '#161616',
             width: '200px',

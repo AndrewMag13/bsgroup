@@ -51,21 +51,9 @@ const ApplicationWidget: NextPage = () => {
         <h2 className={s.title}>{t('title')}</h2>
         <motion.form
           noValidate
-          initial={{
-            opacity: 0,
-            x: -100,
-          }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-            transition: {
-              duration: 1,
-            },
-          }}
           style={{
             zIndex: 10,
           }}
-          viewport={{ once: true }}
           onSubmit={handleSubmit(onSubmit)}
         >
           <div className={s.forms}>

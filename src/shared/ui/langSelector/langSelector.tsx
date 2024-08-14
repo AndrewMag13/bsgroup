@@ -77,7 +77,6 @@ const LangSelector: NextPage = () => {
               pointerEvents: isOpen ? 'auto' : 'none',
             }}
           >
-
               <ul className={s.uli}>
                 {langs.map((lang) => {
                   return (
@@ -99,7 +98,6 @@ const LangSelector: NextPage = () => {
                   )
                 })}
               </ul>
-
           </motion.div>
         </motion.nav>
       </AnimatePresence>

@@ -44,6 +44,9 @@
   -moz-transition:
     --based 1s,
     --funded 1s;
+  -webkit-transition:
+    --based 1s,
+    --funded 1s;
 }
 .storybook-button--primary:hover {
   --based: rgba(98, 214, 197, 1);

@@ -1,7 +1,3 @@
-// $xl: 1200px;
-// $lg: 992px;
-// $md: 768px;
-// $sm: 576px;
 $laptop: 1024px;
 $tablet: 768px;
 $mobile: 434px;
@@ -20,9 +16,4 @@ $mobile: 434px;
       @content;
     }
   }
-  // @else if $media == xl {
-  //   @media only screen and (max-width: $xl) {
-  //     @content;
-  //   }
-  // }
 }
