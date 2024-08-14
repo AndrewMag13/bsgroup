@@ -4,3 +4,4 @@ export const SHEETS_API = process.env.GOOGLE_SHEETS_API!
 export const OAUTH_API = process.env.OAUTH!
 export const BOT_API = process.env.BOT!
 export const CHAT_ID = process.env.TG_CHAT!
+export const GA_ID = process.env.GA!
