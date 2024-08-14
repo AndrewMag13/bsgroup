@@ -11,12 +11,16 @@ const withPWA = require('next-pwa')({
 
 
 })
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
+// module.exports = withBundleAnalyzer({})
 const config = {
 
 }
-module.exports = withPWA(withNextIntl({
+module.exports = withBundleAnalyzer(withPWA(withNextIntl({
   reactProductionProfiling: true,
   experimental: {
     serverComponentsExternalPackages: ['telegraf']
   }
-}));
+})));
