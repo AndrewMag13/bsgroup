@@ -14,7 +14,108 @@
       "title": "Not found!"
     },
     "terms": {
-      "title": "Terms of Service"
+      "title": "Terms of Service",
+      "sections": {
+        "title": "This Privacy Policy of personal information (hereinafter referred to as the Policy)",
+        "description": "applies to all information that Nail Anatolyevich Burdasov (registration address: 414000 Astrakhan region, Astrakhan, Kuprina St., 25) and/or his affiliated persons may receive about the user during the use of the site https://bsgroup.vercel.app/. Using the site https://bsgroup.vercel.app/ means the user's unconditional consent to this Policy and the terms of processing his personal information specified in it; in case of disagreement with these conditions, the user must refrain from using this resource.",
+        "sections": {
+          "1": {
+            "title": "1. Personal information of users that the site https://bsgroup.vercel.app/ receives and processes",
+            "subsections": {
+              "11": {
+                "title": "1.1. Within the framework of this Policy, 'personal information of the user' means:",
+                "description": "1.1.1. Personal information that the user provides about himself independently when submitting an application, making a purchase, registering (creating an account), or in any other process of using the site. 1.1.2. Data that is automatically transmitted by the site https://bsgroup.vercel.app/ during its use using the software installed on the user's device, including IP address, cookie information, information about the user's browser (or other program through which access to the site is carried out), access time, address of the requested page. 1.1.3. Data provided to the site for the purpose of providing services and/or selling goods and/or providing other values to visitors of the site, in accordance with the activities of this resource: username, email address, phone number."
+              },
+              "12": {
+                "title": "1.2.",
+                "description": "This Policy applies only to the site https://bsgroup.vercel.app/ and does not control and is not responsible for third-party sites to which the user can go through the links available on the site https://bsgroup.vercel.app/. On such sites, the user may collect or request other personal information, as well as other actions may be performed."
+              },
+              "13": {
+                "title": "1.3.",
+                "description": "The site generally does not verify the accuracy of personal information provided by users and does not control their legal capacity. However, the site https://bsgroup.vercel.app/ assumes that the user provides reliable and sufficient personal information on the issues proposed in the forms of this resource and maintains this information up to date."
+              }
+            }
+          },
+          "2": {
+            "title": "2. Purposes of collecting and processing personal information of users",
+            "subsections": {
+              "21": {
+                "title": "2.1.",
+                "description": "The site collects and stores only those personal data that are necessary for the provision of services and/or the sale of goods and/or the provision of other values to visitors of the site https://bsgroup.vercel.app/."
+              },
+              "22": {
+                "title": "2.2.",
+                "description": "Personal information of the user can be used for the following purposes: 2.2.1. Providing the user with personalized services and services, goods, and other values."
+              }
+            }
+          },
+          "3": {
+            "title": "3. Conditions for processing the user's personal information and its transfer to third parties",
+            "subsections": {
+              "31": {
+                "title": "3.1.",
+                "description": "The site https://bsgroup.vercel.app/ stores the personal information of users in accordance with the internal regulations of specific services."
+              },
+              "32": {
+                "title": "3.2.",
+                "description": "The confidentiality of the user's personal information is maintained, except in cases of voluntary provision by the user of information about himself for general access to an unlimited number of persons."
+              },
+              "33": {
+                "title": "3.3.",
+                "description": "The site https://bsgroup.vercel.app/ has the right to transfer the user's personal information to third parties in the following cases: 3.3.1. The user has expressed his consent to such actions, by consent expressed in the provision of such data. 3.3.2. The transfer is necessary within the framework of the user's use of a specific site https://bsgroup.vercel.app/, or for the provision of goods and/or services to the user. 3.3.3. The transfer is provided for by Russian or other applicable legislation within the framework of the established legislative procedure. 3.3.4. In order to ensure the possibility of protecting the rights and legitimate interests of the site https://bsgroup.vercel.app/ or third parties in cases where the user violates the User Agreement of the site https://bsgroup.vercel.app/."
+              },
+              "34": {
+                "title": "3.4.",
+                "description": "When processing personal data of users, the site https://bsgroup.vercel.app/ is guided by the Federal Law of the Russian Federation 'On Personal Data'."
+              }
+            }
+          },
+          "4": {
+            "title": "4. Changing the user's personal information",
+            "subsections": {
+              "41": {
+                "title": "4.1.",
+                "description": "The user can change (update, supplement) the personal information provided by him or part of it, as well as the parameters of its confidentiality, at any time by leaving a statement to the site administration in the following way: Email: nnaaiillburdasov@gmail.com"
+              },
+              "42": {
+                "title": "4.2.",
+                "description": "The user can withdraw his consent to the processing of personal data at any time by leaving a statement to the site administration in the following way: Email: nnaaiillburdasov@gmail.com"
+              }
+            }
+          },
+          "5": {
+            "title": "5. Measures taken to protect the user's personal information",
+            "subsections": {
+              "51": {
+                "title": "5.1.",
+                "description": "The site takes the necessary and sufficient organizational and technical measures to protect the user's personal information from unlawful or accidental access, destruction, alteration, blocking, copying, distribution, as well as from other unlawful actions of third parties."
+              }
+            }
+          },
+          "6": {
+            "title": "6. Changing the Privacy Policy. Applicable law",
+            "subsections": {
+              "61": {
+                "title": "6.1.",
+                "description": "The site has the right to make changes to this Privacy Policy. When changes are made, the current edition indicates the date of the last update. The new edition of the Policy comes into force from the moment of its placement, unless otherwise provided by the new edition of the Policy."
+              },
+              "62": {
+                "title": "6.2.",
+                "description": "This Policy and the relationship between the user and the Site arising in connection with the application of the Privacy Policy are subject to the law of the Russian Federation."
+              }
+            }
+          },
+          "7": {
+            "title": "7. Feedback. Questions and suggestions",
+            "subsections": {
+              "71": {
+                "title": "7.1.",
+                "description": "All suggestions or questions regarding this Policy should be sent in the following way: Email: bsgroup.dev@yahoo.com"
+              }
+            }
+          }
+        }
+      }
     },
     "privacy": {
       "title": "Privacy Policy"
@@ -259,6 +360,130 @@
         "inst": "https://www.instagram.com/bsgroup_ru/",
         "youtube": "https://www.youtube.com/@bsgroupru",
         "github": "https://github.com/AndrewMag13/bsgroup"
+      }
+    },
+    "priv": {
+      "sections": {
+        "1": {
+          "title": "1. GENERAL PROVISIONS",
+          "content": {
+            "1": "1.1. This User Agreement (hereinafter referred to as the Agreement) applies to the website 'BSGroup - IT company of the new era', located at https://bsgroup.vercel.app/.",
+            "2": "1.2. The website 'BSGroup - IT company of the new era.' (here in after referred to as the Site) is owned by an individual, Nail Anatolyevich Burdasov (registration address: 414000 Astrakhan region, Astrakhan city, Kuprina street, 25).",
+            "3": "1.3. This Agreement governs the relationship between the Administration of the website 'BSGroup - IT company of the new era.' (hereinafter referred to as the Site Administration) and the User of this Site.",
+            "4": "1.4. The Site Administration reserves the right to change, add, or delete clauses of this Agreement at any time without notifying the User.",
+            "5": "1.5. The use of the Site by the User means acceptance of the Agreement and the changes made to this Agreement.",
+            "6": "1.6. The User is personally responsible for checking this Agreement for changes."
+          }
+        },
+        "2": {
+          "title": "2. DEFINITIONS",
+          "content": {
+            "1": "2.1. The following terms have the following meanings for the purposes of this Agreement:",
+            "2": "2.1.1 'BSGroup - IT company of the new era' – an Internet resource located at the domain name https://bsgroup.vercel.app/ operating through the Internet resource and its related services (hereinafter referred to as the Site).",
+            "3": "2.1.2. 'BSGroup - IT company of the new era' – a site containing information about Goods and/or Services and/or other values for the user, Seller and/or Service Provider, allowing the selection, ordering, and (or) purchase of Goods, and/or receipt of services.",
+            "4": "2.1.3. Site Administration – authorized employees managing the Site, acting on behalf of Nail Anatolyevich Burdasov.",
+            "5": "2.1.4. Site User (hereinafter referred to as the User) – a person who has access to the Site via the Internet and uses the Site.",
+            "6": "2.1.5. Site Content (hereinafter referred to as Content) – protected results of intellectual activity, including literary works, their titles, prefaces, annotations, articles, illustrations, covers, musical works with or without text, graphic, textual, photographic, derivative, composite and other works, user interfaces, visual interfaces, trademarks, logos, computer programs, databases, as well as the design, structure, selection, coordination, appearance, general style and arrangement of this Content, included in the Site and other intellectual property objects all together and/or separately, contained on the site https://bsgroup.vercel.app/."
+          }
+        },
+        "3": {
+          "title": "3. SUBJECT OF THE AGREEMENT",
+          "content": {
+            "1": "3.1. The subject of this Agreement is to provide the User with access to the Goods and/or services available on the Site.",
+            "2": "3.1.1. The Site provides the User with the following types of services (services):",
+            "3": "Access to the site's search and navigation tools",
+            "4": "access to information about the Goods and/or services, information about the purchase of Goods on a paid/free basis;",
+            "5": "3.1.2. This Agreement applies to all existing (actually functioning) services (services) of the Site at the moment, as well as any of their subsequent modifications and additional services (services) that appear in the future.",
+            "6": "3.2. Access to the site is provided free of charge.",
+            "7": "3.3. This Agreement is a public offer. By accessing the Site, the User is considered to have joined this Agreement.",
+            "8": "3.4. The use of materials and services of the Site is governed by the applicable laws of the Russian Federation."
+          }
+        },
+        "4": {
+          "title": "4. RIGHTS AND OBLIGATIONS OF THE PARTIES",
+          "content": {
+            "1": "4.1. The Site Administration has the right to:",
+            "2": "4.1.1. Change the rules for using the Site, as well as change the content of this Site. Changes take effect from the moment the new version of the Agreement is published on the Site.",
+            "3": "4.2. The User has the right to:",
+            "4": "4.2.1. Use all the services available on the Site, as well as purchase any Goods and/or Services offered on the Site.",
+            "5": "4.2.2. Ask any questions related to the services of the site:",
+            "6": "by email: bsgroup.dev@yahoo.com",
+            "7": "4.2.3. Use the Site exclusively for the purposes and in the manner provided for by the Agreement and not prohibited by the laws of the Russian Federation.",
+            "8": "4.2.4. Copy information from the Site is allowed.",
+            "9": "4.2.5. Require the administration to hide any information about the user.",
+            "10": "4.2.6. Use the site information for commercial purposes without special permission.",
+            "11": "4.3. The User of the Site undertakes to:",
+            "12": "4.3.1. Provide additional information at the request of the Site Administration, which is directly related to the services provided by this Site.",
+            "13": "4.3.2. Respect the property and non-property rights of authors and other rights holders when using the Site.",
+            "14": "4.3.3. Not take actions that can be considered as disrupting the normal operation of the Site.",
+            "15": "4.3.4. Not distribute using the Site any confidential and protected by the legislation of the Russian Federation information about individuals or legal entities.",
+            "16": "4.3.5. Avoid any actions that may result in the violation of the confidentiality of information protected by the legislation of the Russian Federation.",
+            "17": "4.3.6. Not use the Site to distribute advertising information, except with the consent of the Site Administration.",
+            "18": "4.3.7. Not use the services for the purpose of:",
+            "19": "4.3.7.1. violating the rights of minors and (or) causing them harm in any form.",
+            "20": "4.3.7.2. infringing on the rights of minorities.",
+            "21": "4.3.7.3. representing oneself as another person or representative of an organization and (or) community without sufficient rights, including for employees of this site.",
+            "22": "4.3.7.4. misleading about the properties and characteristics of any Goods and/or services posted on the Site.",
+            "23": "4.3.7.5. incorrect comparison of Goods and/or Services, as well as the formation of a negative attitude towards persons (not) using certain Goods and/or services, or condemnation of such persons.",
+            "24": "4.3.8. Ensure the accuracy of the information provided",
+            "25": "4.3.9. Ensure the safety of personal data from access by third parties.",
+            "26": "4.4. The User is prohibited from:",
+            "27": "4.4.1. Using any devices, programs, procedures, algorithms and methods, automatic devices or equivalent manual processes to access, acquire, copy or track the content of the Site.",
+            "28": "4.4.2. Disrupting the proper functioning of the Site.",
+            "29": "4.4.3. Bypassing the navigation structure of the Site in any way to obtain or attempt to obtain any information, documents or materials by any means that are not specifically provided by the services of this Site.",
+            "30": "4.4.4. Unauthorized access to the functions of the Site, any other systems or networks related to this Site, as well as to any services offered on the Site.",
+            "31": "4.4.4. Violating the security or authentication system on the Site or in any network related to the Site.",
+            "32": "4.4.5. Performing reverse search, tracking or attempting to track any information about any other User of the Site.",
+            "33": "4.4.6. Using the Site and its Content for any purposes prohibited by the laws of the Russian Federation, as well as inciting any illegal activity or other activity that violates the rights of the Site or other persons."
+          }
+        },
+        "5": {
+          "title": "5. USE OF THE SITE",
+          "content": {
+            "1": "5.1. The Site and the Content included in the Site are owned and managed by the Site Administration.",
+            "2": "5.2. The content of the Site is protected by copyright, trademark law, as well as other rights related to intellectual property, and unfair competition law.",
+            "3": "5.3. This Agreement extends to all additional terms and conditions for the purchase of Goods and/or the provision of services provided on the Site.",
+            "4": "5.4. The information posted on the Site should not be construed as a change to this Agreement.",
+            "5": "5.5. The Site Administration has the right to make changes to the list of Goods and services offered on the Site, and (or) their prices at any time without notifying the User.",
+            "6": "5.6. The document specified in clause 5.7.1 of this Agreement regulates in the relevant part and applies to the use of the Site by the User:",
+            "7": "5.7.1. Privacy Policy;",
+            "8": "5.8. Any of the documents listed in clause 5.7.1. of this Agreement may be subject to updates. Changes take effect from the moment they are published on the Site."
+          }
+        },
+        "6": {
+          "title": "6. LIABILITY",
+          "content": {
+            "1": "6.1. Any losses that the User may incur in case of intentional or careless violation of any provision of this Agreement, as well as due to unauthorized access to the communications of another User, are not reimbursed by the Site Administration.",
+            "2": "6.2. The Site Administration is not responsible for:",
+            "3": "6.2.1. Delays or failures in the process of performing an operation, caused by force major, as well as any case of malfunction in telecommunications, computer, electrical and other related systems.",
+            "4": "6.2.2. Actions of transfer systems, banks, payment systems and for delays related to their work.",
+            "5": "6.2.3. Proper functioning of the Site, if the User does not have the necessary technical means to use it, and also does not bear any obligations to provide users with such means."
+          }
+        },
+        "7": {
+          "title": "7. VIOLATION OF THE TERMS OF THE USER AGREEMENT",
+          "content": {
+            "1": "7.1. The Site Administration has the right to disclose information about the User if the current legislation of the Russian Federation requires or permits such disclosure.",
+            "2": "7.2. The Site Administration has the right, without prior notice to the User, to terminate and (or) block access to the Site if the User has violated this Agreement or the terms of use of the Site contained in other documents, as well as in case of termination of the Site or due to a technical malfunction or problem.",
+            "3": "7.3. The Site Administration is not responsible to the User or third parties for terminating access to the Site in case of violation by the User of any provision of this Agreement or other document containing the terms of use of the Site."
+          }
+        },
+        "8": {
+          "title": "8. DISPUTE RESOLUTION",
+          "content": {
+            "1": "8.1. In case of any disagreements or disputes between the Parties to this Agreement, a prerequisite before going to court is to submit a claim (a written proposal for voluntary settlement of the dispute).",
+            "2": "8.2. The recipient of the claim, within 30 calendar days from the date of its receipt, shall notify the claimant in writing of the results of the consideration of the claim.",
+            "3": "8.3. If it is impossible to resolve the dispute voluntarily, any of the Parties has the right to apply to the court for the protection of their rights, which are granted to them by the current legislation of the Russian Federation.",
+            "4": "8.4. Any claim regarding the terms of use of the Site must be filed within 5 days after the grounds for the claim arise, except for the protection of copyright on materials protected by law. If the conditions of this clause are violated, any claim is left without consideration by the court."
+          }
+        },
+        "9": {
+          "title": "9. ADDITIONAL CONDITIONS",
+          "content": {
+            "1": "9.1. The Site Administration does not accept counter offers from the User regarding changes to this User Agreement.",
+            "2": "9.2. User reviews posted on the Site are not confidential information and can be used by the Site Administration without restrictions."
+          }
+        }
       }
     }
   }
