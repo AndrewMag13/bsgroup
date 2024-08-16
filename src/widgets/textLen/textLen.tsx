@@ -1,46 +1,14 @@
 'use client'
 
 import { Fragment } from 'react'
+import { getIntlKeys } from '@/shared/functions/getIntlKeys'
 import { motion } from 'framer-motion'
 import s from './textLen.module.scss'
 import { useTranslations } from 'next-intl'
 
 const TextLen = () => {
-  const t = useTranslations('home.textLen')
-  const keys = [
-    'market analysis',
-    'adaptation',
-    'audit',
-    'accessibility',
-    'scalability',
-    'projection',
-    'SEO',
-    'SMI',
-    'metrics',
-    'integration',
-    'documentation',
-    'design',
-    'redesign',
-    'prototype',
-    'wireframing',
-    'typography',
-    'UI/UX',
-    'E2E',
-    'content management',
-    'content strategy',
-    'setting',
-    'animation',
-    'motion design',
-    'marketing',
-    'testing',
-    'deployment',
-    'hosting',
-    'coffee consumption',
-    'optimization',
-    'maintenance',
-    'promotion',
-    'support',
-  ]
+  const t = useTranslations('home')
+  const keys = getIntlKeys(t, 'textLen')
   return (
     <>
       <section className={s.wrapper}>
@@ -63,7 +31,7 @@ const TextLen = () => {
             {keys.map((key) => {
               return (
                 <Fragment key={key}>
-                  <li className={s.title}>{t(`${key}`)}</li>
+                  <li className={s.title}>{t(`textLen.${key}`)}</li>
                   <li className={s.dot}>·</li>
                 </Fragment>
               )
@@ -73,7 +41,7 @@ const TextLen = () => {
             {keys.map((key) => {
               return (
                 <Fragment key={key}>
-                  <li className={s.title}>{t(`${key}`)}</li>
+                  <li className={s.title}>{t(`textLen.${key}`)}</li>
                   <li className={s.dot}>·</li>
                 </Fragment>
               )

@@ -1,48 +1,13 @@
 import Image from 'next/image'
 import { NextPage } from 'next'
 import TechCard from '@/shared/ui/techCard/techCard'
+import { getIntlKeys } from '@/shared/functions/getIntlKeys'
 import s from './techWidget.module.scss'
 import { useTranslations } from 'next-intl'
 
 const TechsWidget: NextPage = () => {
-  const keys = [
-    'html',
-    'css',
-    'js',
-    'React',
-    'Docker',
-    'Wordpress',
-    'Git',
-    'Tailwind',
-    'Tilda',
-    'Express',
-    'PWA',
-    'Playwright',
-    'Redux',
-    'Zustand',
-    'React-hook-form',
-    'React-typed',
-    'Storybook',
-    'Nextjs',
-    'TS',
-    'SCSS',
-    'PostCSS',
-    'Framer',
-    'FSD',
-    'Tanstack',
-    'Swiper',
-    'Tsparticles',
-    'Hot toast',
-    'Prettier',
-    'i18n',
-    'a11y',
-    'NextUI',
-    'Postgress',
-    'Flex',
-    'Grid',
-    'Responsive',
-  ]
   const t = useTranslations('home.techs')
+  const keys = getIntlKeys(t, 'list')
   return (
     <>
       <section className={s.container} id="techs">

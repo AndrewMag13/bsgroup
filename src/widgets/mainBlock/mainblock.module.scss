@@ -1,4 +1,5 @@
 @import '../../shared/scss/media';
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
 .text {
   height: calc(100vh - 60px);
   @apply z-10 flex px-39 flex-col justify-center text-start gap-10 max-w-fit;
@@ -45,4 +46,10 @@
 }
 .button {
   @apply w-36;
+}
+.typeWrote {
+  font-family: 'JetBrains Mono', monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }

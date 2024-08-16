@@ -3,15 +3,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { NextPage } from 'next'
+import { getIntlKeys } from '@/shared/functions/getIntlKeys'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 
 const Icons: NextPage = () => {
-  const t = useTranslations('home.footer.iconsLinks')
-  const icons = ['telegram', 'taplink', 'behance', 'inst', 'youtube', 'github']
+  const t = useTranslations('home.footer')
+  const arr = getIntlKeys(t, 'iconsLinks')
   return (
     <>
-      {icons.map((icon) => {
+      {arr.map((icon) => {
         return (
           <motion.div
             key={icon}
@@ -19,7 +20,7 @@ const Icons: NextPage = () => {
             whileHover={{ scale: 1.06 }}
             transition={{ type: 'spring', stiffness: 200, damping: 20 }}
           >
-            <Link href={t(icon)}>
+            <Link href={t(`iconsLinks.${icon}`)}>
               <Image
                 src={`/footer/${icon}.svg`}
                 width={24}

@@ -1,29 +1,20 @@
 'use client'
 
 import { ReactTyped } from 'react-typed'
+import { getIntlKeysTranslated } from '@/shared/functions/getIntlKeys'
 import { useTranslations } from 'next-intl'
 
 const TypeWrote = () => {
   const t = useTranslations('home.mainBlock')
-  const keys = [
-    'sales-driven',
-    'engaging',
-    'elegant',
-    'functional',
-    'high-quality',
-    'grandiose',
-  ]
-  const arr = keys.map((key) => {
-    return t(`titles.${key}`)
-  })
+  const arr = getIntlKeysTranslated(t, 'titles')
   return (
     <>
       <ReactTyped
         strings={arr}
-        typeSpeed={100}
-        backDelay={3000}
-        backSpeed={50}
-        startDelay={100}
+        typeSpeed={80} // Slower typing speed for better readability
+        backDelay={3000} // Shorter delay before starting to delete
+        backSpeed={30} // Slower back speed for a smoother effect
+        startDelay={500} // Slightly longer start delay for anticipation
         cursorChar="|"
         loop
       />

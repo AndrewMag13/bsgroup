@@ -5,12 +5,13 @@ import 'react-photo-view/dist/react-photo-view.css'
 import Image from 'next/image'
 import { PhotoProvider } from 'react-photo-view'
 import ProjectCard from '@/shared/ui/projectCard/projectCard'
+import { getIntlKeys } from '@/shared/functions/getIntlKeys'
 import s from './projectWidget.module.scss'
 import { useTranslations } from 'next-intl'
 
 const ProjectWidget = () => {
   const t = useTranslations('home.projects')
-  const keys = ['fixer', 'webDeva', 'runSmart', 'amazon', 'vlad', 'grow']
+  const keys = getIntlKeys(t, 'list')
   return (
     <>
       <section className={s.container} id="projects">

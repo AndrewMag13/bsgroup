@@ -1,5 +1,10 @@
 'use client'
 
+import {
+  getIntlKeys,
+  getIntlKeysTranslated,
+} from '@/shared/functions/getIntlKeys'
+
 import Link from 'next/link'
 import Napisat from '@/shared/ui/napisat/napisat'
 import Parallax from '@/shared/ui/parallax/parallax'
@@ -9,15 +14,9 @@ import s from './mainblock.module.scss'
 import { useTranslations } from 'next-intl'
 
 const MainBlockPage = () => {
-  const headerKeys = [
-    'services',
-    'development',
-    'projects',
-    'techs',
-    'application',
-  ]
   const t = useTranslations('home.mainBlock')
   const ht = useTranslations('home.header')
+  const headerKeys = getIntlKeys(ht, 'links')
   return (
     <>
       <section className={s.main} id="main">
@@ -52,7 +51,7 @@ const MainBlockPage = () => {
                   zIndex: 10,
                 }}
               >
-                <Link href={`/${ht(`links.${headerKey}.href`)}`}>
+                <Link href={`#${ht(`links.${headerKey}.href`)}`}>
                   {ht(`links.${headerKey}.title`)}
                 </Link>
               </motion.li>
@@ -79,9 +78,9 @@ const MainBlockPage = () => {
         >
           <h1 className={s.title}>
             {t('headerFirst')}
-            <b>
+            <span className={s.typeWrote}>
               <TypeWrote />
-            </b>
+            </span>
             {t('headerSecond')}
           </h1>
           <h3 className={s.smalltext}>{t('smallText')}</h3>

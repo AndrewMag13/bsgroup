@@ -9,7 +9,6 @@ import { useTranslations } from 'next-intl'
 
 const Header = () => {
   const t = useTranslations('home')
-
   return (
     <>
       <motion.header

@@ -8,7 +8,7 @@ interface ITechCard {
   title: string
 }
 const TechCard = (props: ITechCard) => {
-  const t = useTranslations('home.techs')
+  const t = useTranslations('home.techs.list')
   return (
     <>
       <motion.div
@@ -28,8 +28,8 @@ const TechCard = (props: ITechCard) => {
         }}
         viewport={{ once: true }}
       >
-        <div className={s.title}>{t(`${props.title}`)}</div>
-      </motion.div>
+        <div className={s.title}>{t(props.title)}</div>
+      </motion.div> 
     </>
   )
 }

@@ -4,6 +4,7 @@ import { AnimatePresence, Variants, motion } from 'framer-motion'
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { getIntlKeys } from '@/shared/functions/getIntlKeys'
 import s from './navButton.module.scss'
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
@@ -19,7 +20,7 @@ const NavButton = () => {
   }
   const [isOpen, setIsOpen] = useState(false)
   const t = useTranslations('home.header')
-  const opts = ['services', 'development', 'projects', 'techs', 'application']
+  const opts = getIntlKeys(t, 'links')
   return (
     <>
       <AnimatePresence>

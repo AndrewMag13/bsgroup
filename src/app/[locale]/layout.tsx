@@ -16,11 +16,6 @@ import { ReactNode } from 'react'
 import localFont from 'next/font/local'
 import ogImage from '../../../public/images/og.png'
 
-// const inter = Inter({
-//   subsets: ['latin', 'cyrillic'],
-//   display: 'swap',
-// })
-
 const locales = ['en', 'ru']
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
