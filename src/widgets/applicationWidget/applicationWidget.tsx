@@ -1,14 +1,20 @@
 'use client'
 
 import { SubmitHandler, useForm } from 'react-hook-form'
-import toast, { Toaster } from 'react-hot-toast'
 
 import { ErrorMessage } from '@hookform/error-message'
 import { NextPage } from 'next'
 import OtpravitButton from '@/shared/ui/otpravit/otpravit'
+import { Suspense } from 'react'
+import dynamic from 'next/dynamic'
 import { motion } from 'framer-motion'
 import s from './applicationWidget.module.scss'
 import { useTranslations } from 'next-intl'
+
+const Toaster = dynamic(
+  () => import('react-hot-toast').then((mod) => mod.Toaster),
+  { ssr: false },
+)
 
 interface Inputs {
   name: string
@@ -25,15 +31,15 @@ const ApplicationWidget: NextPage = () => {
     formState: { errors },
   } = useForm<Inputs>({ mode: 'onChange' })
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => {
-    fetch(`/api/bot`, {
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    await fetch(`/api/bot`, {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
       },
       body: JSON.stringify(data),
     })
-    console.log(JSON.stringify(data))
+    const toast = (await import('react-hot-toast')).default
     toast(t('done'), {
       duration: 2000,
       icon: '👏',
@@ -47,7 +53,9 @@ const ApplicationWidget: NextPage = () => {
   return (
     <>
       <section className={s.container} id="application">
-        <Toaster />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Toaster />
+        </Suspense>
         <h2 className={s.title}>{t('title')}</h2>
         <motion.form
           noValidate
@@ -79,7 +87,7 @@ const ApplicationWidget: NextPage = () => {
               errors={errors}
               name="phone"
               render={({ message }) => (
-                <div className="self-center flex  justify-center align-bottom py-10">
+                <div className="self-center flex justify-center align-bottom py-10">
                   <span className={'absolute mt-10'}>{message}</span>
                 </div>
               )}

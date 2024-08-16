@@ -67,7 +67,6 @@ const ServiceCard = (props: IWidgetProps) => {
             },
           },
         }}
-      
         style={{
           zIndex: 10,
           display: 'flex',

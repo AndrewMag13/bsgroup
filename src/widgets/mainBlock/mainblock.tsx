@@ -1,14 +1,10 @@
 'use client'
 
-import {
-  getIntlKeys,
-  getIntlKeysTranslated,
-} from '@/shared/functions/getIntlKeys'
-
 import Link from 'next/link'
 import Napisat from '@/shared/ui/napisat/napisat'
 import Parallax from '@/shared/ui/parallax/parallax'
 import TypeWrote from '@/shared/ui/typeWrote/typeWrote'
+import { getIntlKeys } from '@/shared/functions/getIntlKeys'
 import { motion } from 'framer-motion'
 import s from './mainblock.module.scss'
 import { useTranslations } from 'next-intl'
