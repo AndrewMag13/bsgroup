@@ -8,8 +8,8 @@ import {
 } from 'next-intl/server'
 
 import Footer from '@/widgets/footer/footer'
-import { GA_ID } from '@/shared/constants/constants'
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GA_ID, GTM_ID } from '@/shared/constants/constants'
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import Header from '@/widgets/header/header'
 import { NextIntlClientProvider } from 'next-intl'
 import { ReactNode } from 'react'
@@ -121,7 +121,8 @@ export default async function RootLayout({
             <Footer />
           </NextIntlClientProvider>
         </body>
-        <GoogleAnalytics gaId={GA_ID}/>
+        <GoogleAnalytics gaId={GA_ID} />
+        <GoogleTagManager gtmId={GTM_ID} />
       </html>
     </>
   )
