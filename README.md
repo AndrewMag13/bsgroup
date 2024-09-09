@@ -2,14 +2,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-#Created by [Nail Burdasov](https://t.me/astrajah)
+Created by [Nail Burdasov](https://t.me/astrajah)
+
+Actual website: https://bsgroup.vercel.app
 
 install by
+
 ```bash
 yarn install
 ```
 
 run by
+
 ```bash
 yarn dev
 #or
@@ -17,6 +21,7 @@ yarn turbo
 ```
 
 build by
+
 ```bash
 yarn go
 ```
