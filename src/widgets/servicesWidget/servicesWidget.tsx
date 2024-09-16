@@ -9,13 +9,13 @@ const ServicesWidget = () => {
   const t = useTranslations('home.services')
   const f = useFormatter()
   const keys = ['serviceLanding', 'serviceMulti', 'serviceAdvanced']
-  // const keys = ['serviceLanding', 'serviceMulti']
   const bulletKeys = ['bullet1', 'bullet2', 'bullet3', 'bullet4']
-  const enableMinor = false
+  const enableMinor = true
   const keys2 = ['design', 'presentation', 'motion']
   const bulletSmallKeys = ['bullet1', 'bullet2']
   const propers = (type: string): IWidgetProps => {
     return {
+      type: type,
       header: t(`${type}.header`),
       priceFormatFrom: t(`priceFormat.from`),
       beforePrice: f.number(Number(t(`${type}.beforePrice`)), {

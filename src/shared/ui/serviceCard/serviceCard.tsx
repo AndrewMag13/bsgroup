@@ -8,6 +8,7 @@ import { motion } from 'framer-motion'
 import s from './serviceCard.module.scss'
 
 export interface IWidgetProps {
+  type: string
   header: string
   priceFormatFrom: string
   beforePrice: string
@@ -54,11 +55,17 @@ const ServiceCard = (props: IWidgetProps) => {
                 className={s.serviceType}
                 style={{
                   background:
-                    props.header === 'Landing-page'
+                    props.type === 'serviceLanding'
                       ? 'linear-gradient(90deg,  #6ee556 0%, #9fda20 100%)'
-                      : props.header === 'Multi-page'
-                        ? 'linear-gradient(90deg,  rgb(246, 31, 255) 0%, rgb(85, 205, 226) 100%)'
-                        : 'linear-gradient(90deg,  rgb(197, 23, 104) 0%, rgb(207, 121, 128) 100%)',
+                      : props.type === 'serviceMulti'
+                      ? 'linear-gradient(90deg,  rgb(246, 31, 255) 0%, rgb(85, 205, 226) 100%)'
+                      : props.type === 'serviceAdvanced'
+                      ? 'linear-gradient(90deg,  rgb(197, 23, 104) 0%, rgb(207, 121, 128) 100%)'
+                      : props.type === 'design'
+                      ? 'linear-gradient(90deg,  #C6FFDD 0%, #FBD786 50%, #f7797d 100%)'
+                      : props.type === 'presentation'
+                      ? 'linear-gradient(90deg,  #f12711 0%, #f5af19 100%)'
+                      : 'linear-gradient(90deg,  #FFEFBA 0%, #fff 100%)',
                   backgroundClip: 'text',
                 }}
               >

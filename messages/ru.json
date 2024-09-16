@@ -228,7 +228,8 @@
       },
       "design": {
         "header": "Бренд-дизайн",
-        "price": "15000",
+        "beforePrice": "15990",
+        "price": "9990",
         "serviceType": "Уникальный",
         "bulletList": {
           "bullet1": "Разработка от 3 дней",
@@ -238,7 +239,8 @@
       },
       "presentation": {
         "header": "Презентация",
-        "price": "10000",
+        "beforePrice": "9990",
+        "price": "5990",
         "serviceType": "Интерактивная",
         "bulletList": {
           "bullet1": "Разработка от 2 дней",
@@ -248,7 +250,8 @@
       },
       "motion": {
         "header": "Моушн-дизайн",
-        "price": "10000",
+        "beforePrice": "9990",
+        "price": "5990",
         "serviceType": "Эффектный",
         "bulletList": {
           "bullet1": "Разработка от 2 дней",

@@ -231,7 +231,8 @@
       },
       "design": {
         "header": "Brand-design",
-        "price": "150",
+        "beforePrice": "159",
+        "price": "99",
         "serviceType": "Unique",
         "bulletList": {
           "bullet1": "3 Days delivery time",
@@ -241,7 +242,8 @@
       },
       "presentation": {
         "header": "Presentation",
-        "price": "100",
+        "beforePrice": "99",
+        "price": "59",
         "serviceType": "Interactive",
         "bulletList": {
           "bullet1": "2 Days delivery time",
@@ -251,7 +253,8 @@
       },
       "motion": {
         "header": "Motion-design",
-        "price": "100",
+        "beforePrice": "99",
+        "price": "59",
         "serviceType": "Spectacular",
         "bulletList": {
           "bullet1": "2 Days delivery time",
