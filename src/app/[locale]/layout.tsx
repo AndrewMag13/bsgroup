@@ -88,6 +88,9 @@ export async function generateMetadata(): Promise<Metadata> {
     //   card: 'summary_large_image',
     // },
     manifest: '/manifest.json',
+    verification: {
+      google: 'O6XAh1X35Rx5rNtMZGQk8cS0xEnKQ07WQCfjTs7U1dI'
+    }
   }
 }
 export function viewport(): Viewport {

@@ -2318,15 +2318,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/third-parties@npm:^14.2.11":
-  version: 14.2.11
-  resolution: "@next/third-parties@npm:14.2.11"
+"@next/third-parties@npm:^14.2.18":
+  version: 14.2.18
+  resolution: "@next/third-parties@npm:14.2.18"
   dependencies:
     third-party-capital: "npm:1.0.20"
   peerDependencies:
     next: ^13.0.0 || ^14.0.0
     react: ^18.2.0
-  checksum: 10c0/5197ba3fdea52a9b09d255c48a77d307de0a8bec5715c4c20faa5f027725fad8c75228bd14e0b22a4ac178502aba1f810f2069d66a9599c4ec896e4af39209b7
+  checksum: 10c0/7a22c68890afeb611c6f64c528dab70d5d32e37d0aaca715dc7ddf9ed56f8d8220ba54c8d481ff03ea4c1645968e3c6668ccb26529931ea2c3818399726999d8
   languageName: node
   linkType: hard
 
@@ -7678,7 +7678,7 @@ __metadata:
     "@chromatic-com/storybook": "npm:2.0.2"
     "@hookform/error-message": "npm:^2.0.1"
     "@next/bundle-analyzer": "npm:^14.2.11"
-    "@next/third-parties": "npm:^14.2.11"
+    "@next/third-parties": "npm:^14.2.18"
     "@nextui-org/react": "npm:^2.4.8"
     "@nextui-org/theme": "npm:^2.2.11"
     "@storybook/addon-essentials": "npm:^8.3.0"
