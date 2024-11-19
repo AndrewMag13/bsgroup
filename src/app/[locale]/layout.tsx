@@ -90,7 +90,6 @@ export async function generateMetadata(): Promise<Metadata> {
     manifest: '/manifest.json',
     verification: {
       google: 'O6XAh1X35Rx5rNtMZGQk8cS0xEnKQ07WQCfjTs7U1dI',
-      yandex: '094f33f7ccd9684f'
     }
   }
 }
